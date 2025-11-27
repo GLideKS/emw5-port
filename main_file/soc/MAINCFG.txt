@@ -54,6 +54,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 2
 Levelname = Dark Plains
@@ -69,6 +70,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 3
 Levelname = Dark Plains
@@ -84,6 +86,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 4
 Levelname = Dark Plains
@@ -105,6 +108,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 5
 Levelname = Mystic Ruins
@@ -120,6 +124,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 6
 Levelname = Pyramid Cave
@@ -136,6 +141,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 7
 Levelname = Pyramid Cave
@@ -152,6 +158,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 8
 Levelname = Pyramid Cave
@@ -173,6 +180,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 9
 Levelname = Mystic Ruins
@@ -188,6 +196,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 10
 LevelName = Eggman Base
@@ -204,6 +213,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 11
 LevelName = Eggman Base
@@ -220,6 +230,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 12
 Levelname = The Metallix
@@ -239,6 +250,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 13
 Levelname = Mystic Ruins
@@ -253,6 +265,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 14
 Levelname = NotsoGreen Hill
@@ -268,6 +281,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 15
 Levelname = NotsoGreen Hill
@@ -283,6 +297,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 16
 Levelname = NotsoGreen Hill
@@ -299,6 +314,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 17
 Levelname = Mystic Ruins
@@ -317,6 +333,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 18
 Levelname = Mystic Ruins
@@ -332,6 +349,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 19
 Levelname = Metal Reactor
@@ -347,6 +365,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 20
 Levelname = Metal Reactor
@@ -362,6 +381,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 22
 Levelname = Metal Guardian
@@ -380,6 +400,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 23
 Levelname = Mystic Ruins
@@ -395,6 +416,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 24
 Levelname = The Final Battle
@@ -414,6 +436,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 25
 Levelname = One Year Later
@@ -430,6 +453,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 26
 LevelName = Olivine Forest
@@ -445,6 +469,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 27
 LevelName = Olivine Forest
@@ -460,6 +485,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 28
 LevelName = Olivine Forest
@@ -478,6 +504,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 29
 Levelname = Mystic Ruins
@@ -494,6 +521,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 30
 LevelName = Sunken Steel
@@ -509,6 +537,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 31
 LevelName = Sunken Steel
@@ -524,6 +553,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 32
 LevelName = Sunken Steel
@@ -542,6 +572,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 33
 LevelName = Desolate Hill
@@ -557,6 +588,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 34
 LevelName = Desolate Hill
@@ -572,6 +604,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 35
 LevelName = Shrine
@@ -587,6 +620,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 36
 Levelname = The Doomsday
@@ -607,6 +641,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 41
 Levelname = Emerald Shrine
@@ -621,6 +656,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 40
 Levelname = Mystic Ruins
@@ -637,6 +673,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 48
 Levelname = SuperPlaythrough
@@ -653,6 +690,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 60
 Levelname = Classic DarkPlains
@@ -669,6 +707,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 61
 Levelname = Classic PyramidCave
@@ -685,6 +724,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 62
 Levelname = Classic NotSoGHZ
@@ -702,6 +742,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 63
 Levelname = Classic MysticRuins
@@ -719,6 +760,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 64
 Levelname = Classic MetalSonics
@@ -736,6 +778,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 90
 Levelname = Shadow
@@ -749,6 +792,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 91
 Levelname = Kine
@@ -763,6 +807,7 @@ Weather = 0
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 92
 Levelname = Goldie
@@ -776,6 +821,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 93
 Levelname = Shade
@@ -790,6 +836,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 95
 Levelname = Brad
@@ -804,6 +851,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 96
 Levelname = Shadow
@@ -818,6 +866,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 97
 Levelname = Shadow
@@ -832,6 +881,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+Lua.emw5 = true
 
 Level 99
 Levelname = Waiting Lobby
@@ -844,6 +894,7 @@ NoZone = 1
 TimeAttack = 0
 LevelSelect = 1
 SaveGame = true
+Lua.emw5 = true
 
 FREESLOT
 SPR_F001
