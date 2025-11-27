@@ -1,0 +1,10 @@
+Level 72
+Levelname = NotThatGreen Hill
+MusicSlot = 72
+NextLevel = 73
+TypeOfLevel = 12
+SkyNum = 7
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1
+Weather = 3

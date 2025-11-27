@@ -1,0 +1,11 @@
+Level 8
+Levelname = Pyramid Cave
+Act = 6
+MusicSlot = 8
+NextLevel = 9
+TypeOfLevel = 4099
+SkyNum = 1
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 1
+weather = 0

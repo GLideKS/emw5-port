@@ -1,0 +1,10 @@
+Level 95
+Levelname = Brad
+Act = 24
+MusicSlot = 95
+NextLevel = 95
+TypeOfLevel = 4099
+SkyNum = 7
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1

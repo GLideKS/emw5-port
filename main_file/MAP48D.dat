@@ -1,0 +1,11 @@
+Level 48
+Levelname = SuperPlaythrough
+Act = 0
+MusicSlot = 150
+NextLevel = 1
+TypeOfLevel = 1
+SkyNum = 94
+TimeAttack = 0
+LevelSelect = 0
+NoZone = 1
+Hidden = 1

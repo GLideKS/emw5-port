@@ -1,0 +1,10 @@
+Level 3
+Levelname = Dark Plains
+Act = 2
+MusicSlot = 3
+NextLevel = 4
+TypeOfLevel = 4099
+SkyNum = 7
+NoZone = 0
+TimeAttack = 1
+LevelSelect = 0

@@ -1,0 +1,10 @@
+Level 91
+Levelname = Kine
+MusicSlot = 91
+NextLevel = 91
+TypeOfLevel = 4099
+SkyNum = 29
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+Weather = 0

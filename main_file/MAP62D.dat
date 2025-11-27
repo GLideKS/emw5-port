@@ -1,0 +1,12 @@
+Level 62
+Levelname = Classic NotSoGHZ
+Act = 3
+MusicSlot = 16
+NextLevel = 63
+TypeOfLevel = 129
+SkyNum = 7
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 0
+weather = 1
+Hidden = 1

@@ -1,0 +1,11 @@
+Level 7
+Levelname = Pyramid Cave
+Act = 5
+MusicSlot = 6
+NextLevel = 8
+TypeOfLevel = 4099
+SkyNum = 1
+NoZone = 0
+TimeAttack = 1
+LevelSelect = 1
+weather = 0

@@ -1,0 +1,11 @@
+Level 6
+Levelname = Pyramid Cave
+Act = 4
+MusicSlot = 6
+NextLevel = 7
+TypeOfLevel = 4099
+SkyNum = 1
+NoZone = 0
+TimeAttack = 1
+LevelSelect = 1
+weather = 0

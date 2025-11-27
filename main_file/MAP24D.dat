@@ -1,0 +1,11 @@
+Level 24
+Levelname = The Final Battle
+Act = 16
+MusicSlot = 24
+NextLevel = 36
+TypeOfLevel = 4099
+SkyNum = 96
+TimeAttack = 0
+LevelSelect = 1
+NoSSMusic = 1
+Hidden = 1

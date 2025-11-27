@@ -1,0 +1,16 @@
+cecho "We will now try Tails out";
+wait 100
+cecho "Tail's Mid-Air is his Flight ability";
+wait 120
+cecho "On top of that, his special";
+wait 100
+cecho "Will alter how long he can fly";
+wait 100
+cecho "warning, if you hit it once";
+wait 100
+cecho "and too early, he won't fly too long.";
+wait 150
+cecho "Fly over the spikes using Special.";
+wait 150
+cecho "Proceed.";
+wait 100

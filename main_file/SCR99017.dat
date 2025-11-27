@@ -1,0 +1,20 @@
+cecho "We will now try Espio out";
+wait 100
+cecho "Espio's Mid-air is the Multi-Thok";
+wait 120
+cecho "Like a normal Thok, Espio can";
+wait 100
+cecho "perform a Thok more than once";
+wait 100
+cecho "per jump.";
+wait 125
+cecho "Espio's special is breathing";
+wait 100
+cecho "underwater, 1 ring and he";
+wait 100
+cecho "can breathe for awhile in water.";
+wait 150
+cecho "Go through the water!";
+wait 150
+cecho "Proceed.";
+wait 100

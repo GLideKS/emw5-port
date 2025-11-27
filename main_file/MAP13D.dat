@@ -1,0 +1,9 @@
+Level 13
+Levelname = Mystic Ruins
+MusicSlot = 13
+NextLevel = 14
+TypeOfLevel = 4099
+SkyNum = 7
+NoZone = 1
+TimeAttack = 0
+weather = 5

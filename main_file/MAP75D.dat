@@ -1,0 +1,9 @@
+Level 75
+Levelname = Emerald Shrine
+MusicSlot = 75
+NextLevel = 70
+TypeOfLevel = 12
+SkyNum = 29
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1

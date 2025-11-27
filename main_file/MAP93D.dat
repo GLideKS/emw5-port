@@ -1,0 +1,10 @@
+Level 93
+Levelname = Shade
+Act = 24
+MusicSlot = 93
+NextLevel = 93
+TypeOfLevel = 4099
+SkyNum = 29
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1

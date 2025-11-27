@@ -1,0 +1,10 @@
+Level 15
+Levelname = NotsoGreen Hill
+Act = 11
+MusicSlot = 14
+NextLevel = 16
+TypeOfLevel = 4099
+SkyNum = 7
+NoZone = 0
+TimeAttack = 1
+weather = 1

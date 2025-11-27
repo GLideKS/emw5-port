@@ -1,0 +1,11 @@
+Level 12
+Levelname = The Metallix
+Act = 9
+MusicSlot = 12
+NextLevel = 13
+TypeOfLevel = 4099
+SkyNum = 1
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+weather = 0

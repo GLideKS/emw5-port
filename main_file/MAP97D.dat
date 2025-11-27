@@ -1,0 +1,10 @@
+Level 97
+Levelname = Shadow
+Act = 24
+MusicSlot = 97
+NextLevel = 97
+TypeOfLevel = 4099
+SkyNum = 96
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1

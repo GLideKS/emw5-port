@@ -1,0 +1,10 @@
+Level 26
+LevelName = Olivine Forest
+Act = 1
+MusicSlot = 26
+TypeOfLevel = 4099
+SkyNum = 29
+NextLevel = 27
+TimeAttack = 1
+LevelSelect = 1
+Hidden = 1

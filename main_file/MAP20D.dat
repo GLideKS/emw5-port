@@ -1,0 +1,10 @@
+Level 20
+Levelname = Metal Reactor
+Act = 14
+MusicSlot = 20
+NextLevel = 22
+TypeOfLevel = 4099
+SkyNum = 7
+TimeAttack = 1
+LevelSelect = 1
+Weather = 2

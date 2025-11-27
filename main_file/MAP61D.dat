@@ -1,0 +1,11 @@
+Level 61
+Levelname = Classic PyramidCave
+Act = 1
+MusicSlot = 7
+NextLevel = 62
+TypeOfLevel = 129
+SkyNum = 29
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 0
+Hidden = 1

@@ -1,0 +1,9 @@
+Level 71
+Levelname = Pyramid Temple
+MusicSlot = 6
+NextLevel = 72
+TypeOfLevel = 12
+SkyNum = 4
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1
