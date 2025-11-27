@@ -12,5 +12,4 @@ Jon (LUA Coding)
 External assets used:
 SRB2 The Past old A_Boss1Chase final demo recreation
 
-Port Version = 2.4
 Updated by: GLide KS
