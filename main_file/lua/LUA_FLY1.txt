@@ -1,0 +1,400 @@
+freeslot("MT_METALIX", "S_METALIX_STND1", "S_METALIX_STND2", "S_METALIX_PAIN")
+freeslot("S_METALIX_ATK1",
+"S_METALIX_ATK2",
+"S_METALIX_ATK3",
+"S_METALIX_ATK4",
+"S_METALIX_PANIC1",
+"S_METALIX_PANIC2",
+"S_METALIX_DIE1",
+"S_METALIX_DIE2",
+"S_METALIX_DIE3",
+"S_METALIX_DIE4",
+"S_METALIX_DIE5",
+"S_METALIX_DIE6",
+"S_METALIX_DIE7",
+"S_METALIX_DIE8",
+"S_METALIX_DIE9",
+"S_METALIX_DIE10",
+"S_METALIX_DIE11",
+"S_METALIX_DIE12",
+"S_METALIX_DIE13",
+"S_METALIX_DIE14",
+"S_METALIX_FLEE1",
+"S_METALIX_FLEE2",
+"S_METALIX_FLEE3",
+"S_METALIX_FLEE4",
+"S_METALIX_1420",
+"S_METALIX_1421",
+"S_METALIX_1422",
+"S_METALIX_1423",
+"S_METALIX_1424",
+"S_METALIX_1425",
+"S_METALIX_1427",
+"S_METALIX_1428",
+"S_METALIX_1429",
+"S_METALIX_1430",
+"S_CLASSICMTLX_STND",
+"S_CLASSICMTLX_MELEEATK1",
+"S_CLASSICMTLX_MELEEATK2",
+"S_CLASSICMTLX_MISSILEATK1",
+"S_CLASSICMTLX_MISSILEATK2",
+"S_CLASSICMTLX_RAISE1783",
+"S_CLASSICMTLX_RAISE1784",
+"S_CLASSICMTLX_PAIN1785"
+)
+
+//Code from SRB2 the Past
+
+
+--METALIX--
+local function nomissile(actor)
+	if not (actor and actor.valid) then return end
+	
+	// possibly choose another target
+	if multiplayer and P_RandomByte() < 2
+		if P_LookForPlayers(actor, 0, true, false)
+			return // got a new target
+		end
+	end
+	
+	//chase towards player
+	actor.movecount = $-1
+	if actor.movecount < 0 or not P_Move(actor, actor.info.speed)
+		P_NewChaseDir(actor)
+	end
+end
+
+local function FD_Boss1Chase(actor, var1, var2)
+	if not (actor and actor.valid) then return end
+	
+	local delta
+	
+	if actor.reactiontime then actor.reactiontime = $-1 end
+	
+	// turn towards movement direction if not there yet
+	if actor.movedir < NUMDIRS then // NUMDIRS should be 8
+		actor.angle = $ & (7 * (2^29))
+		delta = actor.angle - (actor.movedir * (2^29))
+		
+		if delta > 0 then
+			actor.angle = $-ANGLE_45
+		elseif delta < 0 then
+			actor.angle = $+ANGLE_45
+		end
+	end
+	
+	// do not attack twice in a row
+	if (actor.flags2 & MF2_JUSTATTACKED) then
+		actor.flags2 = $ & ~MF2_JUSTATTACKED
+		P_NewChaseDir(actor)
+		return
+	end
+	
+	if actor.movecount then
+		nomissile(actor)
+		return
+	end
+	
+	if not P_CheckMissileRange(actor) then
+		nomissile(actor)
+		return
+	end
+	
+	if actor.reactiontime <= 0 then
+		if actor.health > actor.info.damage then
+			if (P_RandomByte() & 1) then
+				actor.state = actor.info.missilestate
+			else
+				actor.state = actor.info.meleestate
+			end
+		else
+			actor.state = actor.info.raisestate
+		end
+		
+		actor.flags2 = $|MF2_JUSTATTACKED
+		actor.reactiontime = 2*TICRATE
+		return
+	end
+end
+
+// Make the Final Demo Egg Mobile spawn 33 FRACUNITS off the ground if its z-position hasn't been set
+addHook("MapThingSpawn", function(mobj, mapthing)
+	if not (mobj and mobj.valid
+	and mapthing and mapthing.valid)
+		return
+	end
+	
+	local offset
+	
+	if mapthing.z ~= 0
+		offset = mapthing.z
+	else
+		offset = 33*FRACUNIT
+	end
+	
+	if (mapthing.options & MTF_OBJECTFLIP)
+		if offset ~= 0
+			mobj.z = mobj.z - offset
+		else
+			mobj.z = mobj.ceilingz
+		end
+	else
+		if offset ~= 0
+			mobj.z = mobj.z + offset
+		else
+			mobj.z = mobj.floorz
+		end
+	end
+	
+	// Spawn a spike ball shield if the ambush flag is set
+	if (mapthing.options & MTF_AMBUSH)
+		local spikemobj
+		for i = 0, 3, 1 do
+			spikemobj = P_SpawnMobj(mobj.x, mobj.y, mobj.z, MT_SPIKEBALL)
+			spikemobj.target = mobj
+			if i == 0
+				spikemobj.angle = 0
+			elseif i == 1
+				spikemobj.angle = ANGLE_90
+			elseif i == 2
+				spikemobj.angle = ANGLE_180
+			elseif i == 3
+				spikemobj.angle = ANGLE_270
+			end
+		end
+	end
+end, MT_METALIX)
+
+// The Egg Mobile originally bounced off of players instead of going through them in "SKULLFLY" mode
+addHook("MobjMoveCollide", function(tmthing, thing)
+	if not (tmthing and tmthing.valid
+	and thing and thing.valid) then
+		return
+	end
+	
+	// Only bounce off of objects if the Final Demo Egg Mobile is in "SKULLFLY" mode
+	if not (tmthing.flags2 & MF2_SKULLFLY) then return end
+	
+	// Don't let spikeballs interrupt the Egg Mobile's movement
+	if thing.type == MT_SPIKEBALL then return end
+	
+	tmthing.momx = -$
+	tmthing.momy = -$
+	tmthing.momz = -$
+	return false
+end, MT_METALIX)
+
+
+
+// Override the vanilla boss death function
+addHook("BossDeath", function(mobj)
+	if not mobj and mobj.valid then return end
+	
+	// Stop exploding and prepare to run.
+	mobj.state = mobj.info.xdeathstate
+	if not mobj.valid then
+		return
+	end
+	
+	mobj.target = nil
+	
+	// Flee! Flee! Find a point to escape to! If none, just shoot upward!
+	// scan the thinkers to find the runaway point
+	for th in mobjs.iterate() do
+		if th.type == MT_BOSSFLYPOINT then
+			// If this one's closer then the last one, go for it
+			if not (mobj.target and mobj.target.valid) or
+			FixedHypot(FixedHypot(mobj.x - th.x, mobj.y - th.y), mobj.z - th.z) <
+			FixedHypot(FixedHypot(mobj.x - mobj.target.x, mobj.y - mobj.target.y), mobj.z - mobj.target.z) then
+				mobj.target = th
+			end
+			// Otherwise... Don't!
+		end
+	end
+	
+	mobj.flags = $|MF_NOGRAVITY|MF_NOCLIP
+	mobj.flags = $|MF_NOCLIPHEIGHT
+	
+	if mobj.target and mobj.target.valid
+		mobj.angle = R_PointToAngle2(mobj.x, mobj.y, mobj.target.x, mobj.target.y)
+		mobj.flags2 = $|MF2_BOSSFLEE
+		mobj.momz = FixedMul(FixedDiv(mobj.target.z - mobj.z, FixedHypot(mobj.x-mobj.target.x,mobj.y-mobj.target.y)), FixedMul(2*FRACUNIT, mobj.scale))
+	else
+		mobj.momz = FixedMul(2*FRACUNIT, mobj.scale)
+	end
+	
+	return true
+end, MT_METALIX)
+
+// Ported BossThinker behavior for Final Demo Egg Mobile from 1.09.4
+addHook("BossThinker", function(mobj)
+	if not (mobj and mobj.valid) then return end
+	
+	if mobj.health < mobj.info.damage+1 and (leveltime & 1) and mobj.health > 0 then
+		P_SpawnMobj(mobj.x, mobj.y, mobj.z, MT_SMOKE) // Replace MT_SMOKE with MT_21SMOKE if necessary
+	end
+	if mobj.flags2 & MF2_SKULLFLY then
+		local spawnmobj
+		spawnmobj = P_SpawnMobj(mobj.x, mobj.y, mobj.z, mobj.info.painchance)
+		spawnmobj.target = mobj
+		spawnmobj.color = SKINCOLOR_GREY
+	end
+	
+	if states[mobj.state].nextstate == mobj.info.spawnstate and mobj.tics == 1 then
+		mobj.flags2 = $ & ~MF2_FRET
+		if not (mobj.flags2 & MF2_SKULLFLY) then
+			mobj.momx = 0
+			mobj.momy = 0
+			mobj.momz = 0
+		end
+	end
+	
+	if not (mobj.target and mobj.target.valid and (mobj.target.flags & MF_SHOOTABLE)) then
+		if mobj.health <= 0 then
+			if P_LookForPlayers(mobj, 0, true) and mobj.info.mass then // Bid farewell!
+				S_StartSound(mobj, mobj.info.mass)
+			end
+			return true
+		end
+		
+		// look for a new target
+		if P_LookForPlayers(mobj, 0, true) then
+			S_StartSound(mobj, mobj.info.seesound)
+			FD_Boss1Chase(mobj, 1, 0)
+		end
+		
+		return true
+	end
+	
+	if mobj.state == mobj.info.spawnstate then FD_Boss1Chase(mobj, 1, 0) end
+	
+	if mobj.state == mobj.info.meleestate
+	or (mobj.state == mobj.info.missilestate and mobj.health > mobj.info.damage) then
+		mobj.angle = R_PointToAngle2(mobj.x, mobj.y, mobj.target.x, mobj.target.y)
+	end
+	
+	return true
+end, MT_METALIX)
+
+
+
+
+
+
+
+
+
+
+--CLASSIC METAL--
+//Code from SRB2 the Past
+
+freeslot("MT_CLASSICMETAL")
+
+// The Egg Mobile originally bounced off of players instead of going through them in "SKULLFLY" mode
+addHook("MobjMoveCollide", function(tmthing, thing)
+	if not (tmthing and tmthing.valid
+	and thing and thing.valid) then
+		return
+	end
+	
+	// Only bounce off of objects if the Final Demo Egg Mobile is in "SKULLFLY" mode
+	if not (tmthing.flags2 & MF2_SKULLFLY) then return end
+	
+	// Don't let spikeballs interrupt the Egg Mobile's movement
+	if thing.type == MT_SPIKEBALL then return end
+	
+	tmthing.momx = -$
+	tmthing.momy = -$
+	tmthing.momz = -$
+	return false
+end, MT_CLASSICMETAL)
+
+// Override the vanilla boss death function
+addHook("BossDeath", function(mobj)
+	if not mobj and mobj.valid then return end
+	
+	// Stop exploding and prepare to run.
+	mobj.state = mobj.info.xdeathstate
+	if not mobj.valid then
+		return
+	end
+	
+	mobj.target = nil
+	
+	// Flee! Flee! Find a point to escape to! If none, just shoot upward!
+	// scan the thinkers to find the runaway point
+	for th in mobjs.iterate() do
+		if th.type == MT_BOSSFLYPOINT then
+			// If this one's closer then the last one, go for it
+			if not (mobj.target and mobj.target.valid) or
+			FixedHypot(FixedHypot(mobj.x - th.x, mobj.y - th.y), mobj.z - th.z) <
+			FixedHypot(FixedHypot(mobj.x - mobj.target.x, mobj.y - mobj.target.y), mobj.z - mobj.target.z) then
+				mobj.target = th
+			end
+			// Otherwise... Don't!
+		end
+	end
+	
+	mobj.flags = $|MF_NOGRAVITY|MF_NOCLIP
+	mobj.flags = $|MF_NOCLIPHEIGHT
+	
+	if mobj.target and mobj.target.valid
+		mobj.angle = R_PointToAngle2(mobj.x, mobj.y, mobj.target.x, mobj.target.y)
+		mobj.flags2 = $|MF2_BOSSFLEE
+		mobj.momz = FixedMul(FixedDiv(mobj.target.z - mobj.z, FixedHypot(mobj.x-mobj.target.x,mobj.y-mobj.target.y)), FixedMul(2*FRACUNIT, mobj.scale))
+	else
+		mobj.momz = FixedMul(2*FRACUNIT, mobj.scale)
+	end
+	
+	return true
+end, MT_CLASSICMETAL)
+
+// Ported BossThinker behavior for Final Demo Egg Mobile from 1.09.4
+addHook("BossThinker", function(mobj)
+	if not (mobj and mobj.valid) then return end
+	
+	if mobj.health < mobj.info.damage+1 and (leveltime & 1) and mobj.health > 0 then
+		P_SpawnMobj(mobj.x, mobj.y, mobj.z, MT_SMOKE) // Replace MT_SMOKE with MT_21SMOKE if necessary
+	end
+	if mobj.flags2 & MF2_SKULLFLY then
+		local spawnmobj
+		spawnmobj = P_SpawnMobj(mobj.x, mobj.y, mobj.z, mobj.info.painchance)
+		spawnmobj.target = mobj
+		spawnmobj.color = SKINCOLOR_GREY
+	end
+	
+	if states[mobj.state].nextstate == mobj.info.spawnstate and mobj.tics == 1 then
+		mobj.flags2 = $ & ~MF2_FRET
+		if not (mobj.flags2 & MF2_SKULLFLY) then
+			mobj.momx = 0
+			mobj.momy = 0
+			mobj.momz = 0
+		end
+	end
+	
+	if not (mobj.target and mobj.target.valid and (mobj.target.flags & MF_SHOOTABLE)) then
+		if mobj.health <= 0 then
+			if P_LookForPlayers(mobj, 0, true) and mobj.info.mass then // Bid farewell!
+				S_StartSound(mobj, mobj.info.mass)
+			end
+			return true
+		end
+		
+		// look for a new target
+		if P_LookForPlayers(mobj, 0, false) then
+			S_StartSound(mobj, mobj.info.seesound)
+			FD_Boss1Chase(mobj, 1, 0)
+		end
+		
+		return true
+	end
+	
+	if mobj.state == mobj.info.spawnstate then FD_Boss1Chase(mobj, 1, 0) end
+	
+	if mobj.state == mobj.info.meleestate
+	or (mobj.state == mobj.info.missilestate and mobj.health > mobj.info.damage) then
+		mobj.angle = R_PointToAngle2(mobj.x, mobj.y, mobj.target.x, mobj.target.y)
+	end
+	
+	return true
+end, MT_CLASSICMETAL)

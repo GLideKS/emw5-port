@@ -1,0 +1,28 @@
+-- Comments: "thanks Jimita to make this lua x3"
+
+function A_Explode2(actor, var1, var2)
+    for player in players.iterate do
+        if (player.mo and player.mo.valid and player.mo.health)
+        and (player.powers[pw_flashing] < 1) then
+--Modified by GLide KS. to avoid deathball damage by hiding on the rocks like og EMW5
+            local radius = R_PointToDist2(player.mo.x, player.mo.y, actor.x, actor.y)
+            local instakill = (abs(radius) <= (player.mo.radius*24))
+            if (player.powers[pw_super] > 0) then
+                if (instakill)
+				and P_CheckSight(actor, player.mo) then
+                    player.mo.health = 1
+                    player.health = 1
+                end
+                return
+            end
+            if instakill then
+                P_KillMobj(player.mo)
+                return
+            end
+--Modified by GLide KS. to avoid deathball damage by hiding on the rocks like og EMW5
+			if P_CheckSight(actor, player.mo)
+				P_DamageMobj(player.mo)
+			end
+        end
+    end
+end

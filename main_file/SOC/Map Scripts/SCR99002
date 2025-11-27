@@ -1,6 +1,0 @@
-cecho "We will begin explaining Sonic.";
-Wait 100
-cecho "Stand over on the Yellow square to change";
-wait 90
-cecho "To the correct character";
-wait 100

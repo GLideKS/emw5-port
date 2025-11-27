@@ -1,0 +1,11 @@
+-- Comments: Thanks for this lua Jon"
+
+function A_LinedefExecute(actor, var1, var2)
+	//Debug
+	--print("A_LinedefExecute: Running mobjtype " .. actor.type .. "'s sector with tag " .. var1)
+	if var2 then
+		print("WARNING - VAR2 IS UNUSED! Look into this.")
+	end
+	
+	P_LinedefExecute(var1, actor, actor.subsector.sector)
+end
