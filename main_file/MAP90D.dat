@@ -1,9 +1,0 @@
-Level 90
-Levelname = Shadow
-MusicSlot = 150
-NextLevel = 90
-TypeOfLevel = 4099
-SkyNum = 96
-NoZone = 1
-TimeAttack = 0
-LevelSelect = 1

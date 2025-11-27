@@ -1,9 +1,0 @@
-Level 1
-Levelname = Mystic Ruins
-MusicSlot = 1
-NextLevel = 2
-TypeOfLevel = 4099
-SkyNum = 29
-NoZone = 1
-TimeAttack = 0
-LevelSelect = 1
