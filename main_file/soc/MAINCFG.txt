@@ -1,17 +1,16 @@
 MainCfg
-CustomVersion = EMW5v2.4
-LOOPTITLE = 1
 INTROTOPLAY = 1
 INVULNTICS = 720
-TitlePicsMode = Old
-TitleMap = 0
 SNEAKERTICS = 800
 FLASHINGTICS = 85
+LOOPTITLE = 1
+GAMEDATA = EGGMANWAY5.DAT
+TitlePicsMode = Old
+TitleMap = 0
 NumDemos = 0
-SmpStage_Start = A0
 
 Cutscene 1
-NumScenes 4
+NumScenes 2
 Scene 1
 NumberOfPics = 2
 Pic1Name = DISCLAIM
@@ -29,32 +28,6 @@ Tails called out over the cool summer
 breeze. "Come quick, you gotta come see 
 this!"#
 Scene 2
-NumberOfPics = 1
-Pic1Name = RETINT
-Pic1Duration = 150
-Pic1XCoord = 0
-Pic1YCoord = 0
-Music = MAPYEM
-TextXPos = 1
-TextYPos = 320
-SceneText = "Retro Community Port Presents..."
-Tails called out over the cool summer
-breeze. "Come quick, you gotta come see 
-this!"#
-Scene 3
-NumberOfPics = 1
-Pic1Name = ABOUT
-Pic1Duration = 100
-Pic1XCoord = 0
-Pic1YCoord = 0
-Music = MAPZOM
-TextXPos = 1
-TextYPos = 320
-SceneText = "About..."
-Tails called out over the cool summer
-breeze. "Come quick, you gotta come see 
-this!"#
-Scene 4
 NumberOfPics = 1
 Pic1Name = BFPINTR
 Pic1Duration = 800
