@@ -1,0 +1,20 @@
+cecho "We will now try Shadow out";
+wait 100
+cecho "Shadow's Mid-Air is his Chaos Blast";
+wait 120
+cecho "It costs 0 rings to perform. hotdog!";
+wait 100
+cecho "And after a second or to, he'll";
+wait 100
+cecho "blow up everything around him.";
+wait 100
+cecho "The downside is you lose all speed.";
+wait 150
+cecho "Shadow's special is the Chaos Spear.";
+wait 100
+cecho "Costing 1 ring per shot.";
+wait 150
+cecho "Destroy everything in your path.";
+wait 150
+cecho "Proceed.";
+wait 100

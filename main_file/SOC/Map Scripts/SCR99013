@@ -1,0 +1,12 @@
+cecho "We will now try Brad out";
+wait 100
+cecho "Brad's Mid-Air is his Super GlideandClimb";
+wait 120
+cecho "On top of that, his special";
+wait 100
+cecho "Shoots out an explosive missile.";
+wait 150
+cecho "Try shooting the enemies.";
+wait 150
+cecho "Proceed.";
+wait 100

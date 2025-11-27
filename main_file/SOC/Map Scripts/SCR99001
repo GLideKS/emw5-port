@@ -1,0 +1,14 @@
+cecho "Welcome to the Eggmanway5 Training Course!";
+wait 100
+cecho "This will explain all the characters";
+wait 100
+cecho "That are in Eggmanway 5";
+wait 90
+cecho "Aswell as their abilities";
+wait 100
+cecho "If you need something repeated";
+wait 100
+cecho "Simply re-touch the red floor";
+wait 100
+cecho "Now, proceed up ahead";
+wait 100

@@ -1,0 +1,16 @@
+cecho "Sonic is a fast character";
+Wait 100
+cecho "He's one of the best for top speed";
+wait 100
+cecho "All characters have a spin ability";
+wait 100
+cecho "Which can be charged, or while moving";
+wait 100
+cecho "you'll instantly start rolling.";
+wait 150
+cecho "Spinning also makes you smaller, so you";
+wait 100
+cecho "can fit under small cracks";
+wait 150
+cecho "Proceed";
+wait 100
