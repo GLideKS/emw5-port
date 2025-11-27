@@ -834,16 +834,15 @@ TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
 
 Level 99
-Levelname = Heaven
+Levelname = Waiting Lobby
 Act = 0
-MusicSlot = 99
-NextLevel = 1102
+Music = MAP99M
+NextLevel = 01
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 41
 NoZone = 1
 TimeAttack = 0
 LevelSelect = 1
-Hidden = 1
 SaveGame = true
 
 FREESLOT
