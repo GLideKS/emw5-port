@@ -1,0 +1,145 @@
+CHARACTER 0
+STATUS = 0
+
+
+
+
+
+CHARACTER 1
+STATUS = 0
+
+
+
+
+
+CHARACTER 2
+STATUS = 0
+
+
+
+
+CHARACTER 0
+PLAYERNAME = SHADOW
+PICNAME = SHDWCHAR
+SKINNAME = EMWSHADOW
+STATUS = 32
+PlayerText =              36 MPH
+                ChaosBlast
+             Not a good pick
+for starters, but when
+controlled properly,
+Shadow is the most
+powerful character.
+          #
+
+
+
+
+CHARACTER 1
+PLAYERNAME = BRAD
+PICNAME = BRADCHAR
+SKINNAME = EMWBRAD
+STATUS = 32
+PlayerText =              34 MPH
+                JetGlide/Climb
+             Fairly Fast,
+however Brad packs
+a powerful punch.
+He can fire missiles.
+          #
+
+
+
+CHARACTER 2
+PLAYERNAME = SHADE
+PICNAME = SHDECHAR
+SKINNAME = EMWSHADE
+STATUS = 32
+PlayerText =              33 MPH
+                Glide/Slash
+             High reflexes,
+Shade has the fastest
+Acceleration out of
+any character.
+          #
+
+CHARACTER 3
+PLAYERNAME = SONIC
+PICNAME = SONCCHAR
+SKINNAME = emwsonic
+STATUS = 32
+PlayerText =              35 MPH
+                Thok/Boost
+             Basic speed
+character, Sonic has a
+good top speed, he
+also has the boost.
+          #
+
+
+CHARACTER 4
+PLAYERNAME = TAILS
+PICNAME = TAILCHAR
+SKINNAME = emwtails
+STATUS = 32
+PlayerText =              34 MPH
+                Fly/Bomb
+             Decent speed,
+Tails also has the
+ability to drop bombs.
+          #
+
+
+CHARACTER 5
+PLAYERNAME = Amy
+PICNAME = AMYRCHAR
+SKINNAME = emwamy
+STATUS = 32
+PlayerText =              33 MPH
+                DoubleJump/Hammer
+             Amy has
+good control, with her
+double jump and nice
+acceleration.
+          #
+
+
+
+CHARACTER 6
+PLAYERNAME = Espio
+PICNAME = spioCHAR
+SKINNAME = emwespio
+STATUS = 32
+PlayerText =              32 MPH
+                Multi-Thok
+             Fast character,
+He can throw ninja stars,
+because he's a ninja.
+          #
+
+
+CHARACTER 7
+PLAYERNAME = KNUCKLES
+PICNAME = KNUXCHAR
+SKINNAME = emwknux
+STATUS = 32
+PlayerText =              33 MPH
+                  Glide/Climb
+             Decent speed,
+He can punch. woot.
+          #
+
+
+
+
+CHARACTER 8
+PLAYERNAME = VECTOR
+PICNAME = VECTCHAR
+SKINNAME = emwvector
+STATUS = 32
+PlayerText =              32 MPH
+                Slow Fall/Climb
+             Not very fast,
+however Vector has
+the ability to throw
+rocks.  #

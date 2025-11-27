@@ -1,0 +1,31 @@
+Cutscene 1
+NumScenes 2
+Scene 1
+NumberOfPics = 2
+Pic1Name = DISCLAIM
+Pic1Duration = 300
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic2Name = STJRINT
+Pic2Duration = 150
+Pic2XCoord = 0
+Pic2YCoord = 0
+TextXPos = 1
+TextYPos = 320
+SceneText = "SONIC THE HEDGEHOG!"
+Tails called out over the cool summer
+breeze. "Come quick, you gotta come see 
+this!"#
+Scene 2
+NumberOfPics = 1
+Pic1Name = BFPINTR
+Pic1Duration = 800
+Pic1XCoord = 0
+Pic1YCoord = 0
+MusicSlot = 98
+TextXPos = 1
+TextYPos = 320
+SceneText = "SONIC THE HEDGEHOG!"
+Tails called out over the cool summer
+breeze. "Come quick, you gotta come see 
+this!"#

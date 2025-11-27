@@ -1,0 +1,804 @@
+Level 1
+Levelname = Mystic Ruins
+Music = MAP01M
+NextLevel = 2
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 29
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 2
+Levelname = Dark Plains
+Act = 1
+Music = MAP02M
+NextLevel = 3
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+NoZone = 0
+LevelSelect = 0
+TimeAttack = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 3
+Levelname = Dark Plains
+Act = 2
+Music = MAP03M
+NextLevel = 4
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+NoZone = 0
+TimeAttack = 1
+LevelSelect = 0
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 4
+Levelname = Dark Plains
+Act = 3
+Music = MAP04M
+MusicPostBoss = MAP02M
+NextLevel = 5
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 0
+weather = 1
+BonusType = Boss
+ForceResetMusic = On
+StartRings = 10
+WarningTitle = true
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 5
+Levelname = Mystic Ruins
+Music = MAP01M
+NextLevel = 6
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+weather = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 6
+Levelname = Pyramid Cave
+Act = 4
+Music = MAP06M
+NextLevel = 7
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 1
+NoZone = 0
+TimeAttack = 1
+LevelSelect = 1
+weather = 0
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 7
+Levelname = Pyramid Cave
+Act = 5
+Music = MAP06M
+NextLevel = 8
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 1
+NoZone = 0
+TimeAttack = 1
+LevelSelect = 1
+weather = 0
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 8
+Levelname = Pyramid Cave
+Act = 6
+Music = MAP08M
+MusicPostBoss = MAP06M
+NextLevel = 9
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 1
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 1
+weather = 0
+BonusType = Boss
+ForceResetMusic = On
+StartRings = 10
+WarningTitle = true
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 9
+Levelname = Mystic Ruins
+Music = MAP01M
+NextLevel = 10
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+weather = 0
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 10
+LevelName = Eggman Base
+Act = 7
+Music = MAP10M
+NextLevel = 11
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+Weather = 0
+TimeAttack = 1
+LevelSelect = 1
+NoZone = 0
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 11
+LevelName = Eggman Base
+Act = 8
+Music = MAP10M
+NextLevel = 12
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+Weather = 0
+TimeAttack = 1
+LevelSelect = 1
+NoZone = 0
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 12
+Levelname = The Metallix
+Act = 9
+Music = MAP12M
+NextLevel = 13
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 1
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+weather = 0
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 13
+Levelname = Mystic Ruins
+Music = MAP13M
+NextLevel = 14
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 1
+TimeAttack = 0
+weather = 5
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 14
+Levelname = NotsoGreen Hill
+Act = 10
+Music = MAP14M
+NextLevel = 15
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+NoZone = 0
+TimeAttack = 1
+weather = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 15
+Levelname = NotsoGreen Hill
+Act = 11
+Music = MAP14M
+NextLevel = 16
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+NoZone = 0
+TimeAttack = 1
+weather = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 16
+Levelname = NotsoGreen Hill
+Act = 12
+Music = MAP16M
+NextLevel = 17
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 0
+TimeAttack = 1
+LevelSelect = 1
+weather = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 17
+Levelname = Mystic Ruins
+Music = MAP17M
+NextLevel = 18
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 1
+TimeAttack = 1
+LevelSelect = 1
+weather = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 18
+Levelname = Mystic Ruins
+Music = MAP18M
+NextLevel = 19
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+weather = 3
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 19
+Levelname = Metal Reactor
+Act = 13
+Music = MAP19M
+NextLevel = 20
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+TimeAttack = 1
+LevelSelect = 1
+weather = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 20
+Levelname = Metal Reactor
+Act = 14
+Music = MAP20M
+NextLevel = 22
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 7
+TimeAttack = 1
+LevelSelect = 1
+Weather = 2
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 22
+Levelname = Metal Guardian
+Act = 15
+Music = MAP21M
+NextLevel = 23
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+TimeAttack = 0
+LevelSelect = 1
+weather = 3
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 23
+Levelname = Mystic Ruins
+Music = MAP01M
+NextLevel = 1102
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+weather = 3
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 24
+Levelname = The Final Battle
+Act = 16
+Music = MAP24M
+NextLevel = 36
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 22
+TimeAttack = 0
+LevelSelect = 1
+NoSSMusic = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 25
+Levelname = One Year Later
+Music = MAP25M
+NextLevel = 26
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 9
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+weather = 0
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 26
+LevelName = Olivine Forest
+Act = 1
+Music = MAP26M
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 29
+NextLevel = 27
+TimeAttack = 1
+LevelSelect = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 27
+LevelName = Olivine Forest
+Act = 2
+Music = MAP26M
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 29
+NextLevel = 28
+TimeAttack = 1
+LevelSelect = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 28
+LevelName = Olivine Forest
+Act = 3
+Music = MAP28M
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NextLevel = 29
+weather = 5
+LevelSelect = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 29
+Levelname = Mystic Ruins
+Music = MAP29M
+NextLevel = 30
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+weather = 3
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 30
+LevelName = Sunken Steel
+Act = 4
+Music = MAP30M
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+NextLevel = 31
+weather = 5
+LevelSelect = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 31
+LevelName = Sunken Steel
+Act = 5
+Music = MAP31M
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+NextLevel = 32
+weather = 5
+LevelSelect = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 32
+LevelName = Sunken Steel
+Act = 6
+Music = MAP32M
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NextLevel = 33
+weather = 5
+LevelSelect = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 33
+LevelName = Desolate Hill
+Act = 7
+Music = MAP33M
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+NextLevel = 34
+weather = 5
+LevelSelect = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 34
+LevelName = Desolate Hill
+Act = 8
+Music = MAP34M
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 20
+NextLevel = 35
+weather = 5
+LevelSelect = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 35
+LevelName = Shrine
+Act = 9
+Music = MAP35M
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NextLevel = 41
+weather = 5
+LevelSelect = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 36
+Levelname = The Doomsday
+Act = 11
+Music = MAP36M
+NextLevel = 1102
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 22
+TimeAttack = 0
+LevelSelect = 1
+NoSSMusic = 1
+weather = 5
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 41
+Levelname = Emerald Shrine
+Music = MAP99M
+NextLevel = 24
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 29
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 40
+Levelname = Mystic Ruins
+Music = MAP01M
+NextLevel = 2
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 29
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 0
+Hidden = 1
+weather = 0
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 48
+Levelname = SuperPlaythrough
+Act = 0
+Music = 0
+NextLevel = 1
+TypeOfLevel = Singleplayer
+SkyNum = 22
+TimeAttack = 0
+LevelSelect = 2
+NoZone = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 60
+Levelname = Classic DarkPlains
+Act = 1
+Music = MAP02M
+NextLevel = 61
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 0
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 61
+Levelname = Classic PyramidCave
+Act = 1
+Music = MAP07M
+NextLevel = 62
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 29
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 0
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 62
+Levelname = Classic NotSoGHZ
+Act = 3
+Music = MAP16M
+NextLevel = 63
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 0
+weather = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 63
+Levelname = Classic MysticRuins
+Act = 3
+Music = MAP01M
+NextLevel = 64
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 0
+weather = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 64
+Levelname = Classic MetalSonics
+Act = 4
+Music = MAP73M
+NextLevel = 60
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 0
+TimeAttack = 0
+LevelSelect = 0
+weather = 1
+Hidden = 1
+SaveGame = true
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 90
+Levelname = Shadow
+Music = 0
+NextLevel = 90
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 22
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 91
+Levelname = Kine
+Music = MAP91M
+NextLevel = 91
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 29
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+Weather = 0
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 92
+Levelname = Goldie
+Music = MAP92M
+NextLevel = 92
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 29
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 93
+Levelname = Shade
+Act = 0
+Music = MAP93M
+NextLevel = 93
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 29
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 95
+Levelname = Brad
+Act = 0
+Music = MAP95M
+NextLevel = 95
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 20
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 96
+Levelname = Shadow
+Act = 0
+Music = 0
+NextLevel = 96
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 22
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 97
+Levelname = Shadow
+Act = 0
+Music = MAP97M
+NextLevel = 97
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 22
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+TitleCardZigZag = NULL
+TitleCardActDiamond = NULL
+TitleCardZigZagText = NULL
+
+Level 99
+Levelname = Heaven
+Act = 0
+MusicSlot = 99
+NextLevel = 1102
+TypeOfLevel = Singleplayer,Co-op
+SkyNum = 41
+NoZone = 1
+TimeAttack = 0
+LevelSelect = 1
+Hidden = 1
+SaveGame = true

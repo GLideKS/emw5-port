@@ -1,0 +1,37 @@
+UNLOCKABLE 1
+NAME = Eggmanway5Encore
+OBJECTIVE = Beat Eggmanway5
+TYPE = 1
+VAR = 25
+NEEDEDGRADE = 1
+
+UNLOCKABLE 2
+NAME = Super Playthrough
+OBJECTIVE = 100% done, 45 min time atk
+NEEDEDEMBLEMS = 142
+NEEDEDTIME = 1200
+TYPE = 1
+VAR = 48
+NEEDEDGRADE = 137
+
+UNLOCKABLE 3
+NAME = Emw5 Classic Lvls
+OBJECTIVE = Beat Emw5, 1 hour time atk
+NEEDEDTIME = 1500
+TYPE = 1
+VAR = 60
+NEEDEDGRADE = 1
+
+UNLOCKABLE 4
+NAME = Level Select
+OBJECTIVE = all emeralds, 142 emblems
+NEEDEDEMBLEMS = 142
+TYPE = 0
+NEEDEDGRADE = 8
+
+UNLOCKABLE 5
+NAME = The Arena
+OBJECTIVE = Complete Eggmanway5
+TYPE = 1
+VAR = 25
+NEEDEDGRADE = 1
