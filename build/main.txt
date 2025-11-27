@@ -1,0 +1,4 @@
+$basepath main_file/
+$output out/Emw5base_22.pk3
+
+**
