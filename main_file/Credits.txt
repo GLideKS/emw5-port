@@ -4,12 +4,10 @@ Enemy sprites and soc help: Senku
 Vector and Espio,And the Base sprite of Metal Sonic: ChaosZero64
 
 Porters:
-ARA/Messiah (Main porter)
-GLide KS (Basic Lua coding)
+ARA/Messiah & GLide KS (Main porters)
 Jimita (LUA Coding)
 Jon (LUA Coding)
 
-External assets used:
+Open assets used:
 SRB2 The Past old A_Boss1Chase final demo recreation
-
-Updated by: GLide KS
+Retro Monitors by MIDIMan
