@@ -54,6 +54,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 2
@@ -70,6 +71,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 3
@@ -86,6 +88,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 4
@@ -108,6 +111,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 5
@@ -124,6 +128,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 6
@@ -141,6 +146,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 7
@@ -158,6 +164,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 8
@@ -180,6 +187,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 9
@@ -196,6 +204,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 10
@@ -213,6 +222,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 11
@@ -230,6 +240,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 12
@@ -250,6 +261,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 13
@@ -265,6 +277,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 14
@@ -281,6 +294,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 15
@@ -297,6 +311,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 16
@@ -314,6 +329,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 17
@@ -333,6 +349,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 18
@@ -349,6 +366,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 19
@@ -365,6 +383,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 20
@@ -381,6 +400,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 22
@@ -400,6 +420,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 23
@@ -416,6 +437,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 24
@@ -436,6 +458,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 25
@@ -453,6 +476,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 26
@@ -469,6 +493,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 27
@@ -485,6 +510,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 28
@@ -504,6 +530,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 29
@@ -521,6 +548,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 30
@@ -537,6 +565,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 31
@@ -553,6 +582,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 32
@@ -572,6 +602,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 33
@@ -588,6 +619,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 34
@@ -604,6 +636,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 35
@@ -620,6 +653,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 36
@@ -641,6 +675,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 41
@@ -656,6 +691,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 40
@@ -673,6 +709,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 48
@@ -690,6 +727,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 60
@@ -707,6 +745,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 61
@@ -724,6 +763,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 62
@@ -742,6 +782,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 63
@@ -760,6 +801,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 64
@@ -778,6 +820,7 @@ SaveGame = true
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 90
@@ -792,6 +835,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 91
@@ -807,6 +851,7 @@ Weather = 0
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 92
@@ -821,6 +866,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 93
@@ -836,6 +882,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 95
@@ -851,6 +898,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 96
@@ -866,6 +914,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 97
@@ -881,6 +930,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 Level 99
@@ -894,6 +944,7 @@ NoZone = 1
 TimeAttack = 0
 LevelSelect = 1
 SaveGame = true
+InterScreen = INTERSCRW
 Lua.emw5 = true
 
 FREESLOT
