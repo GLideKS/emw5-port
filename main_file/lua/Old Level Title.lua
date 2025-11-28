@@ -43,7 +43,13 @@ local LevelActY = {
 }
 
 hud.add(function(v, p, ticker, endtick)
-    hud.disable("stagetitle")
+	if mapheaderinfo[gamemap].emw5 then
+    	hud.disable("stagetitle")
+	else
+		hud.enable("stagetitle")
+	end
+	
+	if not mapheaderinfo[gamemap].emw5 then return end
 
     if (ticker < 0) or (ticker > endtick) then return end
 
