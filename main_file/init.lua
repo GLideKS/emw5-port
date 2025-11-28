@@ -22,8 +22,10 @@ dofolder("FDYellowBox.lua") -- Final Demo Yellow (Attraction) Shield Monitor
 dofolder("FDWhiteBox.lua") -- Final Demo White (Whirlwind) Shield Monitor
 dofolder("FDMiscBoxCommon.lua") -- Final Demo Miscellaneous Monitor Commonalities
 dofolder("FDEggmanBox.lua") -- Final Demo Eggman Monitor
+dofolder("20GravityBox.lua") -- 2.0 Gravity Boots Monitor
 dofolder("FDMysteryBox.lua") -- Final Demo Mystery Monitor
 dofolder("FDTeleporterBox.lua") -- Final Demo Teleporter Monitor
+dofolder("20RecyclerBox.lua") -- 2.0 Recycler Monitor
 
 folder = "RetroMonitors"
 
