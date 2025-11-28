@@ -31,6 +31,14 @@ dofolder("FDShieldOrb.lua")
 dofolder("ShieldEra.lua")
 dofolder("FDInfernoShield.lua")
 
+folder = "Common"
+
+dofolder("LUA_CCOM.txt")
+
+folder = "Crawla Commander FD"
+
+dofolder("LUA_OCOM.txt")
+
 dofile("Legacy Replacements")
 dofile("Old Level Title")
 dofile("LUA_FLY1")

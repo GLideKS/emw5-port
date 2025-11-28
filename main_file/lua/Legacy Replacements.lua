@@ -1,3 +1,5 @@
+--Monitors
+
 addHook("MobjSpawn", function(mo)
 	if mo.type == MT_1UP_BOX and mapheaderinfo[gamemap].emw5 then mo.type = MT_FDBOX_1UP end
 end,MT_1UP_BOX)
@@ -41,3 +43,9 @@ end,MT_MIXUP_BOX)
 addHook("MobjSpawn", function(mo)
 	if mo.type == MT_MYSTERY_BOX and mapheaderinfo[gamemap].emw5 then mo.type = MT_FDBOX_QUESTION end
 end,MT_MYSTERY_BOX)
+
+--Enemies
+
+addHook("MobjSpawn", function(mo)
+	if mo.type == MT_CRAWLACOMMANDER and mapheaderinfo[gamemap].emw5 then mo.type = MT_OLDCRAWLACOMANDER end
+end,MT_CRAWLACOMMANDER)
