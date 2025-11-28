@@ -32,6 +32,7 @@ dofolder("ShieldEra.lua")
 dofolder("FDInfernoShield.lua")
 
 dofile("Legacy Replacements")
+dofile("Old Level Title")
 dofile("LUA_FLY1")
 dofile("LUA_LNDF")
 dofile("LUA_XPDL")
