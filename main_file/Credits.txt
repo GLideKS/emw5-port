@@ -9,5 +9,10 @@ Jimita (LUA Coding)
 Jon (LUA Coding)
 
 Open assets used:
-SRB2 The Past old A_Boss1Chase final demo recreation
+SRB2 The Past: 
+
+-Old A_Boss1Chase final demo recreation
+-Old Crawla Commander
+-Final Demo Zim's Base
+
 Retro Monitors by MIDIMan
