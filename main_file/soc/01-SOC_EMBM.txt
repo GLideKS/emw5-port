@@ -5,3 +5,1132 @@ Clear Unlockables
 Clear Emblems
 Clear ExtraEmblems
 Clear ConditionSets
+
+Emblem 1
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 1
+Type = Global
+Tag = 0
+
+Emblem 2
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 2
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 3
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 3
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 4
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 4
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 5
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 5
+Type = Global
+Tag = 0
+
+Emblem 6
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 6
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 7
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 7
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 8
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 8
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 9
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 9
+Type = Global
+Tag = 0
+
+Emblem 10
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 10
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 11
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 11
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 12
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 12
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 13
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 13
+Type = Global
+Tag = 0
+
+Emblem 14
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 14
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 15
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 15
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 16
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 16
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 17
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 17
+Type = Global
+Tag = 0
+
+Emblem 18
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 18
+Type = Global
+Tag = 0
+
+Emblem 19
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 19
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 20
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 20
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 21
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 22
+Type = Skin
+Var = 3
+Tag = 0
+
+Emblem 22
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 23
+Type = Global
+Tag = 0
+
+Emblem 23
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 2
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 24
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 3
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 25
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 4
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 26
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 6
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 27
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 7
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 28
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 8
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 29
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 10
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 30
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 11
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 31
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 12
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 32
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 14
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 33
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 15
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 34
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 16
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 35
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 19
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 36
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 20
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 37
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 22
+Type = Skin
+Var = 4
+Tag = 1
+
+Emblem 38
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 2
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 39
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 3
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 40
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 4
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 41
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 6
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 42
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 7
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 43
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 8
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 44
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 10
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 45
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 11
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 46
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 12
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 47
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 14
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 48
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 15
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 49
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 16
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 50
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 19
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 51
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 20
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 52
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 22
+Type = Skin
+Var = 5
+Tag = 2
+
+Emblem 53
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 2
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 54
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 3
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 55
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 4
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 56
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 6
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 57
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 7
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 58
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 8
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 59
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 10
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 60
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 11
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 61
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 12
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 62
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 14
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 63
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 15
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 64
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 16
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 65
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 19
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 66
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 20
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 67
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 22
+Type = Skin
+Var = 6
+Tag = 3
+
+Emblem 68
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 2
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 69
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 3
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 70
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 4
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 71
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 6
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 72
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 7
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 73
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 8
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 74
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 10
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 75
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 11
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 76
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 12
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 77
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 14
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 78
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 15
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 79
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 16
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 80
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 19
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 81
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 20
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 82
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 22
+Type = Skin
+Var = 7
+Tag = 4
+
+Emblem 83
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 2
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 84
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 3
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 85
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 4
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 86
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 6
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 87
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 7
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 88
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 8
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 89
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 10
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 90
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 11
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 91
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 12
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 92
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 14
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 93
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 15
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 94
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 16
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 95
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 19
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 96
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 20
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 97
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 22
+Type = Skin
+Var = 8
+Tag = 5
+
+Emblem 98
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 2
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 99
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 3
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 100
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 4
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 101
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 6
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 102
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 7
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 103
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 8
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 104
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 10
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 105
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 11
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 106
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 12
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 107
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 14
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 108
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 15
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 109
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 16
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 110
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 19
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 111
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 20
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 112
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 22
+Type = Skin
+Var = 9
+Tag = 6
+
+Emblem 113
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 2
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 114
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 3
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 115
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 4
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 116
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 6
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 117
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 7
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 118
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 8
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 119
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 10
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 120
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 11
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 121
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 12
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 122
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 14
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 123
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 15
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 124
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 16
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 125
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 19
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 126
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 20
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 127
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 22
+Type = Skin
+Var = 10
+Tag = 7
+
+Emblem 128
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 2
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 129
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 3
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 130
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 4
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 131
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 6
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 132
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 7
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 133
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 8
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 134
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 10
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 135
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 11
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 136
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 12
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 137
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 14
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 138
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 15
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 139
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 16
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 140
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 19
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 141
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 20
+Type = Skin
+Var = 11
+Tag = 8
+
+Emblem 142
+Sprite = A
+Color = SKINCOLOR_BLUE
+MapNum = 22
+Type = Skin
+Var = 11
+Tag = 8
