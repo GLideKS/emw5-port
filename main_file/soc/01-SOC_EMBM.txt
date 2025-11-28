@@ -1134,3 +1134,52 @@ MapNum = 22
 Type = Skin
 Var = 11
 Tag = 8
+
+#EMW5 encore
+UNLOCKABLE 1
+NAME = Eggmanway5Encore
+OBJECTIVE = Beat Eggmanway5
+Type = Warp
+Var = 25
+Height = 11
+ConditionSet = 1
+
+ConditionSet 1
+Condition1 = GameClear 1
+
+#Super
+UNLOCKABLE 2
+NAME = Super Playthrough
+OBJECTIVE = 100% done, 45 min time atk
+TYPE = Warp
+VAR = 48
+Height = 22
+ConditionSet = 2
+
+ConditionSet 2
+Condition1 = OverallTime 94500
+Condition2 = TotalEmblems 142
+
+#Classic levels
+UNLOCKABLE 3
+NAME = Emw5 Classic Lvls
+OBJECTIVE = Beat Emw5, 1 hour time atk
+TYPE = Warp
+VAR = 60
+Height = 33
+ConditionSet = 3
+
+ConditionSet 3
+Condition1 = OverallTime 126000
+
+#The Arena (Same as encore requirement)
+UNLOCKABLE 5
+NAME = The Arena
+OBJECTIVE = Complete Eggmanway5
+TYPE = Warp
+VAR = 25
+Height = 44
+ConditionSet = 1
+
+#Level select
+#By default, srb2 enables level select on GameClear, so no point to port over emw5's level select unlock
