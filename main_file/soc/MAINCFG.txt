@@ -947,6 +947,89 @@ SaveGame = true
 InterScreen = INTERSCRW
 Lua.emw5 = true
 
+#Match
+
+Level 70
+Levelname = Zim's Pad
+Music = ZIMBAS
+SelectHeading = EggmanWay 5
+NextLevel = 71
+TypeOfLevel = Match,Tag
+SkyNum = 38
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1
+InterScreen = INTERSCRW
+Lua.emw5 = true
+
+Level 71
+Levelname = Pyramid Temple
+Music = MAP06M
+SelectHeading = EggmanWay 5
+NextLevel = 72
+TypeOfLevel = Match,Tag
+SkyNum = 4
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1
+InterScreen = INTERSCRW
+Lua.emw5 = true
+
+Level 72
+Levelname = NotThatGreen Hill
+Music = MAP72M
+SelectHeading = EggmanWay 5
+NextLevel = 65
+TypeOfLevel = Match,Tag
+SkyNum = 65
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1
+Weather = PRECIP_STORM
+InterScreen = INTERSCRW
+Lua.emw5 = true
+
+Level 73
+Levelname = AngelsCrevice
+Music = MAP73M
+SelectHeading = EggmanWay 5
+NextLevel = 65
+TypeOfLevel = Match,Tag
+SkyNum = 65
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1
+Weather = PRECIP_STORM_NORAIN
+InterScreen = INTERSCRW
+Lua.emw5 = true
+
+Level 74
+Levelname = Shadowcity
+Music = MAP74M
+SelectHeading = EggmanWay 5
+NextLevel = 65
+TypeOfLevel = Match,Tag
+SkyNum = 65
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1
+Weather = PRECIP_STORM
+InterScreen = INTERSCRW
+Lua.emw5 = true
+
+Level 75
+Levelname = Emerald Shrine
+Music = MAP75M
+SelectHeading = EggmanWay 5
+NextLevel = 29
+TypeOfLevel = Match,Tag
+SkyNum = 29
+TimeAttack = 0
+LevelSelect = 1
+NoZone = 1
+InterScreen = INTERSCRW
+Lua.emw5 = true
+
 FREESLOT
 SPR_F001
 SPR_F002
