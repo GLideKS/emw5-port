@@ -920,7 +920,7 @@ Lua.emw5 = true
 Level 97
 Levelname = Shadow
 Act = 0
-Music = MAP97M
+Music = ZIMBAS
 NextLevel = 97
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 22
