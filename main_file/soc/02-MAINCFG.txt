@@ -835,6 +835,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+NoVisitNeeded = true
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -851,6 +852,7 @@ Weather = 0
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+NoVisitNeeded = true
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -866,6 +868,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+NoVisitNeeded = true
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -882,6 +885,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+NoVisitNeeded = true
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -898,6 +902,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+NoVisitNeeded = true
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -914,6 +919,7 @@ LevelSelect = 1
 TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
+NoVisitNeeded = true
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -928,6 +934,7 @@ NoZone = 1
 TimeAttack = 0
 LevelSelect = 1
 TitleCardZigZag = NULL
+NoVisitNeeded = true
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
 InterScreen = INTERSCR
@@ -943,6 +950,7 @@ SkyNum = 41
 NoZone = 1
 TimeAttack = 0
 LevelSelect = 1
+NoVisitNeeded = true
 SaveGame = true
 InterScreen = INTERSCR
 Lua.emw5 = true
