@@ -833,6 +833,7 @@ NoZone = 1
 TimeAttack = 0
 LevelSelect = 1
 TitleCardZigZag = NULL
+SelectHeading = Extras
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
 NoVisitNeeded = true
@@ -853,6 +854,7 @@ TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
 NoVisitNeeded = true
+SelectHeading = Extras
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -869,6 +871,7 @@ TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
 NoVisitNeeded = true
+SelectHeading = Extras
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -886,6 +889,7 @@ TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
 NoVisitNeeded = true
+SelectHeading = Extras
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -903,6 +907,7 @@ TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
 NoVisitNeeded = true
+SelectHeading = Extras
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -920,6 +925,7 @@ TitleCardZigZag = NULL
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
 NoVisitNeeded = true
+SelectHeading = Extras
 InterScreen = INTERSCR
 Lua.emw5 = true
 
@@ -935,6 +941,7 @@ TimeAttack = 0
 LevelSelect = 1
 TitleCardZigZag = NULL
 NoVisitNeeded = true
+SelectHeading = Extras
 TitleCardActDiamond = NULL
 TitleCardZigZagText = NULL
 InterScreen = INTERSCR
