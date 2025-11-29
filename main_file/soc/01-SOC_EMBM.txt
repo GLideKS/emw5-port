@@ -1,10 +1,7 @@
 MainCfg
 GameData = eggmanway5.dat
 
-Clear Unlockables
-Clear Emblems
-Clear ExtraEmblems
-Clear ConditionSets
+Clear All
 
 Emblem 1
 Sprite = A
