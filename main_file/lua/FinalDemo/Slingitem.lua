@@ -8,6 +8,7 @@ mobjinfo[MT_REDRING].seesound = sfx_none
 
 --Don't use red ring weapon for slingitem characters, already has it's own
 addHook("PostThinkFrame", function()
+if gamestate != GS_LEVEL then return end
 for mo in mobjs.iterate() do
 	if mo.valid and mo.type == MT_REDRING and mo.target
 	and (finaldemo_character[mo.target.skin] and finaldemo_character[mo.target.skin].slingitem) then
@@ -32,6 +33,7 @@ end
 
 --Main hook to handle slingitem shooting
 addHook("PreThinkFrame", function()
+if gamestate != GS_LEVEL then return end
 for p in players.iterate() do
 	local pmo = p.mo
 	local cmd = p.cmd
