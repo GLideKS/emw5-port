@@ -46,6 +46,7 @@ folder = "FinalDemo"
 dofolder("FDHud.lua")
 dofolder("Old Level Title.lua")
 dofolder("Legacy Replacements.lua")
+dofolder("FD Weapon System.lua")
 dofolder("Slingitem.lua")
 
 dofile("LUA_FLY1")
