@@ -1,5 +1,9 @@
 --Coded by GLide KS
 
+--add brad to the final demo hud list from emw5
+if not finaldemo_character then rawset(_G, "finaldemo_character", {}) end
+finaldemo_character["emwbrad"] = "STBRADN"
+
 -- Old spin trail
 
 freeslot("MT_OLDTHOK", "S_OLDTHOK")

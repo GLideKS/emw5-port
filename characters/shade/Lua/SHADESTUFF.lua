@@ -1,5 +1,9 @@
 --Coded by GLide KS
 
+--add shade to the final demo hud list from emw5
+if not finaldemo_character then rawset(_G, "finaldemo_character", {}) end
+finaldemo_character["emwshade"] = "STSHADE"
+
 -- Shade Spin Item
 
 freeslot("MT_SHADESPIN",
