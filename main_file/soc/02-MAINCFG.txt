@@ -8,6 +8,8 @@ GAMEDATA = EGGMANWAY5.DAT
 TitlePicsMode = Old
 TitleMap = 0
 NumDemos = 0
+SStage_Start = 0
+SMPStage_Start = 0
 
 Cutscene 1
 NumScenes 2
