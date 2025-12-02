@@ -28,7 +28,7 @@ local function EMWIdentifier(v, p)
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
 	and not (maptol & TOL_NIGHTS)
-		v.draw(53, 161, v.cachePatch(finaldemo_character[p.mo.skin]),V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		v.draw(53, 161, v.cachePatch(finaldemo_character[p.mo.skin].name_graphic),V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
 	end
 end
 
