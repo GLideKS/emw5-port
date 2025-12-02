@@ -35,6 +35,7 @@ end
 addHook("PreThinkFrame", function()
 if gamestate != GS_LEVEL then return end
 for p in players.iterate() do
+	if p.exiting then continue end
 	local pmo = p.mo
 	local cmd = p.cmd
 	local has_slingitem = finaldemo_character[pmo.skin] and finaldemo_character[pmo.skin].slingitem
