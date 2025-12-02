@@ -1,0 +1,31 @@
+FREESLOT
+SKINCOLOR_SUPERBRAD1
+SKINCOLOR_SUPERBRAD2
+SKINCOLOR_SUPERBRAD3
+SKINCOLOR_SUPERBRAD4
+SKINCOLOR_SUPERBRAD5
+
+Skincolor SKINCOLOR_SUPERBRAD1
+name = Super Brad 1
+ramp = 3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10
+accessible = False
+
+Skincolor SKINCOLOR_SUPERBRAD2
+name = Super Brad 2
+ramp = 3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10
+accessible = False
+
+Skincolor SKINCOLOR_SUPERBRAD3
+name = Super Brad 3
+ramp = 3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10
+accessible = False
+
+Skincolor SKINCOLOR_SUPERBRAD4
+name = Super Brad 4
+ramp = 3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10
+accessible = False
+
+Skincolor SKINCOLOR_SUPERBRAD5
+name = Super Brad 5
+ramp = 3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10
+accessible = False

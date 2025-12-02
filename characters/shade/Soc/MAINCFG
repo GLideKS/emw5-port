@@ -1,0 +1,11 @@
+CHARACTER
+PICNAME = SHDECHAR
+SKINNAME = EMWSHADE
+DisplayName = Shade
+TagTextColor = SKINCOLOR_GREY
+TagOutlineColor = SKINCOLOR_BLACK
+OppositeColor = SKINCOLOR_JET
+PlayerText = ^2SPEED:^0 33 MPH
+^2ABILITY:^0 Glide/Slash
+^2NOTES:^0 High reflexes, Shade has the fastest Acceleration out of any character.
+#

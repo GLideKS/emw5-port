@@ -1,0 +1,16 @@
+Shade made by: Shadow/SkorneDemon
+
+Porters:
+GLide KS
+
+Changelog V2:
+- WAD transfered to .pk3
+- Renamed sprites to SPR2 naming
+- Converted DOOM Palette sprites to SRB2 actual palette
+- Imported sprites, object definitions and sound stuff that Shade uses
+  from EMW5Base since it's bound to the EMW5Base mod to work correctly
+- Object definitions rewritten on LUA
+- Imported Final Demo HUD (Open Assets) and edited to use it for Shade only
+- Added aditional states for Shade's ringslinger to make deathsound work as intended
+- Imported old glide behavior scripts from Ugly Knux (Open Assets)
+- Restoration of his exclusive ringslinger weapon usable in coop too (Through LUA)

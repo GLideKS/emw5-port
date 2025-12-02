@@ -1,0 +1,376 @@
+local emw5chars = {
+    emwshade = true,
+    emwbrad = true,
+	emwsonic = true,
+	emwtails = true,
+	emwknux = true,
+	emwshadow = true,
+	emwamy = true,
+	emwmetal = true,
+	emwvector = true,
+	emwespio = true
+}
+
+local function EMWFDLifeIcon(v, stplyr)
+	if not stplyr.mo or not emw5chars[stplyr.mo.skin] return end
+	
+	if not (stplyr.powers[pw_carry] == CR_NIGHTSMODE)
+	and not (maptol & TOL_NIGHTS)
+		local face = v.getSprite2Patch(stplyr.mo.skin, SPR2_XTRA, (stplyr.powers[pw_super] != 0), 0, 0)
+		v.drawScaled(16*FRACUNIT, 161*FRACUNIT, 1*FRACUNIT, face, V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS, v.getColormap(stplyr.mo.skin, stplyr.mo.color))
+	end
+end
+
+local function EMWFDLifeX(v, stplyr)
+	if not stplyr.mo or not emw5chars[stplyr.mo.skin] return end
+	
+	if not (stplyr.powers[pw_carry] == CR_NIGHTSMODE)
+	and not (maptol & TOL_NIGHTS)
+		local livex = v.cachePatch("STFINLX")
+		v.draw(57, 185, livex, V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+	end
+end
+
+// Skin names.
+// Please note that not all of them are available, since those
+// names are shown as patches and not in-font texts.
+local function EMWIdentifier(v, stplyr)
+	if not stplyr.mo or not emw5chars[stplyr.mo.skin] return end
+	
+	if stplyr.mo.skin == "emwbrad"
+	and not (stplyr.powers[pw_carry] == CR_NIGHTSMODE)
+	and not (maptol & TOL_NIGHTS)
+		v.draw(53, 161, v.cachePatch("STBRADN"),V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+	end
+end
+
+// Below is a script written to fix an issue that causes Adventure Sonic to re-enable the
+// original "X", character hudname and number from the original SRB2's life counter.
+// However, there's a twist: The WHOLE life number code has to be rewritten.
+local function EMWFDLifeCounter(v, stplyr)
+	if not stplyr.mo or not emw5chars[stplyr.mo.skin] return end
+	
+	if not (stplyr.powers[pw_carry] == CR_NIGHTSMODE)
+	and not (maptol & TOL_NIGHTS)
+		if (stplyr.lives == 0) then
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 1) then
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 2) then
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 3) then
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 4) then
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 5) then
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 6) then
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 7) then
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 8) then
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 9) then
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 10) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 11) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 12) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 13) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 14) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 15) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 16) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 17) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 18) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 19) then
+			v.draw(73, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 20) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 21) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 22) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 23) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 24) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 25) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 26) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 27) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 28) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 29) then
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 30) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 31) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 32) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 33) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 34) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 35) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 36) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 37) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 38) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 39) then
+			v.draw(73, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 40) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 41) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 42) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 43) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 44) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 45) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 46) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 47) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 48) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 49) then
+			v.draw(73, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 50) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 51) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 52) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 53) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 54) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 55) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 56) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 57) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 58) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 59) then
+			v.draw(73, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 60) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 61) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 62) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 63) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 64) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 65) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 66) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 67) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 68) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 69) then
+			v.draw(73, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 70) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 71) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 72) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 73) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 74) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 75) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 76) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 77) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 78) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 79) then
+			v.draw(73, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 80) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 81) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 82) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 83) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 84) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 85) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 86) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 87) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 88) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 89) then
+			v.draw(73, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 90) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 91) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 92) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 93) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM3"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 94) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM4"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 95) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM5"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 96) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM6"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 97) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 98) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM8"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == 99) then
+			v.draw(73, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM9"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		elseif (stplyr.lives == INFLIVES) then
+			v.draw(65, 182, v.cachePatch("STTNUM1"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(73, 182, v.cachePatch("STTNUM2"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+			v.draw(81, 182, v.cachePatch("STTNUM7"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		end
+	end
+end
+
+hud.add(EMWFDLifeX)
+hud.add(EMWIdentifier)
+hud.add(EMWFDLifeCounter)
+hud.add(EMWFDLifeIcon)
+
+addHook("PlayerThink", function(p)
+	if not p.hudchanged
+		p.hudchanged = false
+	end
+	
+	if emw5chars[p.mo.skin] == true
+		if not p.hudchanged
+			if hud.enabled("lives")
+				hud.disable("lives")
+				p.hudchanged = true
+			end
+		elseif hud.enabled("lives")
+			hud.disable("lives")
+		end
+	elseif p.hudchanged
+		hud.enable("lives")
+		p.hudchanged = false
+	end
+end)
