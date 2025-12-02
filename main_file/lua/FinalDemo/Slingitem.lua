@@ -1,11 +1,14 @@
---Don't use rs weapons, we already have a propper one
-addHook("MobjThinker", function(mo)
-	if mo.target
+--Don't use red ring weapon.
+addHook("PostThinkFrame", function()
+for mo in mobjs.iterate() do
+	if mo.valid and mo.type == MT_REDRING and mo.target
 	and (finaldemo_character[mo.target.skin] and finaldemo_character[mo.target.skin].slingitem) then
-		S_StopSound(mo)
+		S_StopSoundByID(mo, sfx_thok)
+		S_StopSoundByID(mo.target, sfx_thok)
 		P_RemoveMobj(mo)
 	end
-end, MT_REDRING)
+end
+end)
 
 local function Shoot(p, slingitem)
 	local pmo = p.mo
