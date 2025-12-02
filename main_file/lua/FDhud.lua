@@ -1,20 +1,20 @@
 if not finaldemo_character then rawset(_G, "finaldemo_character", {}) end
 
 local function EMWFDLifeIcon(v, p)
-	if not (p.mo and finaldemo_character[p.mo.skin]) return end
+	if not (p.mo and finaldemo_character[p.mo.skin]) then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
-	and not (maptol & TOL_NIGHTS)
+	and not (maptol & TOL_NIGHTS) then
 		local face = v.getSprite2Patch(p.mo.skin, SPR2_XTRA, (p.powers[pw_super] != 0), 0, 0)
 		v.drawScaled(16*FRACUNIT, 161*FRACUNIT, 1*FRACUNIT, face, V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS, v.getColormap(p.mo.skin, p.mo.color))
 	end
 end
 
 local function EMWFDLifeX(v, p)
-	if not (p.mo and finaldemo_character[p.mo.skin]) return end
+	if not (p.mo and finaldemo_character[p.mo.skin])then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
-	and not (maptol & TOL_NIGHTS)
+	and not (maptol & TOL_NIGHTS) then
 		local livex = v.cachePatch("STFINLX")
 		v.draw(57, 185, livex, V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
 	end
@@ -24,10 +24,10 @@ end
 // Please note that not all of them are available, since those
 // names are shown as patches and not in-font texts.
 local function EMWIdentifier(v, p)
-	if not (p.mo and finaldemo_character[p.mo.skin]) return end
+	if not (p.mo and finaldemo_character[p.mo.skin]) then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
-	and not (maptol & TOL_NIGHTS)
+	and not (maptol & TOL_NIGHTS) then
 		v.draw(53, 161, v.cachePatch(finaldemo_character[p.mo.skin].name_graphic),V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
 	end
 end
@@ -36,10 +36,10 @@ end
 // original "X", character hudname and number from the original SRB2's life counter.
 // However, there's a twist: The WHOLE life number code has to be rewritten.
 local function EMWFDLifeCounter(v, p)
-	if not (p.mo and finaldemo_character[p.mo.skin]) return end
+	if not (p.mo and finaldemo_character[p.mo.skin]) then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
-	and not (maptol & TOL_NIGHTS)
+	and not (maptol & TOL_NIGHTS) then
 		if (p.lives == 0) then
 			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
 		elseif (p.lives == 1) then
@@ -344,20 +344,20 @@ hud.add(EMWFDLifeCounter)
 hud.add(EMWFDLifeIcon)
 
 addHook("PlayerThink", function(p)
-	if not p.hudchanged
+	if not p.hudchanged then
 		p.hudchanged = false
 	end
 	
-	if finaldemo_character[p.mo.skin]
-		if not p.hudchanged
-			if hud.enabled("lives")
+	if finaldemo_character[p.mo.skin] then
+		if not p.hudchanged then
+			if hud.enabled("lives") then
 				hud.disable("lives")
 				p.hudchanged = true
 			end
-		elseif hud.enabled("lives")
+		elseif hud.enabled("lives") then
 			hud.disable("lives")
 		end
-	elseif p.hudchanged
+	elseif p.hudchanged then
 		hud.enable("lives")
 		p.hudchanged = false
 	end

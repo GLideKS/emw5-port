@@ -29,7 +29,7 @@ addHook("BossDeath", function(mobj)
 	mobj.flags = $|MF_NOGRAVITY|MF_NOCLIP
 	mobj.flags = $|MF_NOCLIPHEIGHT
 	
-	if mobj.target and mobj.target.valid
+	if mobj.target and mobj.target.valid then
 		mobj.angle = R_PointToAngle2(mobj.x, mobj.y, mobj.target.x, mobj.target.y)
 		mobj.flags2 = $|MF2_BOSSFLEE
 		mobj.momz = FixedMul(FixedDiv(mobj.target.z - mobj.z, FixedHypot(mobj.x-mobj.target.x,mobj.y-mobj.target.y)), FixedMul(2*FRACUNIT, mobj.scale))
