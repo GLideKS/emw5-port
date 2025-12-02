@@ -1,3 +1,5 @@
+--TODO: Replace hud.add with the proper "HUD" hook
+
 if not finaldemo_character then rawset(_G, "finaldemo_character", {}) end
 
 local function EMWFDLifeIcon(v, p)

@@ -1,7 +1,12 @@
+/*
+Replica of Final Demo's S_SKIN slingitem functionality for EMW5.
+Coded by: GLide KS
+*/
+
 --we gotta set this up manually in the PreThinkFrame where the inputs goes
 mobjinfo[MT_REDRING].seesound = sfx_none 
 
---Don't use red ring weapon.
+--Don't use red ring weapon for slingitem characters, already has it's own
 addHook("PostThinkFrame", function()
 for mo in mobjs.iterate() do
 	if mo.valid and mo.type == MT_REDRING and mo.target
@@ -11,6 +16,7 @@ for mo in mobjs.iterate() do
 end
 end)
 
+--Shooting function for slingitems
 local function Shoot(p, slingitem)
 	local pmo = p.mo
 	if not (pmo and pmo.valid) then return end
@@ -24,6 +30,7 @@ local function Shoot(p, slingitem)
 	end
 end
 
+--Main hook to handle slingitem shooting
 addHook("PreThinkFrame", function()
 for p in players.iterate() do
 	local pmo = p.mo
