@@ -1,10 +1,11 @@
+--we gotta set this up manually in the PreThinkFrame where the inputs goes
+mobjinfo[MT_REDRING].seesound = sfx_none 
+
 --Don't use red ring weapon.
 addHook("PostThinkFrame", function()
 for mo in mobjs.iterate() do
 	if mo.valid and mo.type == MT_REDRING and mo.target
 	and (finaldemo_character[mo.target.skin] and finaldemo_character[mo.target.skin].slingitem) then
-		S_StopSoundByID(mo, sfx_thok)
-		S_StopSoundByID(mo.target, sfx_thok)
 		P_RemoveMobj(mo)
 	end
 end
@@ -27,16 +28,26 @@ addHook("PreThinkFrame", function()
 for p in players.iterate() do
 	local pmo = p.mo
 	local cmd = p.cmd
-	if not (pmo and pmo.valid and p.playerstate == PST_LIVE and (finaldemo_character[pmo.skin] and finaldemo_character[pmo.skin].slingitem)) then continue end
-	local slingitem = finaldemo_character[pmo.skin].slingitem
+	local has_slingitem = finaldemo_character[pmo.skin] and finaldemo_character[pmo.skin].slingitem
+	if not (pmo and pmo.valid and p.playerstate == PST_LIVE) then continue end
 
 	if p.rings != 0
-	and not p.weapondelay
-	and (cmd.buttons & BT_ATTACK) and not (p.lastbuttons & BT_ATTACK) then
-		Shoot(p, slingitem)
-		if not G_RingSlingerGametype() then
-			p.rings = $-1
-			p.weapondelay = TICRATE/4
+	and not p.weapondelay then
+		if (cmd.buttons & BT_ATTACK) and not (p.lastbuttons & BT_ATTACK) then
+			if has_slingitem then
+				local slingitem = finaldemo_character[pmo.skin].slingitem
+				Shoot(p, slingitem)
+				if not G_RingSlingerGametype() then
+					p.rings = $-1
+					p.weapondelay = TICRATE/4
+				end
+			elseif G_RingSlingerGametype() then
+				S_StartSound(pmo, sfx_thok) -- play the shooting sound as usual
+			end
+		elseif (cmd.buttons & BT_FIRENORMAL) and not (p.lastbuttons & BT_FIRENORMAL)
+		and G_RingSlingerGametype()
+		and not has_slingitem then
+			S_StartSound(pmo, sfx_thok) -- play the shooting sound as usual
 		end
 	end
 end
