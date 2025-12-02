@@ -4,7 +4,8 @@ local function EMWFDLifeIcon(v, p)
 	if not (p.mo and finaldemo_character[p.mo.skin]) then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
-	and not (maptol & TOL_NIGHTS) then
+	and not (maptol & TOL_NIGHTS) 
+	and not G_RingSlingerGametype() then
 		local face = v.getSprite2Patch(p.mo.skin, SPR2_XTRA, (p.powers[pw_super] != 0), 0, 0)
 		v.drawScaled(16*FRACUNIT, 161*FRACUNIT, 1*FRACUNIT, face, V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS, v.getColormap(p.mo.skin, p.mo.color))
 	end
@@ -14,7 +15,8 @@ local function EMWFDLifeX(v, p)
 	if not (p.mo and finaldemo_character[p.mo.skin])then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
-	and not (maptol & TOL_NIGHTS) then
+	and not (maptol & TOL_NIGHTS)
+	and not G_RingSlingerGametype() then
 		local livex = v.cachePatch("STFINLX")
 		v.draw(57, 185, livex, V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
 	end
@@ -27,7 +29,8 @@ local function EMWIdentifier(v, p)
 	if not (p.mo and finaldemo_character[p.mo.skin]) then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
-	and not (maptol & TOL_NIGHTS) then
+	and not (maptol & TOL_NIGHTS)
+	and not G_RingSlingerGametype() then
 		v.draw(53, 161, v.cachePatch(finaldemo_character[p.mo.skin].name_graphic),V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
 	end
 end
@@ -39,7 +42,8 @@ local function EMWFDLifeCounter(v, p)
 	if not (p.mo and finaldemo_character[p.mo.skin]) then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
-	and not (maptol & TOL_NIGHTS) then
+	and not (maptol & TOL_NIGHTS)
+	and not G_RingSlingerGametype() then
 		if (p.lives == 0) then
 			v.draw(81, 182, v.cachePatch("STTNUM0"), V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
 		elseif (p.lives == 1) then
