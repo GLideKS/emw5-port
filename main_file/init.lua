@@ -7,7 +7,7 @@ local dofolder = function(file)
     dofile(folder.."/"..file)
 end
 
-folder = "RetroMonitors/FinalDemo"
+folder = "FinalDemo/RetroMonitors/FinalDemo"
 
 dofolder("FDBoxCommon.lua") -- Final Demo Monitor Commonalities
 dofolder("FDRingBox.lua") -- Final Demo Ring Monitors
@@ -27,25 +27,28 @@ dofolder("FDMysteryBox.lua") -- Final Demo Mystery Monitor
 dofolder("FDTeleporterBox.lua") -- Final Demo Teleporter Monitor
 dofolder("20RecyclerBox.lua") -- 2.0 Recycler Monitor
 
-folder = "RetroMonitors"
+folder = "FinalDemo/RetroMonitors"
 
 dofolder("FDShieldOrb.lua")
 dofolder("ShieldEra.lua")
 dofolder("FDInfernoShield.lua")
 
-folder = "Common"
+folder = "FinalDemo/Common"
 
 dofolder("LUA_CCOM.txt")
 
-folder = "Crawla Commander FD"
+folder = "FinalDemo/Crawla Commander FD"
 
 dofolder("LUA_OCOM.txt")
 
-dofile("Legacy Replacements")
-dofile("Old Level Title")
+folder = "FinalDemo"
+
+dofolder("FDHud.lua")
+dofolder("Old Level Title.lua")
+dofolder("Legacy Replacements.lua")
+dofolder("Slingitem.lua")
+
 dofile("LUA_FLY1")
 dofile("LUA_LNDF")
 dofile("LUA_XPDL")
 dofile("Some Brad Lua")
-dofile("FDhud")
-dofile("Slingitem")
