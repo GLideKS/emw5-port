@@ -71,11 +71,6 @@ addHook("PlayerThink", function(p)
 		--Shade doesn't climb in the original version. Still, I don't know how to avoid the cling
 		p.climbing = 0
 		
-		--Don't play the transform animation, directly go super
-		if pmo.state >= S_PLAY_SUPER_TRANS1 and pmo.state <= S_PLAY_SUPER_TRANS6
-			pmo.state = S_PLAY_STND
-		end
-		
 		--In the original version of this character, spin trails dissapears when on super
 		if p.powers[pw_super]
 			p.revitem = 0
@@ -91,5 +86,6 @@ end)
 if not finaldemo_character then rawset(_G, "finaldemo_character", {}) end
 finaldemo_character["emwshade"] = {
 	name_graphic = "STSHADE",
-	slingitem = MT_SHADESLING
+	slingitem = MT_SHADESLING,
+	skiptransform = true
 }
