@@ -1,0 +1,11 @@
+CHARACTER
+PICNAME = SONCCHAR
+SKINNAME = EMWSONIC
+DisplayName = Sonic
+TagTextColor = SKINCOLOR_BLUE
+TagOutlineColor = SKINCOLOR_BLACK
+OppositeColor = SKINCOLOR_CORNFLOWER
+PlayerText = ^2SPEED:^0 35 MPH
+^2ABILITY:^0 Thok/Boost
+^2NOTES:^0 Basic speed character, Sonic has a good top speed, he also has the boost
+#
