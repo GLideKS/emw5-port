@@ -42,9 +42,9 @@ for p in players.iterate() do
 	if p.exiting then continue end
 	local pmo = p.mo
 	local cmd = p.cmd
-	local has_slingitem = finaldemo_character[pmo.skin] and finaldemo_character[pmo.skin].slingitem
 	if not (pmo and pmo.valid and p.playerstate == PST_LIVE) then continue end
-
+	local has_slingitem = finaldemo_character[pmo.skin] and finaldemo_character[pmo.skin].slingitem
+	
 	if p.rings != 0
 	and not p.weapondelay then
 		if (cmd.buttons & BT_ATTACK) and not (p.lastbuttons & BT_ATTACK) then
