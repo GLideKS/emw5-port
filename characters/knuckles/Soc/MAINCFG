@@ -1,0 +1,11 @@
+CHARACTER
+PICNAME = KNUXCHAR
+SKINNAME = EMWKNUX
+DisplayName = Knuckles
+TagTextColor = SKINCOLOR_RED
+TagOutlineColor = SKINCOLOR_YELLOW
+OppositeColor = SKINCOLOR_RUBY
+PlayerText = ^2SPEED:^0 33 MPH
+^2ABILITY:^0 Glide/Climb
+^2NOTES:^0 Decent speed, He can punch. woot.
+#
