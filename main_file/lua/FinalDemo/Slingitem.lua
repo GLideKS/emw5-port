@@ -24,8 +24,12 @@ local function Shoot(p, slingitem)
 
 	p.lookfortargets = P_LookForEnemies(p, false, true)
 	
-	if p.lookfortargets then
-		P_SpawnMissile(pmo, p.lookfortargets, slingitem)
+	if not finaldemo_character[pmo.skin].slingitem_notarget
+		if p.lookfortargets then
+			P_SpawnMissile(pmo, p.lookfortargets, slingitem)
+		else
+			P_SpawnPlayerMissile(pmo, slingitem)
+		end
 	else
 		P_SpawnPlayerMissile(pmo, slingitem)
 	end
