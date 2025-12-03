@@ -47,23 +47,3 @@ skincolors[SKINCOLOR_SUPERLEGACYYELLOW5] = {
     chatcolor = V_YELLOWMAP,
     accessible = false
 }
-
-addHook("PostThinkFrame", function()
-if gamestate != GS_LEVEL then return end
-for p in players.iterate() do
-	local pmo = p.mo
-	if not (pmo and pmo.valid and pmo.health and pmo.skin == "emwsonic") then continue end
-		
-	--Don't play the transform animation, directly go super
-	if pmo.state >= S_PLAY_SUPER_TRANS1 and pmo.state <= S_PLAY_SUPER_TRANS6 then
-		pmo.state = S_PLAY_STND
-	end
-
-    --Go to walk animation when using springs as superform
-    if p.powers[pw_super]
-    and (p.panims == PA_SPRING or pmo.state == S_PLAY_SPRING) then
-        pmo.state = S_PLAY_WALK
-        p.panims = PA_WALK
-    end
-end
-end)

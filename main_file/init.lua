@@ -49,6 +49,7 @@ dofolder("Legacy Replacements.lua")
 dofolder("FD Weapon System.lua")
 dofolder("Slingitem.lua")
 dofolder("Old Thok.lua")
+dofolder("Old Anims.lua")
 
 dofile("LUA_FLY1")
 dofile("LUA_LNDF")
