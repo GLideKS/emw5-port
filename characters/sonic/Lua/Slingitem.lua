@@ -16,7 +16,7 @@ mobjinfo[MT_EMWSONICBOOST] = {
 	reactiontime = 8,
 	deathstate = S_BOOST_1,
 	radius = 81*FRACUNIT,
-	height = 35*FRACUNIT,
+	height = 80*FRACUNIT,
 	flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_MISSILE
 }
 
