@@ -22,3 +22,16 @@ for p in players.iterate() do
     end
 end
 end)
+
+addHook("PlayerThink", function(p)
+	--Do rolling after a glide (for non-spin jump and multiability)
+	if not (p and p.mo and p.mo.valid and p.playerstate == PST_LIVE) then return end
+	if not (finaldemo_character[p.mo.skin] and finaldemo_character[p.mo.skin].oldglide_rolloff) then return end
+	
+	if (p.pflags & PF_GLIDING) and not (p.cmd.buttons & BT_JUMP)
+	and not P_IsObjectOnGround(p.mo) then
+		P_ResetPlayer(p)
+		p.mo.state = S_PLAY_ROLL
+		p.pflags = ($ | PF_JUMPED)
+	end
+end)

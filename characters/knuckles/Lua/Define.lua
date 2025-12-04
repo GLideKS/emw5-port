@@ -3,5 +3,6 @@ finaldemo_character["emwknux"] = {
 	name_graphic = "STKNUXNM",
 	slingitem = MT_KNUXPUNCH,
 	--slingitem_notarget = true,
-	skiptransform = true
+	skiptransform = true,
+	oldglide = true
 }
