@@ -3,6 +3,7 @@ if gamestate != GS_LEVEL then return end
 for p in players.iterate() do
 	local pmo = p.mo
     if p.exiting then return end
+	if not (p and pmo and pmo.valid and p.playerstate == PST_LIVE) then continue end
 		
 	--Don't play the transform animation, directly go super
     if not (p and pmo and finaldemo_character[p.mo.skin]) then continue end
