@@ -10,6 +10,7 @@ local yellow_ramp = {73,73,73,73,73,73,73,73,64,64,65,66,66,67,67,68}
 local RED_ramp = skincolors[SKINCOLOR_RED].ramp
 local white_ramp = {0,0,0,208,208,208,2,2,2,208,208,208,3,3,3,3}
 local silver_ramp = {2,3,3,4,5,6,6,7,8,8,9,10,11,12,12,13}
+local PINK_ramp = {209,209,210,210,211,211,212,212,213,213,214,214,215,215,207,20}
 --old 3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10
 
 skincolors[SKINCOLOR_SUPERLEGACYYELLOW1] = {
@@ -197,5 +198,54 @@ skincolors[SKINCOLOR_SUPERLEGACYSILVER5] = {
     invcolor = skincolors[SKINCOLOR_SILVER].invcolor,
     invshade = skincolors[SKINCOLOR_SILVER].invshade,
     chatcolor = skincolors[SKINCOLOR_SILVER].chatcolor,
+    accessible = false
+}
+
+freeslot(
+	"SKINCOLOR_SUPERLEGACYPINK1",
+	"SKINCOLOR_SUPERLEGACYPINK2",
+	"SKINCOLOR_SUPERLEGACYPINK3",
+	"SKINCOLOR_SUPERLEGACYPINK4",
+	"SKINCOLOR_SUPERLEGACYPINK5"
+)
+
+skincolors[SKINCOLOR_SUPERLEGACYPINK1] = {
+    name = "Super legacypink 1",
+    ramp = PINK_ramp,
+    invcolor = SKINCOLOR_CORNFLOWER,
+    invshade = 9,
+    chatcolor = V_PINKMAP,
+    accessible = false
+}
+skincolors[SKINCOLOR_SUPERLEGACYPINK2] = {
+    name = "Super legacypink 2",
+    ramp = PINK_ramp,
+    invcolor = SKINCOLOR_CORNFLOWER,
+    invshade = 9,
+    chatcolor = V_PINKMAP,
+    accessible = false
+}
+skincolors[SKINCOLOR_SUPERLEGACYPINK3] = {
+    name = "Super legacypink 3",
+    ramp = PINK_ramp,
+    invcolor = SKINCOLOR_CORNFLOWER,
+    invshade = 9,
+    chatcolor = V_PINKMAP,
+    accessible = false
+}
+skincolors[SKINCOLOR_SUPERLEGACYPINK4] = {
+    name = "Super legacypink 4",
+    ramp = PINK_ramp,
+    invcolor = SKINCOLOR_CORNFLOWER,
+    invshade = 9,
+    chatcolor = V_PINKMAP,
+    accessible = false
+}
+skincolors[SKINCOLOR_SUPERLEGACYPINK5] = {
+    name = "Super legacypink 5",
+    ramp = PINK_ramp,
+    invcolor = SKINCOLOR_CORNFLOWER,
+    invshade = 9,
+    chatcolor = V_PINKMAP,
     accessible = false
 }
