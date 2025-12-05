@@ -1,0 +1,11 @@
+CHARACTER
+PICNAME = SHDWCHAR
+SKINNAME = EMWSHADOW
+DisplayName = Shadow
+TagTextColor = SKINCOLOR_BLACK
+TagOutlineColor = SKINCOLOR_RED
+OppositeColor = SKINCOLOR_VOLCANIC
+PlayerText = ^2SPEED:^0 36 MPH
+^2ABILITY:^0 ChaosBlast
+^2NOTES:^0 Not a good pick for starters, but when controlled properly, Shadow is the most powerful character.
+#

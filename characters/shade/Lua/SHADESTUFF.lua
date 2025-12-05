@@ -67,12 +67,12 @@ states[S_SHADESLINGDEATH2] = {SPR_NULL, A, 30, nil, 0, 0, S_NULL}
 
 addHook("PlayerThink", function(p)
 	local pmo = p.mo
-	if pmo and pmo.valid and pmo.health and pmo.skin == "emwshade"
+	if pmo and pmo.valid and pmo.health and pmo.skin == "emwshade" then
 		--Shade doesn't climb in the original version. Still, I don't know how to avoid the cling
 		p.climbing = 0
 		
 		--In the original version of this character, spin trails dissapears when on super
-		if p.powers[pw_super]
+		if p.powers[pw_super] then
 			p.revitem = 0
 			p.spinitem = 0
 		else

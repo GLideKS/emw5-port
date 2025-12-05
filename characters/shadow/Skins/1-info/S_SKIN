@@ -1,0 +1,25 @@
+name = EMWShadow
+ability = CA_NONE
+flags = SF_NOSPINDASHDUST|SF_NOSKID|SF_RUNONWATER|SF_SUPER
+normalspeed = 36
+thrustfactor = 3
+accelstart = 50
+acceleration = 51
+spin = 1
+startcolor = 33
+endcolor = 47
+prefcolor = Red
+jumpheight = 100
+runspeed = 65
+supercolor = legacyred
+slingitem = 351
+thokitem = MT_OLDTHOK
+revitem = MT_OLDTHOK
+spinitem = MT_OLDTHOK
+dsaltow1 = dsshdwh1
+dsaltow2 = dsshdwh2
+dsaltdi1 = dsshdwd1
+dsaltdi2 = dsshdwd2
+dsaltdi3 = dsshdwd3
+dsaltdi4 = dsshdwd4
+
