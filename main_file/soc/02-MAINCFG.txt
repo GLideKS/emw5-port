@@ -8,6 +8,8 @@ GAMEDATA = EGGMANWAY5.DAT
 TitlePicsMode = Old
 TitleMap = 0
 NumDemos = 0
+SStage_Start = A0
+SMPStage_Start = A0
 
 # Disable vanilla characters
 
