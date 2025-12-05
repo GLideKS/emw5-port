@@ -9,6 +9,7 @@ freeslot(
 local yellow_ramp = {73,73,73,73,73,73,73,73,64,64,65,66,66,67,67,68}
 local RED_ramp = skincolors[SKINCOLOR_RED].ramp
 local white_ramp = {0,0,0,208,208,208,2,2,2,208,208,208,3,3,3,3}
+local silver_ramp = {2,3,3,4,5,6,6,7,8,8,9,10,11,12,12,13}
 --old 3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10
 
 skincolors[SKINCOLOR_SUPERLEGACYYELLOW1] = {
@@ -147,5 +148,54 @@ skincolors[SKINCOLOR_SUPERLEGACYWHITE5] = {
     invcolor = skincolors[SKINCOLOR_WHITE].invcolor,
     invshade = skincolors[SKINCOLOR_WHITE].invshade,
     chatcolor = skincolors[SKINCOLOR_WHITE].chatcolor,
+    accessible = false
+}
+
+freeslot(
+	"SKINCOLOR_SUPERLEGACYSILVER1",
+	"SKINCOLOR_SUPERLEGACYSILVER2",
+	"SKINCOLOR_SUPERLEGACYSILVER3",
+	"SKINCOLOR_SUPERLEGACYSILVER4",
+	"SKINCOLOR_SUPERLEGACYSILVER5"
+)
+
+skincolors[SKINCOLOR_SUPERLEGACYSILVER1] = {
+    name = "Super legacysilver 1",
+    ramp = silver_ramp,
+    invcolor = skincolors[SKINCOLOR_SILVER].invcolor,
+    invshade = skincolors[SKINCOLOR_SILVER].invshade,
+    chatcolor = skincolors[SKINCOLOR_SILVER].chatcolor,
+    accessible = false
+}
+skincolors[SKINCOLOR_SUPERLEGACYSILVER2] = {
+    name = "Super legacysilver 2",
+    ramp = silver_ramp,
+    invcolor = skincolors[SKINCOLOR_SILVER].invcolor,
+    invshade = skincolors[SKINCOLOR_SILVER].invshade,
+    chatcolor = skincolors[SKINCOLOR_SILVER].chatcolor,
+    accessible = false
+}
+skincolors[SKINCOLOR_SUPERLEGACYSILVER3] = {
+    name = "Super legacysilver 3",
+    ramp = silver_ramp,
+    invcolor = skincolors[SKINCOLOR_SILVER].invcolor,
+    invshade = skincolors[SKINCOLOR_SILVER].invshade,
+    chatcolor = skincolors[SKINCOLOR_SILVER].chatcolor,
+    accessible = false
+}
+skincolors[SKINCOLOR_SUPERLEGACYSILVER4] = {
+    name = "Super legacysilver 4",
+    ramp = silver_ramp,
+    invcolor = skincolors[SKINCOLOR_SILVER].invcolor,
+    invshade = skincolors[SKINCOLOR_SILVER].invshade,
+    chatcolor = skincolors[SKINCOLOR_SILVER].chatcolor,
+    accessible = false
+}
+skincolors[SKINCOLOR_SUPERLEGACYSILVER5] = {
+    name = "Super legacysilver 5",
+    ramp = silver_ramp,
+    invcolor = skincolors[SKINCOLOR_SILVER].invcolor,
+    invshade = skincolors[SKINCOLOR_SILVER].invshade,
+    chatcolor = skincolors[SKINCOLOR_SILVER].chatcolor,
     accessible = false
 }
