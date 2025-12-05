@@ -1,0 +1,11 @@
+CHARACTER
+PICNAME = AMYRCHAR
+SKINNAME = EMWAMY
+DisplayName = Amy
+TagTextColor = SKINCOLOR_ROSY
+TagOutlineColor = SKINCOLOR_RED
+OppositeColor = SKINCOLOR_TAFFY
+PlayerText = ^2SPEED:^0 33 MPH
+^2ABILITY:^0 DoubleJump/Hammer
+^2NOTES:^0 Amy has good control, with her double jump and nice acceleration.
+#

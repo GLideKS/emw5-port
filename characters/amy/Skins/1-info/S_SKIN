@@ -1,0 +1,14 @@
+name = EMWAmy
+ability = CA_DOUBLEJUMP
+flags = SF_MULTIABILITY|SF_NOSPINDASHDUST|SF_NOJUMPSPIN|SF_NOSKID|SF_NOSUPERSPRITES|SF_SUPER
+normalspeed = 33
+thrustfactor = 4
+accelstart = 65
+acceleration = 85
+prefcolor = Red
+jumpheight = 100
+revitem = MT_OLDTHOK
+spinitem = MT_OLDTHOK
+supercolor = legacyred
+ringslinger = 1
+slingitem = 279
