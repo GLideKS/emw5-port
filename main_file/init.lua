@@ -51,6 +51,7 @@ dofolder("Slingitem.lua")
 dofolder("Old Thok.lua")
 dofolder("Old Anims.lua")
 dofolder("Old Glide.lua")
+dofolder("Old Supers.lua")
 
 dofile("LUA_FLY1")
 dofile("LUA_LNDF")
