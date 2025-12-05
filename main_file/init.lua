@@ -53,6 +53,7 @@ dofolder("Old Anims.lua")
 dofolder("Old Glide.lua")
 dofolder("Old Supers.lua")
 dofolder("Old Smoke.lua")
+dofolder("Taunts.lua")
 
 dofile("LUA_FLY1")
 dofile("LUA_LNDF")
