@@ -1,0 +1,11 @@
+CHARACTER 6
+PICNAME = spioCHAR
+SKINNAME = EMWESPIO
+DisplayName = Espio
+TagTextColor = SKINCOLOR_PURPLE
+TagOutlineColor = SKINCOLOR_WHITE
+OppositeColor = SKINCOLOR_NOBLE
+PlayerText = ^2SPEED:^0 32 MPH
+^2ABILITY:^0 Multi-Thok
+^2NOTES:^0 Fast character, He can throw ninja stars, because he's a ninja.
+#
