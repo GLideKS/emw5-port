@@ -1,0 +1,25 @@
+name = emwMetal
+face = METALIFE
+facename = MESONIC
+ability = 180
+flags = SF_NOSPINDASHDUST|SF_NOSKID|SF_RUNONWATER
+normalspeed = 36
+thrustfactor = 5
+accelstart = 40
+acceleration = 40
+startcolor = 145
+jumpheight = 159
+prefcolor = FD_Dark_Blue
+supercolor = legacyyellow
+thokitem = MT_OLDTHOK
+revitem = MT_OLDTHOK
+spinitem = MT_OLDTHOK
+ringslinger = 1
+slingitem = 281
+dsspin = dsfre003
+dszoom = dsfre003
+dsaltow1 = dsdmpain
+dsaltow2 = dsdmpain
+dsaltow3 = dsdmpain
+dsaltow4 = dsdmpain
+

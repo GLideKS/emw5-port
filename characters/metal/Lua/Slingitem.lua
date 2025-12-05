@@ -1,0 +1,38 @@
+freeslot(
+    "MT_EMWMETAL_BOOST",
+    "S_EMWMETAL_BOOST_1750",
+    "S_EMWMETAL_BOOST_1751",
+    "S_EMWMETAL_BOOST_1752",
+    "S_EMWMETAL_BOOST_1753",
+    "S_EMWMETAL_BOOST_1754",
+    "S_EMWMETAL_BOOST_1755",
+    "S_EMWMETAL_BOOST_1756",
+    "S_EMWMETAL_BOOST_1757",
+    "S_EMWMETAL_BOOST_1758"
+)
+
+mobjinfo[MT_EMWMETAL_BOOST] = {
+    spawnstate = S_EMWMETAL_BOOST_1750,
+    deathstate = S_EMWMETAL_BOOST_1750,
+    spawnhealth = 1000,
+    mass = 16,
+    speed = 65536,
+    radius = 5111808,
+    height = 2359296,
+    flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_MISSILE,
+    painchance = 15,
+    reactiontime = 1,
+}
+
+states[S_EMWMETAL_BOOST_1750] = {SPR_F044, 0, 1, A_CapeChase, nil, nil, S_EMWMETAL_BOOST_1751}
+states[S_EMWMETAL_BOOST_1751] = {SPR_F044, 0, 1, A_CustomPower, pw_sneakers, 10, S_EMWMETAL_BOOST_1752}
+states[S_EMWMETAL_BOOST_1752] = {SPR_F044, 0, 1, A_SmokeTrailer, MT_OLDSMOKE, nil, S_EMWMETAL_BOOST_1758}
+states[S_EMWMETAL_BOOST_1753] = {SPR_F044, 0, 1, A_DualAction, S_EMWMETAL_BOOST_1752, S_EMWMETAL_BOOST_1750, S_EMWMETAL_BOOST_1754}
+states[S_EMWMETAL_BOOST_1754] = {SPR_F044, 0, 1, A_DualAction, S_EMWMETAL_BOOST_1752, S_EMWMETAL_BOOST_1750, S_EMWMETAL_BOOST_1755}
+states[S_EMWMETAL_BOOST_1755] = {SPR_F044, 0, 1, A_DualAction, S_EMWMETAL_BOOST_1752, S_EMWMETAL_BOOST_1750, S_EMWMETAL_BOOST_1756}
+--state S_EMWMETAL_BOOST_1756 (S_FREESLOT405 (#1756) in the original mod) 
+--originally mispelled the action wrong causing it to not do the intended action. 
+--not gonna fix that here since that's how it is originally
+states[S_EMWMETAL_BOOST_1756] = {SPR_F044, 0, 1, nil, S_EMWMETAL_BOOST_1752, nil, S_EMWMETAL_BOOST_1757}
+states[S_EMWMETAL_BOOST_1757] = {SPR_F044, 0, 1, A_DualAction, S_EMWMETAL_BOOST_1752, S_EMWMETAL_BOOST_1750, S_EMWMETAL_BOOST_1758}
+states[S_EMWMETAL_BOOST_1758] = {SPR_F044, 0, 1, A_DualAction, S_EMWMETAL_BOOST_1752, S_EMWMETAL_BOOST_1750, S_NULL}
