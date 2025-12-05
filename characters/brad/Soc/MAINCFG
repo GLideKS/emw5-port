@@ -5,7 +5,7 @@ DisplayName = Brad
 TagTextColor = SKINCOLOR_GREEN
 TagOutlineColor = SKINCOLOR_BLUE
 OppositeColor = SKINCOLOR_GREEN
-PlayerText = ^2SPEED:^034 MPH
-^2ABILITY:^0JetGlide/Climb
+PlayerText = ^2SPEED:^0 34 MPH
+^2ABILITY:^0 JetGlide/Climb
 ^2NOTES:^0 Fairly Fast, however Brad packs a powerful punch. He can fire missiles.
 #
