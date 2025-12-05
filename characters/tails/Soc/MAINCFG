@@ -1,0 +1,10 @@
+CHARACTER
+PICNAME = TAILCHAR
+SKINNAME = EMWTAILS
+DisplayName = Tails
+TagTextColor = SKINCOLOR_ORANGE
+TagOutlineColor = SKINCOLOR_BLUE
+OppositeColor = SKINCOLOR_COPPER
+PlayerText = ^2SPEED:^0 34 MPH
+^2ABILITY:^0 Decent speed, Tails also has the ability to drop bombs.
+#
