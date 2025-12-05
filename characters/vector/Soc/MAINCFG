@@ -1,0 +1,11 @@
+CHARACTER
+PICNAME = VECTCHAR
+SKINNAME = EMWVECTOR
+DisplayName = Vector
+TagTextColor = SKINCOLOR_GREEN
+TagOutlineColor = SKINCOLOR_GOLD
+OppositeColor = SKINCOLOR_FOREST
+PlayerText = ^2SPEED:^0 32 MPH
+^2ABILITY:^0 Slow Fall/Climb
+^2NOTES:^0 Not very fast, however Vector has the ability to throw rocks.
+#

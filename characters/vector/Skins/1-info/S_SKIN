@@ -1,0 +1,22 @@
+name = EMWVector
+face = VCTRLIFE
+facename = STVECTOR
+flags = SF_MULTIABILITY|SF_NOSPINDASHDUST|SF_NOSKID|SF_RUNONWATER|SF_NOSUPERSPRITES|SF_SUPER
+ability = CA_GLIDEANDCLIMB
+actionspd = 1
+thrustfactor = 5
+accelstart = 75
+acceleration = 95
+normalspeed = 32
+supercolor = legacyred
+jumpheight = 100
+mindash = 26
+maxdash = 60
+prefcolor = Green
+thokitem = 0
+revitem = MT_OLDTHOK
+spinitem = MT_OLDTHOK
+dsaltow1 = dsvect03
+dsaltdi1 = dsvect04
+dsvictr1 = dsvect01
+
