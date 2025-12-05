@@ -12,6 +12,7 @@ Open assets used:
 SRB2 The Past: 
 
 -Old A_Boss1Chase final demo recreation
+-Final demo colors
 -Old Crawla Commander
 -Final Demo Zim's Base
 
