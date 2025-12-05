@@ -50,8 +50,9 @@ end
 
 addHook("JumpSpecial", GlideJumpThinker)
 
-addHook("PlayerThink", function(p)
-    if not (finaldemo_character[p.mo.skin] and finaldemo_character[p.mo.skin].oldglide) then return end
+addHook("PreThinkFrame", function()
+for p in players.iterate
+    if not (finaldemo_character[p.mo.skin] and finaldemo_character[p.mo.skin].oldglide) then continue end
 
     if (p.climbing > 1) then
         p.pflags = (p.pflags | PF_FORCESTRAFE)
@@ -73,4 +74,5 @@ addHook("PlayerThink", function(p)
 	if p.mo.state != S_PLAY_GLIDE
 		p.pflags = $ & ~PF_THOKKED
 	end
+end
 end)
