@@ -9,6 +9,29 @@ TitlePicsMode = Old
 TitleMap = 0
 NumDemos = 0
 
+# Disable vanilla characters
+
+Character 0
+Status = 0
+
+Character 1
+Status = 0
+
+Character 2
+Status = 0
+
+Character 3
+Status = 0
+
+Character 4
+Status = 0
+
+Character 5
+Status = 0
+
+Character 6
+Status = 0
+
 Cutscene 1
 NumScenes 2
 Scene 1
