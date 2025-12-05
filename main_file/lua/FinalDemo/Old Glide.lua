@@ -2,7 +2,7 @@
 //Translated from C to Lua by Ikkarou Tatsuru
 //Tweaked and 2.2-ified by TrickyTex
 local function GlideJumpThinker(p)
-	if not (finaldemo_character[p.mo.skin] and finaldemo_character[p.mo.skin].oldglide) return end
+	if not (p and p.mo and finaldemo_character[p.mo.skin] and finaldemo_character[p.mo.skin].oldglide) return end
 	
 	if (p.pflags & PF_GLIDING)
 		local leeway
@@ -52,7 +52,7 @@ addHook("JumpSpecial", GlideJumpThinker)
 
 addHook("PreThinkFrame", function()
 for p in players.iterate
-    if not (finaldemo_character[p.mo.skin] and finaldemo_character[p.mo.skin].oldglide) then continue end
+    if not (p and p.mo and finaldemo_character[p.mo.skin] and finaldemo_character[p.mo.skin].oldglide) then continue end
 
     if (p.climbing > 1) then
         p.pflags = (p.pflags | PF_FORCESTRAFE)

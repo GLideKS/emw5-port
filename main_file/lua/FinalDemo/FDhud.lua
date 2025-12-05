@@ -354,6 +354,12 @@ addHook("PlayerThink", function(p)
 		p.hudchanged = false
 	end
 	
+	if not (p and p.mo) then 
+		hud.enable("lives")
+		p.hudchanged = false
+		return
+	end
+	
 	if finaldemo_character[p.mo.skin] then
 		if not p.hudchanged then
 			if hud.enabled("lives") then

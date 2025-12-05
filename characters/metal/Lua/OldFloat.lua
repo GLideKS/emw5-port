@@ -13,6 +13,7 @@ addHook("AbilitySpecial", function(player)
 end)
 
 addHook("PlayerThink", function(player)
+	if not (player and player.mo) then return end
 	if player.charability == CA_OLD_FLOAT then
 		if player.pflags & PF_THOKKED and not player.floatUsedOnce then
 			player.mo.momz = 0
