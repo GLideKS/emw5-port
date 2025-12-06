@@ -22,17 +22,7 @@ local function Shoot(p, slingitem)
 	local pmo = p.mo
 	if not (pmo and pmo.valid) then return end
 
-	p.lookfortargets = P_LookForEnemies(p, false, true)
-	
-	if not finaldemo_character[pmo.skin].slingitem_notarget then
-		if p.lookfortargets then
-			P_SpawnMissile(pmo, p.lookfortargets, slingitem)
-		else
-			P_SpawnPlayerMissile(pmo, slingitem)
-		end
-	else
-		P_SpawnPlayerMissile(pmo, slingitem)
-	end
+	P_SpawnPlayerMissile(pmo, slingitem)
 end
 
 --Main hook to handle slingitem shooting
