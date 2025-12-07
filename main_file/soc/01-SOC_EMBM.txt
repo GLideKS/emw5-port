@@ -1154,8 +1154,9 @@ Height = 22
 ConditionSet = 2
 
 ConditionSet 2
+Condition1 = GameClear 1
 Condition1 = OverallTime 94500
-Condition2 = TotalEmblems 142
+Condition1 = TotalEmblems 142
 
 #Classic levels
 UNLOCKABLE 3
@@ -1167,6 +1168,7 @@ Height = 33
 ConditionSet = 3
 
 ConditionSet 3
+Condition1 = GameClear 1
 Condition1 = OverallTime 126000
 
 #The Arena (Same as encore requirement)
