@@ -1051,7 +1051,7 @@ Level 72
 Levelname = NotThatGreen Hill
 Music = MAP72M
 SelectHeading = EggmanWay 5
-NextLevel = 65
+NextLevel = 73
 TypeOfLevel = Match,Tag
 SkyNum = 65
 TimeAttack = 0
@@ -1064,7 +1064,7 @@ Level 73
 Levelname = AngelsCrevice
 Music = MAP73M
 SelectHeading = EggmanWay 5
-NextLevel = 65
+NextLevel = 74
 TypeOfLevel = Match,Tag
 SkyNum = 65
 TimeAttack = 0
@@ -1077,7 +1077,7 @@ Level 74
 Levelname = Shadowcity
 Music = MAP74M
 SelectHeading = EggmanWay 5
-NextLevel = 65
+NextLevel = 75
 TypeOfLevel = Match,Tag
 SkyNum = 65
 TimeAttack = 0
@@ -1090,7 +1090,7 @@ Level 75
 Levelname = Emerald Shrine
 Music = MAP75M
 SelectHeading = EggmanWay 5
-NextLevel = 29
+NextLevel = 70
 TypeOfLevel = Match,Tag
 SkyNum = 29
 TimeAttack = 0
