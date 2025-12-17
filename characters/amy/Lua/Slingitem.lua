@@ -1,8 +1,7 @@
 freeslot(
     "MT_EMWAMY_HAMMER",
     "S_EMWAMY_HAMMER_1",
-    "S_EMWAMY_HAMMER_DEATH",
-    "SPR_AHMR"
+    "S_EMWAMY_HAMMER_DEATH"
 )
 
 mobjinfo[MT_EMWAMY_HAMMER] = {
@@ -20,5 +19,5 @@ mobjinfo[MT_EMWAMY_HAMMER] = {
     flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_MISSILE,
 }
 
-states[S_EMWAMY_HAMMER_1] = {SPR_AHMR, 0, 3, nil, nil, nil, S_EMWAMY_HAMMER_DEATH}
-states[S_EMWAMY_HAMMER_1] = {SPR_AHMR, 1, 2, nil, nil, nil, S_NULL}
+states[S_EMWAMY_HAMMER_1] = {SPR_EMW5_AMYHAMMER, 0, 3, nil, nil, nil, S_EMWAMY_HAMMER_DEATH}
+states[S_EMWAMY_HAMMER_DEATH] = {SPR_EMW5_AMYHAMMER, 1, 2, nil, nil, nil, S_NULL}

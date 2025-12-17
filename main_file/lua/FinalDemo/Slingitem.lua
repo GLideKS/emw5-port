@@ -10,7 +10,8 @@ mobjinfo[MT_REDRING].seesound = sfx_none
 addHook("PostThinkFrame", function()
 if gamestate != GS_LEVEL then return end
 for mo in mobjs.iterate() do
-	if mo.valid and mo.type == MT_REDRING and mo.target then
+	if mo.type != MT_REDRING then continue end
+	if mo.valid and mo.target then
 		local has_slingitem = (finaldemo_character[mo.target.skin] and finaldemo_character[mo.target.skin].slingitem)
 		if has_slingitem then
 			P_SpawnPlayerMissile(mo.target, finaldemo_character[mo.target.skin].slingitem)
@@ -20,7 +21,7 @@ for mo in mobjs.iterate() do
 end
 end)
 
---Play the usual ring shoot sound for non-slingitem characters
+--Play the usual MT_REDRING shoot sound for non-slingitem characters
 addHook("MobjSpawn", function(mo)
 	if (mo.target and (finaldemo_character[mo.target.skin] and finaldemo_character[mo.target.skin].slingitem)) then return end
 	S_StartSound(mo, sfx_thok)

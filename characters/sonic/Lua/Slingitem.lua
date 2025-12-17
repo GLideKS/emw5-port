@@ -5,7 +5,6 @@ freeslot("MT_EMWSONICBOOST",
 		 "S_BOOST_4",
 		 "S_BOOST_5",
 		 "S_BOOST_6",
-		 "SPR_BOST",
 		 "sfx_boost"
 )
 
@@ -23,9 +22,9 @@ mobjinfo[MT_EMWSONICBOOST] = {
 	flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_MISSILE
 }
 
-states[S_BOOST_1] = {SPR_BOST, TR_TRANS50|FF_FULLBRIGHT|A, 1, A_CapeChase, nil, nil, S_BOOST_2}
-states[S_BOOST_2] = {SPR_BOST, TR_TRANS50|FF_FULLBRIGHT|B, 1, A_CustomPower, pw_sneakers, 10, S_BOOST_3}
-states[S_BOOST_3] = {SPR_BOST, TR_TRANS50|FF_FULLBRIGHT|C, 1, A_CapeChase, nil, nil, S_BOOST_4}
-states[S_BOOST_4] = {SPR_BOST, TR_TRANS50|FF_FULLBRIGHT|D, 1, A_CapeChase, nil, nil, S_BOOST_5}
-states[S_BOOST_5] = {SPR_BOST, TR_TRANS80|FF_FULLBRIGHT|E, 1, A_CapeChase, nil, nil, S_BOOST_6}
-states[S_BOOST_6] = {SPR_BOST, TR_TRANS90|FF_FULLBRIGHT|F, 1, nil, nil, nil, S_NULL}
+states[S_BOOST_1] = {SPR_EMW5_SONICBOOST, TR_TRANS50|FF_FULLBRIGHT|A, 1, A_CapeChase, nil, nil, S_BOOST_2}
+states[S_BOOST_2] = {SPR_EMW5_SONICBOOST, TR_TRANS50|FF_FULLBRIGHT|B, 1, A_CustomPower, pw_sneakers, 10, S_BOOST_3}
+states[S_BOOST_3] = {SPR_EMW5_SONICBOOST, TR_TRANS50|FF_FULLBRIGHT|C, 1, A_CapeChase, nil, nil, S_BOOST_4}
+states[S_BOOST_4] = {SPR_EMW5_SONICBOOST, TR_TRANS50|FF_FULLBRIGHT|D, 1, A_CapeChase, nil, nil, S_BOOST_5}
+states[S_BOOST_5] = {SPR_EMW5_SONICBOOST, TR_TRANS80|FF_FULLBRIGHT|E, 1, A_CapeChase, nil, nil, S_BOOST_6}
+states[S_BOOST_6] = {SPR_EMW5_SONICBOOST, TR_TRANS90|FF_FULLBRIGHT|F, 1, nil, nil, nil, S_NULL}

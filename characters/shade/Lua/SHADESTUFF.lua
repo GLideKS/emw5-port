@@ -38,7 +38,6 @@ freeslot("MT_SHADESLING",
 		"S_SHADESLING",
 		"S_SHADESLINGDEATH1",
 		"S_SHADESLINGDEATH2",
-		"SPR_SLSH",
 		"sfx_fre014",
 		"sfx_fre015")
 		
@@ -61,8 +60,8 @@ mobjinfo[MT_SHADESLING] = {
         flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_MISSILE
 }
 
-states[S_SHADESLING] = {SPR_SLSH, A, 3, nil, 0, 0, S_NULL}
-states[S_SHADESLINGDEATH1] = {SPR_SLSH, A, 3, nil, 0, 0, S_SHADESLINGDEATH2}
+states[S_SHADESLING] = {SPR_EMW5_SHADESLASH, A, 3, nil, 0, 0, S_NULL}
+states[S_SHADESLINGDEATH1] = {SPR_EMW5_SHADESLASH, A, 3, nil, 0, 0, S_SHADESLINGDEATH2}
 states[S_SHADESLINGDEATH2] = {SPR_NULL, A, 30, nil, 0, 0, S_NULL}
 
 addHook("PlayerThink", function(p)
