@@ -1,21 +1,3 @@
-#Old thok for metallix
-FREESLOT
-MT_OLDTHOK
-S_OLDTHOK
-
-Thing MT_OLDTHOK
-Mapthingnum = -1
-Spawnstate = S_OLDTHOK
-Spawnhealth = 1
-Radius = 32*FRACUNIT
-Height = 64*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY
-
-Frame S_OLDTHOK
-Spritename = THOK
-Spriteframe = B|TR_TRANS60
-Duration = 8
-
 #MetalSonic (Hell)
 
 Thing MT_METALIX
