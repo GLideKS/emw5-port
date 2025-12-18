@@ -7,6 +7,8 @@ local dofolder = function(file)
     dofile(folder.."/"..file)
 end
 
+dofile("BossObj_Freeslots")
+
 folder = "FinalDemo/RetroMonitors/FinalDemo"
 
 dofolder("FDBoxCommon.lua") -- Final Demo Monitor Commonalities
