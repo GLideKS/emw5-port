@@ -4,13 +4,12 @@ freeslot("MT_EMWSONICBOOST",
 		 "S_BOOST_3",
 		 "S_BOOST_4",
 		 "S_BOOST_5",
-		 "S_BOOST_6",
-		 "sfx_boost"
+		 "S_BOOST_6"
 )
 
 mobjinfo[MT_EMWSONICBOOST] = {
     doomednum = -1,
-	seesound = sfx_boost,
+	seesound = sfx_SNBOST,
 	spawnstate = S_BOOST_1,
 	reactiontime = 1,
 	painchance = 15,

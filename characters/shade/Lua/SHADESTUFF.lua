@@ -37,21 +37,17 @@ states[S_SHADESPIN_6] = {SPR_SHDS, TR_TRANS60|G, 1, nil, 0, 0, S_NULL}
 freeslot("MT_SHADESLING",
 		"S_SHADESLING",
 		"S_SHADESLINGDEATH1",
-		"S_SHADESLINGDEATH2",
-		"sfx_fre014",
-		"sfx_fre015")
-		
-sfxinfo[sfx_fre014] = {false, 50, SF_X4AWAYSOUND}
-sfxinfo[sfx_fre015] = {false, 50, SF_X4AWAYSOUND}
+		"S_SHADESLINGDEATH2"
+)
 
 mobjinfo[MT_SHADESLING] = {
         doomednum = -1,
         spawnstate = S_SHADESLING,
         spawnhealth = 1000,
-        seesound = sfx_fre014,
+        seesound = sfx_SHSLSH,
         reactiontime = 0,
         deathstate = S_SHADESLINGDEATH1,
-        deathsound = sfx_fre015,
+        deathsound = sfx_SLSHIT,
         speed = 39*FU,
         radius = 60*FU,
         height = 15*FU,

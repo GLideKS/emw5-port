@@ -19,13 +19,12 @@ freeslot("MT_EMWSHADOW_CHAOSBLAST",
 		 "S_EMWSHADOW_CHAOSBLAST_DEBRIS1_2",
 		 "S_EMWSHADOW_CHAOSBLAST_DEBRIS2",
 		 "S_EMWSHADOW_CHAOSBLAST_DEBRIS3",
-		 "S_EMWSHADOW_CHAOSBLAST_DEBRISDEATH",
-		 "sfx_chaos1"
+		 "S_EMWSHADOW_CHAOSBLAST_DEBRISDEATH"
 )
 
 mobjinfo[MT_EMWSHADOW_CHAOSBLAST] = {
     doomednum = -1,
-	seesound = sfx_chaos1,
+	seesound = sfx_CHS02,
 	spawnstate = S_EMWSHADOW_CHAOSBLAST_1,
     spawnhealth = 1000,
 	reactiontime = 8,
