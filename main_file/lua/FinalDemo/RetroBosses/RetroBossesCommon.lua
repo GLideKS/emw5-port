@@ -1,0 +1,92 @@
+-- Retro Boss Commonalities
+
+--- A_BossDeath portion ported from 2.1.25.
+---@param actor mobj_t
+function A_21BossDeath(actor, var1, var2)
+	-- Stop exploding and prepare to run.
+	actor.state = actor.info.xdeathstate
+	if not actor.valid then return end
+
+	actor.target = nil
+	local bossid = 0
+	if actor.spawnpoint and actor.spawnpoint.valid then bossid = actor.spawnpoint.args[0] end
+
+	-- Flee! Flee! Find a point to escape to! If none, just shoot upward!
+	-- scan the thinkers to find the runaway point
+	for th in mobjs.iterate() do
+		if th.type == MT_BOSSFLYPOINT then
+			-- UDMF support for Boss IDs!
+			if udmf then
+				if not (th.spawnpoint and th.spawnpoint.valid and bossid == th.spawnpoint.tag) then continue end
+			end
+
+			-- If this one's closer then the last one, go for it
+			if not (actor.target and actor.target.valid) or
+			FixedHypot(FixedHypot(actor.x - th.x, actor.y - th.y), actor.z - th.z) <
+			FixedHypot(FixedHypot(actor.x - actor.target.x, actor.y - actor.target.y), actor.z - actor.target.z) then
+				actor.target = th
+			end
+			-- Otherwise... Don't!
+		end
+	end
+
+	actor.flags = $|MF_NOGRAVITY|MF_NOCLIP
+	actor.flags = $|MF_NOCLIPHEIGHT
+
+	if actor.target and actor.target.valid then
+		actor.angle = R_PointToAngle2(actor.x, actor.y, actor.target.x, actor.target.y)
+		actor.flags2 = $|MF2_BOSSFLEE
+		actor.momz = FixedMul(FixedDiv(actor.target.z - actor.z, FixedHypot(actor.x-actor.target.x,actor.y-actor.target.y)), FixedMul(2*FRACUNIT, actor.scale))
+	else
+		actor.momz = FixedMul(2*FRACUNIT, actor.scale)
+	end
+end
+
+--- Alters the z position of the given object based on the given offset.
+---@param mo mobj_t
+---@param mthing mapthing_t
+---@param offset fixed_t
+rawset(_G, "RB_MapThingHeightOffset", function(mo, mthing, offset)
+	if not (mo and mo.valid and mthing and mthing.valid) then return end
+	if not offset then return end -- Boss shouldn't be offset if the offset is 0
+
+	if not (mthing.z or (mthing.options & MTF_ABSOLUTEZ)) then
+		if (mthing.options & MTF_OBJECTFLIP) then
+			mo.z = $ - offset
+		else
+			mo.z = $ + offset
+		end
+	end
+end)
+
+--- Emulates the pre-2.2 flashing palette.
+---@param mo mobj_t
+rawset(_G, "RB_21BossFlash", function(mo)
+	if not (mo and mo.valid) then return end
+
+	if (mo.flags2 & MF2_FRET) and (leveltime & 1) then
+		mo.translation = "RBFlash"
+	else
+		mo.translation = nil
+	end
+end)
+
+--- Emulates the 2.0 flashing palette.
+---@param mo mobj_t
+rawset(_G, "RB_20BossFlash", function(mo)
+	if not (mo and mo.valid) then return end
+
+	if (mo.flags2 & MF2_FRET) then
+		if (leveltime & 1) then
+			mo.translation = "RBFlash"
+		else
+			if not mo.rbMatchBetaFlashing then
+				mo.translation = "AllWhite" -- 2.0 does this due to a bug with adding MF_TRANSLATION to an mobj without a color
+			else
+				mo.translation = nil
+			end
+		end
+	else
+		mo.translation = nil
+	end
+end)

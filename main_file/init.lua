@@ -62,5 +62,15 @@ folder = "FinalDemo/RetroBosses"
 dofolder("BossDeath.lua")
 dofolder("Behavior.lua")
 
+dofolder("RetroBossesCommon")
+dofolder("OldJetfumes")
+dofolder("EggSlimerCommon")
+dofolder("Pre21EggSlimerCommon")
+dofolder("OldSlimerGoop")
+
+folder = "FinalDemo/RetroBosses/FinalDemo"
+
+dofolder("FDEggSlimer")
+
 dofile("LUA_LNDF")
 dofile("LUA_XPDL")
