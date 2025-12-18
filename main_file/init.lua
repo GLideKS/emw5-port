@@ -57,10 +57,10 @@ dofolder("Old Supers.lua")
 dofolder("Old Smoke.lua")
 dofolder("Taunts.lua")
 
-dofile("LUA_FLY1")
-dofile("LUA_LNDF")
-dofile("LUA_XPDL")
-
 folder = "FinalDemo/RetroBosses"
 
 dofolder("BossDeath.lua")
+dofolder("Behavior.lua")
+
+dofile("LUA_LNDF")
+dofile("LUA_XPDL")
