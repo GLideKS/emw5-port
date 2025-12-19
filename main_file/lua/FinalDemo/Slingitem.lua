@@ -35,6 +35,7 @@ addHook("PlayerThink", function(p)
 	local cmd = p.cmd
 	local has_slingitem = finaldemo_character[pmo.skin] and finaldemo_character[pmo.skin].slingitem
 	if not has_slingitem then return end
+	if p.exiting then return end
 	
 	if not p.weapondelay
 	and ((cmd.buttons & BT_ATTACK) and not (p.lastbuttons & BT_ATTACK))
