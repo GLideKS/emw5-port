@@ -4,16 +4,11 @@ Enemy sprites and soc help: Senku
 Vector and Espio,And the Base sprite of Metal Sonic: ChaosZero64
 
 Porters:
-ARA/Messiah & GLide KS (Main porters)
-Jimita (LUA Coding)
-Jon (LUA Coding)
+Ogami_WK & GLide KS (Main porters)
+Jimita (LUA Coding assistance)
+Jon (LUA Coding assistance)
 
 Open assets used:
-SRB2 The Past: 
-
--Old A_Boss1Chase final demo recreation
--Final demo colors
--Old Crawla Commander
--Final Demo Zim's Base
-
-Retro Monitors by MIDIMan
+SRB2 The Past (Old A_Boss1Chase, Final demo colors, Old Crawla Commander, Final Demo Zim's Base)
+Retro Monitors by MIDIMan, using EMW5 sprite assets
+Retro Bosses by MIDIman, using EMW5 sprite assets
