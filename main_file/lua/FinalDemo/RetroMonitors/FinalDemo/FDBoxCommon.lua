@@ -44,52 +44,27 @@ end
 
 ---@param mo mobj_t
 local function RM_DetermineShieldVariants(mo)
-	-- Use the 2.0 variants by default
+	-- Use the 1.09.4 variants by default
 	local shields = {
 		monitors = {
 			MT_FDBOX_WHITE,
-			MT_FDBOX_GREEN,
 			MT_FDBOX_BLUE,
-			MT_FDBOX_RED
+			MT_FDBOX_RED,
+			MT_FDBOX_BLACK
 		},
 		icons = {
 			MT_FDBOX_WHITE_ICON,
-			MT_FDBOX_GREEN_ICON,
 			MT_FDBOX_BLUE_ICON,
-			MT_FDBOX_RED_ICON
+			MT_FDBOX_RED_ICON,
+			MT_FDBOX_BLACK_ICON
 		}
 	}
-	if not (mo and mo.valid) then return shields end -- Just use the 2.0 variants 
+	if not (mo and mo.valid) then return shields end -- Just use the 1.09.4 variants 
 
 	-- [1] = jumpshield
 	-- [2] = watershield
 	-- [3] = fireforceshield
 	-- [4] = bombshield
-
-	local altoption = mo.rmFDAltOption or 0
-
-	if altoption > 0 and altoption < 4 then
-		if altoption >= 2 then -- 2K3-1.08 shields
-			shields.monitors[1] = MT_FDBOX_BLUE
-			shields.icons[1] = MT_FDBOX_BLUE_ICON
-			shields.monitors[2] = MT_FDBOX_GREEN
-			shields.icons[2] = MT_FDBOX_GREEN_ICON
-		else -- 1.09-1.09.4 shields
-			shields.monitors[1] = MT_FDBOX_WHITE
-			shields.icons[1] = MT_FDBOX_WHITE_ICON
-			shields.monitors[2] = MT_FDBOX_BLUE
-			shields.icons[2] = MT_FDBOX_BLUE_ICON
-		end
-		shields.monitors[3] = MT_FDBOX_RED
-		shields.icons[3] = MT_FDBOX_RED_ICON
-		shields.monitors[4] = MT_FDBOX_BLACK
-		shields.icons[4] = MT_FDBOX_BLACK_ICON
-	else -- 2.0 shields
-		if altoption == 4 then
-			shields.monitors[4] = MT_FDBOX_BLACK
-			shields.icons[4] = MT_FDBOX_BLACK_ICON
-		end
-	end
 
 	return shields
 end
@@ -98,26 +73,12 @@ end
 rawset(_G, "RM_FDMonitorTypeSpawn", function(mo, mthing)
 	if not (mo and mo.valid and mthing and mthing.valid) then return end
 
+	mo.rmShieldEra = "FINALDEMO"
 	if udmf then
 		-- 1 = 1.09-1.09.4 behavior
 		-- 2 = 1.08 behavior
 		-- 3 = 2K3-1.04 behavior
 		-- 4 = 1.1 (IRC Match beta) behavior
-		mo.rmFDAltOption = max(min(mthing.args[3], 4), 0)
-
-		if not mthing.args[2] then
-			if mo.rmFDAltOption > 1 then
-				if mo.rmFDAltOption < 4 then
-					mo.rmShieldEra = "FINALDEMO"
-				else
-					mo.rmShieldEra = "1.1"
-				end
-			elseif mo.rmFDAltOption == 1 then
-				mo.rmShieldEra = "LATEFINALDEMO"
-			else
-				mo.rmShieldEra = "2.0"
-			end
-		end
 
 		if mthing.args[1] and mo.info.speed ~= 0 then
 			if mthing.args[1] == 1 then
@@ -126,29 +87,7 @@ rawset(_G, "RM_FDMonitorTypeSpawn", function(mo, mthing)
 				mo.flags2 = $|MF2_STRONGBOX
 			end
 		end
-	else
-		-- 1 = 1.09-1.09.4 behavior
-		-- 2 = 1.08 behavior
-		-- 3 = 2K3-1.04 behavior
-		-- 4 = 1.1 (IRC Match beta) behavior
-		mo.rmFDAltOption = max(min(mthing.extrainfo, 4), 0)
-
-		if not (mthing.options & MTF_EXTRA) then
-			if mo.rmFDAltOption > 1 then
-				if mo.rmFDAltOption < 4 then
-					mo.rmShieldEra = "FINALDEMO"
-				else
-					mo.rmShieldEra = "1.1"
-				end
-			elseif mo.rmFDAltOption == 1 then
-				mo.rmShieldEra = "LATEFINALDEMO"
-			else
-				mo.rmShieldEra = "2.0"
-			end
-		end
 	end
-
-	local altoption = mo.rmFDAltOption
 
 -- 	if (mthing.options & MTF_OBJECTSPECIAL) -- 2.0 behavior
 -- 		mo.flags2 = $|MF2_STRONGBOX

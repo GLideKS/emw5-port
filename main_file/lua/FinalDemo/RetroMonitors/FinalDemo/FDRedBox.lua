@@ -27,7 +27,7 @@ local RM_FD_REDSHIELD_VARIANTS = {
 
 function A_FDRedShield(actor, var1, var2)
 	if not (actor and actor.valid) then return end
-	A_GiveShield(actor, RM_FD_REDSHIELD_VARIANTS[actor.rmFDAltOption or 0], var2)
+	A_GiveShield(actor, RM_FD_REDSHIELD_VARIANTS[1], var2)
 end
 
 addHook("MobjFuse", RM_FDMonitorFuseThink, MT_FDBOX_RED)
