@@ -7,6 +7,9 @@ local dofolder = function(file)
     dofile(folder.."/"..file)
 end
 
+folder = "Libraries"
+dofolder("Lib_CustomHUD.lua")
+
 dofile("BossObj_Freeslots")
 
 folder = "FinalDemo/RetroMonitors/FinalDemo"
