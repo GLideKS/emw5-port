@@ -1,9 +1,9 @@
 --TODO: Replace hud.add with the proper "HUD" hook
 
-if not finaldemo_character then rawset(_G, "finaldemo_character", {}) end
+if not FDChar then rawset(_G, "FDChar", {}) end
 
 local function EMWFDLifeIcon(v, p)
-	if not (p.mo and finaldemo_character[p.mo.skin]) then return end
+	if not (p.mo and FDChar[p.mo.skin]) then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
 	and not (maptol & TOL_NIGHTS) 
@@ -14,7 +14,7 @@ local function EMWFDLifeIcon(v, p)
 end
 
 local function EMWFDLifeX(v, p)
-	if not (p.mo and finaldemo_character[p.mo.skin])then return end
+	if not (p.mo and FDChar[p.mo.skin])then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
 	and not (maptol & TOL_NIGHTS)
@@ -28,12 +28,12 @@ end
 // Please note that not all of them are available, since those
 // names are shown as patches and not in-font texts.
 local function EMWIdentifier(v, p)
-	if not (p.mo and finaldemo_character[p.mo.skin]) then return end
+	if not (p.mo and FDChar[p.mo.skin]) then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
 	and not (maptol & TOL_NIGHTS)
 	and not G_RingSlingerGametype() then
-		v.draw(53, 161, v.cachePatch(finaldemo_character[p.mo.skin].name_graphic),V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
+		v.draw(53, 161, v.cachePatch(FDChar[p.mo.skin].name_graphic),V_SNAPTOLEFT|V_SNAPTOBOTTOM|V_PERPLAYER|V_HUDTRANS)
 	end
 end
 
@@ -41,7 +41,7 @@ end
 // original "X", character hudname and number from the original SRB2's life counter.
 // However, there's a twist: The WHOLE life number code has to be rewritten.
 local function EMWFDLifeCounter(v, p)
-	if not (p.mo and finaldemo_character[p.mo.skin]) then return end
+	if not (p.mo and FDChar[p.mo.skin]) then return end
 	
 	if not (p.powers[pw_carry] == CR_NIGHTSMODE)
 	and not (maptol & TOL_NIGHTS)
@@ -360,7 +360,7 @@ addHook("PlayerThink", function(p)
 		return
 	end
 	
-	if finaldemo_character[p.mo.skin] then
+	if FDChar[p.mo.skin] then
 		if not p.hudchanged then
 			if hud.enabled("lives") then
 				hud.disable("lives")

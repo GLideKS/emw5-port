@@ -120,18 +120,12 @@ local function P_DoOldFiring(p)
 		if pw[pw_infinityring]
 			mo = P_SpawnPlayerMissile(p.mo, MT_THROWNINFINITY, 0)
 		else
-            if finaldemo_character[p.mo.skin] and finaldemo_character[p.mo.skin].slingitem then
-                mo = P_SpawnPlayerMissile(p.mo, finaldemo_character[p.mo.skin].slingitem, 0)
-
-			    if mo
-				    P_ColorTeamMissile(mo, p)
-			    end
+            if FDChar[p.mo.skin] then
+                mo = P_SpawnPlayerMissile(p.mo, FDChar[p.mo.skin].slingitem or MT_REDRING, 0)
+				if mo then P_ColorTeamMissile(mo, p) end
             else
                 mo = P_SpawnPlayerMissile(p.mo, MT_REDRING, 0)
-
-			    if mo
-				    P_ColorTeamMissile(mo, p)
-			    end
+				if mo then P_ColorTeamMissile(mo, p) end
             end
 		end
 

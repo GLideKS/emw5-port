@@ -1,7 +1,8 @@
-if not finaldemo_character then rawset(_G, "finaldemo_character", {}) end
-finaldemo_character["emwbrad"] = {
+if not FDChar then rawset(_G, "FDChar", {}) end
+FDChar["emwbrad"] = {
 	name_graphic = "STBRADN",
 	slingitem = MT_ROCKET,
+	ringslinger = true,
 	skiptransform = true,
 	oldglide = true
 }
