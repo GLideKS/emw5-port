@@ -6,8 +6,6 @@ A custom slingitem in final demo acts as an Object replace for MT_REDRING
 and you're able to shoot it on non-ringslinger modes if desired
 */
 
-if not FDChar then rawset(_G, "FDChar", {}) end
-
 --we gotta play this sound manually if we want to use custom slingitem's seesound
 --Since there's no way to directly replace MT_REDRING completely on spawn.
 mobjinfo[MT_REDRING].seesound = sfx_none
@@ -36,6 +34,7 @@ addHook("MobjSpawn", function(mo)
 end, MT_REDRING)
 
 --Do ringslinger in non-ringslinger gamemodes for slingitem characters
+--Or those who has ringslinger enabled
 --That's how it works in Final Demo
 addHook("PlayerThink", function(p)
 	if not (p and p.mo and p.mo.valid and p.playerstate == PST_LIVE and p.rings) then return end

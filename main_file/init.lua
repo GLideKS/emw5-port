@@ -8,7 +8,7 @@ local dofolder = function(file)
 end
 
 folder = "Libraries"
-dofolder("Lib_CustomHUD.lua")
+dofolder("exec")
 
 dofile("BossObj_Freeslots")
 
@@ -47,17 +47,13 @@ dofolder("LUA_OCOM.txt")
 
 folder = "FinalDemo"
 
-dofolder("FDHud.lua")
 dofolder("Old Level Title.lua")
 dofolder("Legacy Replacements.lua")
 dofolder("FD Weapon System.lua")
-dofolder("Slingitem.lua")
 dofolder("Old Thok.lua")
-dofolder("Old Anims.lua")
 dofolder("Old Glide.lua")
 dofolder("Old Supers.lua")
 dofolder("Old Smoke.lua")
-dofolder("Taunts.lua")
 
 folder = "FinalDemo/RetroBosses"
 
