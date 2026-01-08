@@ -53,7 +53,6 @@ dofolder("Old Glide.lua")
 dofolder("Old Supers.lua")
 dofolder("Old Smoke.lua")
 
-dofile("LUA_LNDF")
 --Eggmanway5 Scripts
 dofile("Freeslot_main")
 dofile("LUA_XPDL")
