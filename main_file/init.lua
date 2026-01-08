@@ -10,9 +10,6 @@ end
 folder = "Libraries"
 dofolder("exec")
 
-dofile("Freeslot_main")
-dofile("BossObj_Freeslots")
-
 folder = "FinalDemo/RetroMonitors/FinalDemo"
 
 dofolder("FDBoxCommon.lua") -- Final Demo Monitor Commonalities
@@ -57,8 +54,18 @@ dofolder("Old Supers.lua")
 dofolder("Old Smoke.lua")
 
 dofile("LUA_LNDF")
+--Eggmanway5 Scripts
+dofile("Freeslot_main")
 dofile("LUA_XPDL")
+dofile("Ammo")
+dofile("Sound Definitions")
+dofile("Enemies")
+dofile("Egg Mobile")
+dofile("Metal_Guardian")
 dofile("Metal")
+dofile("Brad")
+dofile("Ambience_1")
+dofile("Cutscenes")
 
 folder = "FinalDemo/RetroBosses"
 
