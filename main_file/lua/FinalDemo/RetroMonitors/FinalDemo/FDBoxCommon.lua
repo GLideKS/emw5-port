@@ -98,12 +98,13 @@ end
 rawset(_G, "RM_FDMonitorTypeSpawn", function(mo, mthing)
 	if not (mo and mo.valid and mthing and mthing.valid) then return end
 
+	local is_emw5 = mapheaderinfo[gamemap].emw5
 	if udmf then
 		-- 1 = 1.09-1.09.4 behavior
 		-- 2 = 1.08 behavior
 		-- 3 = 2K3-1.04 behavior
 		-- 4 = 1.1 (IRC Match beta) behavior
-		mo.rmFDAltOption = max(min(mthing.args[3], 4), 0)
+		mo.rmFDAltOption = (is_emw5 and 1) or max(min(mthing.args[3], 4), 0)
 
 		if not mthing.args[2] then
 			if mo.rmFDAltOption > 1 then
@@ -131,7 +132,7 @@ rawset(_G, "RM_FDMonitorTypeSpawn", function(mo, mthing)
 		-- 2 = 1.08 behavior
 		-- 3 = 2K3-1.04 behavior
 		-- 4 = 1.1 (IRC Match beta) behavior
-		mo.rmFDAltOption = max(min(mthing.extrainfo, 4), 0)
+		mo.rmFDAltOption = (is_emw5 and 1) or max(min(mthing.extrainfo, 4), 0)
 
 		if not (mthing.options & MTF_EXTRA) then
 			if mo.rmFDAltOption > 1 then
