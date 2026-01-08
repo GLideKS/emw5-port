@@ -164,6 +164,20 @@ rawset(_G, "RM_FDMonitorTypeSpawn", function(mo, mthing)
 				P_RemoveMobj(mo)
 				return
 			end
+		elseif altoption > 0 then -- Normal, 2K3-1.1 removed monitors if they were turned off in the settings
+			local shieldMonitors = RM_DetermineShieldVariants(mo)
+			if mo.type == shieldMonitors[3] and not CV_FindVar("tv_forceshield").value then P_RemoveMobj(mo); return end
+			if mo.type == MT_FDBOX_YELLOW and not CV_FindVar("tv_ringshield").value then P_RemoveMobj(mo); return end
+			if mo.type == shieldMonitors[2] and not CV_FindVar("tv_watershield").value then P_RemoveMobj(mo); return end
+			if mo.type == shieldMonitors[4] and not CV_FindVar("tv_bombshield").value then P_RemoveMobj(mo); return end
+			if mo.type == shieldMonitors[1] and not CV_FindVar("tv_jumpshield").value then P_RemoveMobj(mo); return end
+			if mo.type == MT_FDBOX_SHOES and not CV_FindVar("tv_supersneaker").value then P_RemoveMobj(mo); return end
+			if mo.type == MT_FDBOX_1UP then P_RemoveMobj(mo); return end -- no meaning in CTF/tag/chaos/match -1.09.4 code
+			if mo.type == MT_FDBOX_RING and not CV_FindVar("tv_superring").value then P_RemoveMobj(mo); return end
+			if mo.type == MT_FDBOX_SRING and not CV_FindVar("tv_recycler").value then P_RemoveMobj(mo); return end
+			if mo.type == MT_FDBOX_INVIN and not CV_FindVar("tv_invincibility").value then P_RemoveMobj(mo); return end
+			if mo.type == MT_FDBOX_EGGMAN and not CV_FindVar("tv_eggman").value then P_RemoveMobj(mo); return end
+			if mo.type == MT_FDBOX_MIXUP and not CV_FindVar("tv_teleporter").value then P_RemoveMobj(mo); return end
 		end
 	end
 end)
