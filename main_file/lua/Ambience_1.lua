@@ -141,14 +141,7 @@ freeslot(
 "S_WARPEDTREE",
 "MT_METALTAUNT",
 "S_METALLOOK",
-"S_METALSAYS",
-"MT_TITLEMETAL",
-"MT_TITLEMETAL2",
-"S_TITLEMETAL1",
-"S_TITLEMETAL2",
-"S_TITLEMETAL3",
-"S_TITLEMETAL4",
-"S_TITLEMETAL5"
+"S_METALSAYS"
 )
 
 --SpinFire Smoke
@@ -631,43 +624,6 @@ mobjinfo[MT_SMETALFLYBY1] = {
 }
 
 states[S_SMETALFLYBY4] = {SPR_EGGM, B, 1, nil, 0, 0, S_NULL}
-
---TITLEMETAL 2
-mobjinfo[MT_TITLEMETAL2] = {
-    --$Category Decoration
-    --$Name Metal Title 2
-    --$Sprite EGGMD1
-    doomednum = 2107,
-    spawnstate = S_TITLEMETAL5,
-    spawnhealth = 1000,
-    reactiontime = 8,
-    radius = 2621440,
-    height = 9175040,
-    mass = 100,
-    flags = MF_NOGRAVITY|MF_NOCLIP|MF_FLOAT|MF_SCENERY
-}
-
-states[S_TITLEMETAL5] = {SPR_EGGM, D, 0, nil, 0, 0, S_TITLEMETAL5}
-
---TITLEMETAL
-mobjinfo[MT_TITLEMETAL] = {
-    --$Category Decoration
-    --$Name Metal Title
-    --$Sprite EGGMB3B7
-    doomednum = 2106,
-    spawnstate = S_TITLEMETAL1,
-    spawnhealth = 1000,
-    reactiontime = 8,
-    radius = 2621440,
-    height = 9175040,
-    mass = 100,
-    flags = MF_NOGRAVITY|MF_NOCLIP|MF_FLOAT|MF_SCENERY
-}
-
-states[S_TITLEMETAL1] = {SPR_EGGM, D, 200, nil, 0, 0, S_TITLEMETAL2}
-states[S_TITLEMETAL2] = {SPR_EGGM, B, 1, A_MoveRelative, 0, 75, S_TITLEMETAL3}
-states[S_TITLEMETAL3] = {SPR_EGGM, B, 1, A_PlaySound, sfx_mtl01, 0, S_TITLEMETAL4}
-states[S_TITLEMETAL4] = {SPR_EGGM, C, 1, A_SmokeTrailer, MT_SMETALFLYBY1, 0, S_TITLEMETAL4}
 
 --EggmanDead
 mobjinfo[MT_DEADEGG] = {
