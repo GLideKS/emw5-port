@@ -98,24 +98,6 @@ local function Spawn33FU(mobj, mapthing)
 			mobj.z = mobj.floorz
 		end
 	end
-	
-	// Spawn a spike ball shield if the ambush flag is set
-	if (mapthing.options & MTF_AMBUSH)
-		local spikemobj
-		for i = 0, 3, 1 do
-			spikemobj = P_SpawnMobj(mobj.x, mobj.y, mobj.z, MT_SPIKEBALL)
-			spikemobj.target = mobj
-			if i == 0
-				spikemobj.angle = 0
-			elseif i == 1
-				spikemobj.angle = ANGLE_90
-			elseif i == 2
-				spikemobj.angle = ANGLE_180
-			elseif i == 3
-				spikemobj.angle = ANGLE_270
-			end
-		end
-	end
 end
 
 // The Egg Mobile originally bounced off of players instead of going through them in "SKULLFLY" mode
