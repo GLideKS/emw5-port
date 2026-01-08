@@ -18,6 +18,7 @@ dofolder("FDShoesBox.lua") -- Final Demo Super Sneakers Monitor
 dofolder("FDInvinBox.lua") -- Final Demo Invincibility Monitor
 dofolder("FD1upBox.lua") -- Final Demo 1up Monitor
 dofolder("FDBlueBox.lua") -- Final Demo Blue Shield Monitor
+dofolder("FDGreenBox.lua") -- Final Demo Green Shield Monitor
 dofolder("FDBlackBox.lua") -- Final Demo Black Shield Monitor
 dofolder("FDRedBox.lua") -- Final Demo Red Shield Monitor
 dofolder("FDYellowBox.lua") -- Final Demo Yellow (Attraction) Shield Monitor
