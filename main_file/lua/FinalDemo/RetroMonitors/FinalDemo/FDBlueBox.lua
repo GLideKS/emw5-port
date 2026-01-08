@@ -26,7 +26,7 @@ local RM_FD_BLUESHIELD_VARIANTS = {
 
 function A_FDBlueShield(actor, var1, var2)
 	if not (actor and actor.valid) then return end
-	A_GiveShield(actor, RM_FD_BLUESHIELD_VARIANTS[2], var2)
+	A_GiveShield(actor, RM_FD_BLUESHIELD_VARIANTS[actor.rmFDAltOption or 0], var2)
 end
 
 addHook("MobjFuse", RM_FDMonitorFuseThink, MT_FDBOX_BLUE)
