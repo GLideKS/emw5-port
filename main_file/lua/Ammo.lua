@@ -73,7 +73,8 @@ mobjinfo[MT_BRADROCKET] = {
     flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_MISSILE
 }
 
-states[S_BRADROCKET] = {SPR_MISL, A, 1, A_DualAction, S_ROCKET, S_CYBRAKDEMONMISSILE, S_BRADROCKET}
+states[S_ROCKET].nextstate = S_BRADROCKET
+states[S_BRADROCKET] = {SPR_MISL, FF_FULLBRIGHT|A, 1, A_MoveRelative, 0, 0, S_ROCKET}
 
 mobjinfo[MT_ROCKET] = {
     doomednum = -1,
