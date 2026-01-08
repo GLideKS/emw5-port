@@ -24,7 +24,7 @@ freeslot("MT_EMWSHADOW_CHAOSBLAST",
 
 mobjinfo[MT_EMWSHADOW_CHAOSBLAST] = {
     doomednum = -1,
-	seesound = sfx_CHS02,
+	seesound = sfx_chs02,
 	spawnstate = S_EMWSHADOW_CHAOSBLAST_1,
     spawnhealth = 1000,
 	reactiontime = 8,
