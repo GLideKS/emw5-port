@@ -10,6 +10,7 @@ end
 folder = "Libraries"
 dofolder("exec")
 
+dofile("Freeslot_main")
 dofile("BossObj_Freeslots")
 
 folder = "FinalDemo/RetroMonitors/FinalDemo"
@@ -55,6 +56,10 @@ dofolder("Old Glide.lua")
 dofolder("Old Supers.lua")
 dofolder("Old Smoke.lua")
 
+dofile("LUA_LNDF")
+dofile("LUA_XPDL")
+dofile("Metal")
+
 folder = "FinalDemo/RetroBosses"
 
 dofolder("BossDeath.lua")
@@ -69,6 +74,3 @@ dofolder("OldSlimerGoop")
 folder = "FinalDemo/RetroBosses/FinalDemo"
 
 dofolder("FDEggSlimer")
-
-dofile("LUA_LNDF")
-dofile("LUA_XPDL")
