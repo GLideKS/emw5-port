@@ -164,3 +164,58 @@ states[S_CLASSICMTLX_MISSILEATK2] = {SPR_EGGM, FF_FULLBRIGHT|B, 1, A_FireShot, M
 states[S_CLASSICMTLX_RAISE1783]  = {SPR_EGGM, FF_FULLBRIGHT|B, 1, A_SkullAttack, 0, 0, S_CLASSICMTLX_RAISE1784}
 states[S_CLASSICMTLX_RAISE1784]  = {SPR_EGGM, FF_FULLBRIGHT|B, 1, A_FireShot, MT_JETTBULLET, 4, S_CLASSICMTLX_RAISE1783}
 states[S_CLASSICMTLX_PAIN1785]   = {SPR_EGGM, FF_FULLBRIGHT|B, 26, A_Pain, 0, 0, S_CLASSICMTLX_STND}
+
+--Workaround to collide with metals despite having MF_NOCLIPTHING like in final demo
+
+freeslot("MT_DUMMYCOLLIDE")
+mobjinfo[MT_DUMMYCOLLIDE] = {
+    spawnstate = S_INVISIBLE,
+    deathstate = S_NULL,
+    radius = 1*FU,
+    height = 1*FU,
+    flags = MF_NOGRAVITY|MF_FLOAT
+}
+
+addHook("MobjSpawn", function(mo)
+    local dummycollide = P_SpawnMobjFromMobj(mo, 0,0,0, MT_DUMMYCOLLIDE)
+    dummycollide.target = mo
+end, MT_CLASSICMETAL)
+
+addHook("MobjThinker", function(mo)
+    if not (mo and mo.valid) then return end
+    local t = mo.target
+    if t then 
+        P_MoveOrigin(mo, t.x, t.y, t.z)
+        if mo.scale != t.scale then mo.scale = t.scale end
+        if mo.radius != t.radius then mo.radius = t.radius end
+    else 
+        P_RemoveMobj(mo)
+    end
+end, MT_DUMMYCOLLIDE)
+
+local function ZCollide(mo1,mo2)
+	if (mo1.z > mo2.z + mo2.height) then return false; end
+	if (mo2.z > mo1.z + mo1.height) then return false; end
+	return true
+end
+
+local function dummycollide(mo, pmo)
+    if not ((mo and mo.valid) and (pmo and pmo.valid)) then return end
+    if not mo.target then return end
+    if not ZCollide(mo, pmo) then return end
+    if not (
+        (pmo.player and P_PlayerCanDamage(pmo.player, mo))
+        or (pmo.flags & MF_MISSILE)
+    ) then return end
+    if (mo.target.flags2 & MF2_FRET) then return end
+
+    local angle = R_PointToAngle2(mo.x, mo.y, pmo.x, pmo.y)
+    if pmo.player then
+        P_InstaThrust(pmo, pmo.angle+angle, pmo.player.speed)
+        P_SetObjectMomZ(pmo, -pmo.momz)
+    end
+    P_DamageMobj(mo.target, pmo, pmo.target or pmo)
+    return true
+end
+addHook("MobjCollide", dummycollide, MT_DUMMYCOLLIDE)
+addHook("MobjMoveCollide", dummycollide, MT_DUMMYCOLLIDE)
