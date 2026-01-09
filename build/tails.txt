@@ -1,0 +1,3 @@
+$basepath characters/tails
+$output out/characters/CL_TailsEMW_v3_GLideKSPort_Srb2-2.2.pk3
+**

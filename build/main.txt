@@ -1,4 +1,4 @@
 $basepath main_file/
-$output out/Emw5base_22.pk3
+$output out/VSL_emw5base-v3_GLideKSPort_Srb2-2.2.pk3
 
 **

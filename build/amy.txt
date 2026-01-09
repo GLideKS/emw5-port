@@ -1,0 +1,3 @@
+$basepath characters/amy
+$output out/characters/CL_Amyemw_v3_GLideKSPort_Srb2-2.2.pk3
+**
