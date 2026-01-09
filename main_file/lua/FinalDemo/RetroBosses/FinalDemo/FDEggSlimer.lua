@@ -294,8 +294,6 @@ function A_FDBoss2TakeDamage(actor, var1, var2)
 	A_Boss2TakeDamage(actor, 24+TICRATE, 0)
 end
 
-freeslot("sfx_meet")
-
 states[S_FDEGGMOBILE2_PAIN] =	{SPR_FDES,	D,	24,	A_FDBoss2TakeDamage,	0,	0,	S_FDEGGMOBILE2_STND}
 states[S_FDEGGMOBILE2_PAIN2] =	{SPR_FDES,	D,	24,	A_FDBoss2TakeDamage,	0,	0,	S_FDEGGMOBILE2_POGO4}
 

@@ -97,5 +97,6 @@ freeslot(
 "SFX_BRDDTH",
 "SFX_MTL04",
 "SFX_MTL05",
-"SFX_METLX"
+"SFX_METLX",
+"SFX_MEET"
 )
