@@ -69,7 +69,7 @@ end, MT_FDBOX_RING)
 
 mobjinfo[MT_FDBOX_RING] = {
 	--$Name Final Demo Super Ring (10 Rings)
-	--$Sprite FBXRA0
+	--$Sprite FBXRA1
 	--$Category Monitors
 	--$Flags4Text Random (Strong)
 	--$Flags8Text Random (Weak) / Random (Pre-2.0)
@@ -131,7 +131,7 @@ end, MT_FDBOX_SRING)
 
 mobjinfo[MT_FDBOX_SRING] = {
 	--$Name Final Demo Silver Ring (25 Rings)
-	--$Sprite FBXRC0
+	--$Sprite FBXRC1
 	--$Category Monitors
 	--$Flags4Text Random (Strong)
 	--$Flags8Text Random (Weak) / Random (Pre-2.0)

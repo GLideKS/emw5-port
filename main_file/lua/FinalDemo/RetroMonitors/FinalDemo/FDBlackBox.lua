@@ -30,7 +30,7 @@ end, MT_FDBOX_BLACK)
 
 mobjinfo[MT_FDBOX_BLACK] = {
 	--$Name Final Demo Black Shield
-	--$Sprite FBXKA0
+	--$Sprite FBXKA1
 	--$Category Monitors
 	--$Flags1Text Don't "Era-Swap" Shield
 	--$Flags4Text Random (Strong)

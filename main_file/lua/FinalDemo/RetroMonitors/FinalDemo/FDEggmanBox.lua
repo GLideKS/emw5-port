@@ -24,7 +24,7 @@ end, MT_FDBOX_EGGMAN)
 
 mobjinfo[MT_FDBOX_EGGMAN] = {
 	--$Name Final Demo Eggman
-	--$Sprite FBXMA0
+	--$Sprite FBXMA1
 	--$Category Monitors
 	--$Flags4Text Random (Strong)
 	--$Flags8Text Random (Weak) / Random (Pre-2.0)

@@ -29,7 +29,7 @@ end, MT_FDBOX_WHITE)
 
 mobjinfo[MT_FDBOX_WHITE] = {
 	--$Name Final Demo White (Whirlwind) Shield
-	--$Sprite FBXWA0
+	--$Sprite FBXWA1
 	--$Category Monitors
 	--$Flags1Text Don't "Era-Swap" Shield
 	--$Flags4Text Random (Strong)

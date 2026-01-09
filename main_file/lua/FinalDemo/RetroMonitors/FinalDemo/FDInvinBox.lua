@@ -15,7 +15,7 @@ addHook("MapThingSpawn", RM_FDMonitorTypeSpawn, MT_FDBOX_INVIN)
 
 mobjinfo[MT_FDBOX_INVIN] = {
 	--$Name Final Demo Invincibility
-	--$Sprite FBXIA0
+	--$Sprite FBXIA1
 	--$Category Monitors
 	--$Flags4Text Random (Strong)
 	--$Flags8Text Random (Weak) / Random (Pre-2.0)

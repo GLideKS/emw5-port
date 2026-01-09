@@ -11,7 +11,7 @@ addHook("MapThingSpawn", RM_FDMonitorTypeSpawn, MT_FDBOX_QUESTION)
 
 mobjinfo[MT_FDBOX_QUESTION] = {
 	--$Name Final Demo Mystery Monitor
-	--$Sprite FBXME0
+	--$Sprite FBXME1
 	--$Category Monitors
 	--$Flags4Text Random (Strong)
 	--$Flags8Text Random (Weak) / Random (Pre-2.0)

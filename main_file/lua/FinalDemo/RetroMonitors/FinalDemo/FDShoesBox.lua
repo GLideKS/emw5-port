@@ -15,7 +15,7 @@ addHook("MapThingSpawn", RM_FDMonitorTypeSpawn, MT_FDBOX_SHOES)
 
 mobjinfo[MT_FDBOX_SHOES] = {
 	--$Name Final Demo Super Sneakers
-	--$Sprite FBXSA0
+	--$Sprite FBXSA1
 	--$Category Monitors
 	--$Flags4Text Random (Strong)
 	--$Flags8Text Random (Weak) / Random (Pre-2.0)

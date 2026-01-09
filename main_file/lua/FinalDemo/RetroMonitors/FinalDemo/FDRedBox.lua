@@ -45,7 +45,7 @@ end, MT_FDBOX_RED)
 
 mobjinfo[MT_FDBOX_RED] = {
 	--$Name Final Demo Red Shield
-	--$Sprite FBXEA0
+	--$Sprite FBXEA1
 	--$Category Monitors
 	--$Flags1Text Don't "Era-Swap" Shield
 	--$Flags4Text Random (Strong)

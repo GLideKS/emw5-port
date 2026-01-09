@@ -44,7 +44,7 @@ end, MT_FDBOX_BLUE)
 
 mobjinfo[MT_FDBOX_BLUE] = {
 	--$Name Final Demo Blue Shield
-	--$Sprite FBXBA0
+	--$Sprite FBXBA1
 	--$Category Monitors
 	--$Flags1Text Don't "Era-Swap" Shield
 	--$Flags4Text Random (Strong)

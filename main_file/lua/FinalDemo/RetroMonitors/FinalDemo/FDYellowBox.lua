@@ -25,7 +25,7 @@ end, MT_FDBOX_YELLOW)
 
 mobjinfo[MT_FDBOX_YELLOW] = {
 	--$Name Final Demo Yellow (Attraction) Shield
-	--$Sprite FBXYA0
+	--$Sprite FBXYA1
 	--$Category Monitors
 	--$Flags1Text Don't "Era-Swap" Shield
 	--$Flags4Text Random (Strong)

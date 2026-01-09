@@ -86,7 +86,7 @@ addHook("MapThingSpawn", RM_FDMonitorTypeSpawn, MT_FDBOX_1UP)
 
 mobjinfo[MT_FDBOX_1UP] = {
 	--$Name Final Demo Extra Life
-	--$Sprite FBX1A0
+	--$Sprite FBX1A1
 	--$Category Monitors
 	--$Flags4Text Random (Strong)
 	--$Flags8Text Random (Weak) / Random (Pre-2.0)

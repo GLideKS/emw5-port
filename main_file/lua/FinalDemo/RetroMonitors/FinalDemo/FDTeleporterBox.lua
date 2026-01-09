@@ -14,7 +14,7 @@ addHook("MapThingSpawn", RM_FDMonitorTypeSpawn, MT_FDBOX_MIXUP)
 
 mobjinfo[MT_FDBOX_MIXUP] = {
 	--$Name Final Demo Teleporter
-	--$Sprite FBXMF0
+	--$Sprite FBXMF1
 	--$Category Monitors
 	--$Flags4Text Random (Strong)
 	--$Flags8Text Random (Weak) / Random (Pre-2.0)
