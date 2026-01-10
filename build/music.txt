@@ -1,0 +1,3 @@
+$basepath music_files/
+$output out/emw5music_GLideKSPort_Srb2-2.2_V0.98.pk3
+**
