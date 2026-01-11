@@ -1,0 +1,30 @@
+Conversion related
+- Converted all maps to UDMF
+- Converted all graphics for SRB2 Palette
+- Imported some flat and textures from SRB2 v1.09.4
+- All Sounds have been renamed to leave the FREXXX freeslot naming.
+- Most sprites have been moved to LongSprites to leave the F00X freeslot naming.
+- All states have been renamed properly to leave the freeslot restricted states
+- Characters with super frames uses the super marker and the proper sprites, required for SRB2 v2.2
+- Disabled vanilla characters on single player.
+- Ported all 142 emblems position manually with the level editor.
+- Bosses doesn't give 10 rings at start, as in the original.
+
+Needed edits
+- Some graphics are required to be renamed to show them as intended (like the boot up graphic)
+- On Shrine map, I had to edit a single sector to properly show the bustable block due to 2.2 rendering.
+- ERSKYXX textures has been merged into one. those are a splitted sky texture.
+- External files like .bat has been edited to match their current port files to play as intended
+- All torches has coronas enabled
+
+Script related
+- Used Lua to automatically replace 2.2 monitors with RetroMonitors
+- Added a collide workaround with lua to be able to hit Classic Metal Sonics due to behavior differences with MF_NOCLIPTHING between both SRB2 version.
+- Coded Dark Brad's deathball damage from scratch for accuracy with the original mod.
+- Using FD Character Library to replicate past character features from Final demo (Like HUD, slingitem, etc)
+- Included some RetroBosses and RetroMonitors code by MIDIMan (with their intended visuals for EMW5)
+- SRB2 The Past (Old A_Boss1Chase, Final demo colors, Old Crawla Commander, Final Demo Zim's Base)
+- Transfered all SOC definitions to Lua soc definitions, perserving their actions and states. However, I required to add some extra states to make behavior accurate to the original.
+- Characters also contain Lua scripting to replicate their slingitems (FD Character Library), final demo behaviors, old glide, old super colors, etc.
+
+The original mod can be found here: https://drive.google.com/file/d/1LfpgQ1u6CYiuoS0Uj0MU2OWSw9fWzmZF/view
