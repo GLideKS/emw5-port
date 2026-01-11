@@ -809,7 +809,7 @@ Lua.emw5 = true
 Level 61
 Levelname = Classic PyramidCave
 Act = 1
-Music = MAP07M
+Music = FDEMO5
 NextLevel = 62
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 29
