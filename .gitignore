@@ -26,3 +26,4 @@ package-lock.json
 *.autosave10
 *.bak
 *.pk3
+*.zip
