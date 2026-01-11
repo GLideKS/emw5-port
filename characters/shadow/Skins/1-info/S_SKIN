@@ -1,6 +1,6 @@
 name = EMWShadow
 ability = CA_NONE
-flags = SF_NOSPINDASHDUST|SF_NOSKID|SF_RUNONWATER
+flags = SF_NOSPINDASHDUST|SF_NOSKID|SF_RUNONWATER|SF_SUPER
 normalspeed = 36
 thrustfactor = 3
 accelstart = 50
