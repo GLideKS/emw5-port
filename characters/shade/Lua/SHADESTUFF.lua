@@ -72,6 +72,16 @@ addHook("PlayerThink", function(p)
 			p.revitem = MT_SHADESPIN
 			p.spinitem = MT_SHADESPIN
 		end
+		
+		if p.playerstate == PST_DEAD then return end
+		
+		--Do rolling after a glide
+		if (p.pflags & PF_GLIDING) and not (p.cmd.buttons & BT_JUMP)
+		and not P_IsObjectOnGround(p.mo) then
+			P_ResetPlayer(p)
+			p.mo.state = S_PLAY_ROLL
+			p.pflags = ($ | PF_JUMPED)
+		end
 	end
 end)
 
@@ -82,8 +92,7 @@ FDChar["emwshade"] = {
 	slingitem = MT_SHADESLING,
 	ringslinger = true,
 	skiptransform = true,
-	oldglide = true,
-	oldglide_rolloff = true
+	oldglide = true
 }
 
 --Wall checks from Nick WolfFang, prevents Shade to climb
