@@ -13,8 +13,19 @@ local function FDLives(v, p)
 	v.drawScaled(16*FRACUNIT, 161*FRACUNIT, 1*FRACUNIT, face, flags, v.getColormap(p.mo.skin, p.mo.color))
 	
 	--Graphic Name
-	local graphic_name = v.cachePatch(fdchar.name_graphic)
-	v.draw(53, 161, v.cachePatch(fdchar.name_graphic), flags)
+	local gname = {
+		x = 53,
+		y = 161
+	}
+	
+	local graphic_name = fdchar.name_graphic and v.cachePatch(fdchar.name_graphic)
+	local alt_name = skins[p.mo.skin].hudname or skins[p.mo.skin].realname or skins[p.mo.skin].name
+	
+	if graphic_name then
+		v.draw(gname.x, gname.y, v.cachePatch(fdchar.name_graphic), flags)
+	else
+		customhud.CustomFontString(v, gname.x, gname.y, string.upper(alt_name), "FDNAM", flags)
+	end
 	
 	--Lives X
 	local livex = v.cachePatch("STFINLX")
