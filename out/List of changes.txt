@@ -1,5 +1,5 @@
 Conversion related
-- Converted all maps to UDMF
+- Ported and converted all maps to UDMF
 - Converted all graphics for SRB2 Palette
 - Imported some flat and textures from SRB2 v1.09.4
 - All Sounds have been renamed to leave the FREXXX freeslot naming.
