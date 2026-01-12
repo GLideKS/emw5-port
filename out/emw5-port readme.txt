@@ -5,5 +5,7 @@ It's recommended that you open the game with the provided batch files to play th
 Recommended settings
 
 Pallete rendering: off
-legacy shaders (optional): https://mb.srb2.org/addons/legacy-shaders.8271/
 Play style: Strafe or Manual
+Assign yourself the fire button please lol
+legacy shaders (optional): https://mb.srb2.org/addons/legacy-shaders.8271/
+if needed, turn off shaders. some levels has the brightress too low.
