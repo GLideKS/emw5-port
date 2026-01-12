@@ -1,15 +1,15 @@
--- Retro Monitors - init.lua
--- Created by MIDIMan
-
 local folder = ""
 
 local dofolder = function(file)
     dofile(folder.."/"..file)
 end
 
+--Load Libraries and freeslots
+dofile("Freeslot_main")
 folder = "Libraries"
 dofolder("exec")
 
+--Retro Monitors
 folder = "FinalDemo/RetroMonitors/FinalDemo"
 
 dofolder("FDBoxCommon.lua") -- Final Demo Monitor Commonalities
@@ -36,6 +36,7 @@ dofolder("FDShieldOrb.lua")
 dofolder("ShieldEra.lua")
 dofolder("FDInfernoShield.lua")
 
+--SRB2 The Past
 folder = "FinalDemo/Common"
 
 dofolder("LUA_CCOM.txt")
@@ -44,6 +45,7 @@ folder = "FinalDemo/Crawla Commander FD"
 
 dofolder("LUA_OCOM.txt")
 
+--Final Demo system replica
 folder = "FinalDemo"
 
 dofolder("Old Level Title.lua")
@@ -55,7 +57,7 @@ dofolder("Old Supers.lua")
 dofolder("Old Smoke.lua")
 
 --Eggmanway5 Scripts
-dofile("Freeslot_main")
+
 dofile("LUA_XPDL")
 dofile("Ammo")
 dofile("Sound Definitions")
@@ -67,16 +69,17 @@ dofile("Brad")
 dofile("Ambience_1")
 dofile("Cutscenes")
 
+--Retro Bosses
+
 folder = "FinalDemo/RetroBosses"
 
-dofolder("BossDeath.lua")
-dofolder("Behavior.lua")
-
-dofolder("RetroBossesCommon")
-dofolder("OldJetfumes")
-dofolder("EggSlimerCommon")
-dofolder("Pre21EggSlimerCommon")
-dofolder("OldSlimerGoop")
+dofolder("RetroBossesCommon") -- Retro Boss Commonalities
+dofolder("OldJetfumes") -- Old Jetfumes
+dofolder("Pre21EggMobileCommon") -- Pre-2.1 Egg Mobile Commonalities
+dofolder("OldSlimerGoop") -- Old Egg Slimer Goop
+dofolder("EggSlimerCommon") -- Egg Slimer Commonalities
+dofolder("Pre21EggSlimerCommon") -- Pre-2.1 Egg Slimer Commonalities
+dofolder("Behavior")
 
 folder = "FinalDemo/RetroBosses/FinalDemo"
 
