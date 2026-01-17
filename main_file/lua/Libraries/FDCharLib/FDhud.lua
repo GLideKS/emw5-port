@@ -32,35 +32,31 @@ local function FDLives(v, p)
 	v.draw(57, 185, livex, flags)
 	
 	--Lives count
-	local x,y = 81,182
+	local x,y = 89,182
 	local spacing = x - 8
-	local number = p.lives
+	
 	if p.lives <= 99 then
-		while (number) do
-			v.draw(x, 182, v.cachePatch("STTNUM"..(number % 10)), flags)
-			x = spacing
-			number = $ / 10
-		end
+		v.drawNum(x, y, p.lives, flags|V_OLDSPACING)
 	elseif (p.lives == INFLIVES) then
-		v.draw(x, 182, v.cachePatch("STTNUM9"), flags)
-		v.draw(spacing, 182, v.cachePatch("STTNUM9"), flags)
+		v.drawNum(x, y, 99, flags|V_OLDSPACING)
 	end
 end
-customhud.SetupItem("lives", "FDFeatures", FDLives)
 
 addHook("HUD", function(v, p)
 	if not p.mo then
 		if customhud.CheckType("lives") == "FDFeatures" then
 			customhud.SetupItem("lives", "vanilla")
 		end
-		return 
+		return
 	end
 	
 	if FDChar[p.mo.skin] and FDChar[p.mo.skin].fdhud != false then
 		if customhud.CheckType("lives") == "vanilla" then
 			customhud.SetupItem("lives", "FDFeatures")
 		end
-	else
+	elseif customhud.CheckType("lives") == "FDFeatures"
 		customhud.SetupItem("lives", "vanilla")
 	end
 end)
+
+customhud.SetupItem("lives", "FDFeatures", FDLives)
