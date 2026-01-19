@@ -39,6 +39,8 @@ local function FDLives(v, p)
 		v.drawNum(x, y, p.lives, flags|V_OLDSPACING)
 	elseif (p.lives == INFLIVES) then
 		v.drawNum(x, y, 99, flags|V_OLDSPACING)
+	elseif not p.lives then
+		v.drawNum(x, y, 0, flags|V_OLDSPACING)
 	end
 end
 
