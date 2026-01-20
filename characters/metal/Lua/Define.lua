@@ -6,5 +6,6 @@ FDChar["emwmetal"] = {
 	slingitem = MT_EMWMETAL_BOOST,
 	ringslinger = true,
 	skiptransform = true,
-	taunts = {sfx_metl01, sfx_metl01, sfx_mtl01, sfx_mtl01}
+	taunts = {sfx_metl01, sfx_metl01, sfx_mtl01, sfx_mtl01},
+	old_ability = true
 }

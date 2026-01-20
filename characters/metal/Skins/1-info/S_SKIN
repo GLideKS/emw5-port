@@ -1,7 +1,7 @@
 name = emwMetal
 face = METALIFE
 facename = MESONIC
-ability = 180
+ability = CA_FLOAT
 flags = SF_NOSPINDASHDUST|SF_NOSKID|SF_RUNONWATER
 normalspeed = 36
 thrustfactor = 5

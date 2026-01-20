@@ -92,7 +92,7 @@ FDChar["emwshade"] = {
 	slingitem = MT_SHADESLING,
 	ringslinger = true,
 	skiptransform = true,
-	oldglide = true
+	old_ability = true
 }
 
 --Wall checks from Nick WolfFang, prevents Shade to climb

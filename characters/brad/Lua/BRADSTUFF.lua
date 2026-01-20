@@ -4,5 +4,5 @@ FDChar["emwbrad"] = {
 	slingitem = MT_BRADROCKET,
 	ringslinger = true,
 	skiptransform = true,
-	oldglide = true
+	old_ability = true
 }

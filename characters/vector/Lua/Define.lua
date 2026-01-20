@@ -6,6 +6,6 @@ FDChar["emwvector"] = {
 	slingitem = MT_EMWVECTOR_ROCKTHROW,
 	ringslinger = true,
 	skiptransform = true,
-	oldglide = true,
+	old_ability = true,
 	taunts = {sfx_vect01, sfx_vect02}
 }
