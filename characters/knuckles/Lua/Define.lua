@@ -6,6 +6,6 @@ FDChar["emwknux"] = {
 	slingitem = MT_KNUXPUNCH,
 	ringslinger = true,
 	skiptransform = true,
-	oldglide = true,
+	old_ability = true,
 	taunts = {sfx_knux05, sfx_knux06}
 }
