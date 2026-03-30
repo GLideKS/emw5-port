@@ -2,7 +2,7 @@ local coronasloaded = false
 
 local function LoadCoronas() --Only load coronas if the system is loaded. This is not TsoURDt3rd coronas.
 if coronasloaded then return end
-if not LightObjects then return end
+if not LightingSystem_loaded then return end
 
 local explodestuff = {
     color = SKINCOLOR_ORANGE,
@@ -175,8 +175,8 @@ LightObjects[MT_TURRETLASER] = {
 LightObjects[MT_RING].scale = FU/3
 
 coronasloaded = true
+print("\131Eggmanway5 coronas definitions loaded.")
 end
 
-print("\131Eggmanway5 coronas definitions loaded.")
 LoadCoronas()
 addHook("AddonLoaded", LoadCoronas)
