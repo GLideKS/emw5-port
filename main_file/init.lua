@@ -6,8 +6,6 @@ end
 
 --Load Libraries and freeslots
 dofile("Freeslot_main")
-folder = "Libraries"
-dofolder("exec")
 
 --Retro Monitors
 folder = "FinalDemo/RetroMonitors/FinalDemo"

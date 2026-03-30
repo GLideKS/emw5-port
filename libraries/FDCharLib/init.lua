@@ -1,10 +1,16 @@
-dofile("Libraries/Lib_CustomHUD") --Custom HUD Library v4.6
-
-/*---F.D Character Library v1.2 by GLide KS---*/
+/*---F.D Character Library v1.1 by GLide KS---*/
 
 --set this if you have FD Char Lib inside a subfolder.
 --remember to end it with /
-local FDCharLib_root = "Libraries/FDCharLib/"
+local FDCharLib_root = ""
+
+/*
+Custom HUD Library v4.6
+
+In case your addon already counts with Custom HUD Library
+remove this dofile line, but make sure to load it BEFORE FD Character Lib
+*/
+dofile(FDCharLib_root.."Libraries/Lib_CustomHUD")
 
 if not FDChar then rawset(_G, "FDChar", {}) end
 if not FDLib_loaded then rawset(_G, "FDLib_loaded", false) end
