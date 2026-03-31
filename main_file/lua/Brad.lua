@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
 "MT_DARKBRAD",
 "MT_DARKBSHRINE",
 "S_DARKB_1820",

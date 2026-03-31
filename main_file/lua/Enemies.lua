@@ -1,4 +1,4 @@
-freeslot("S_SPOS_MOD1", "S_SPOS_MOD2")
+SafeFreeslot("S_SPOS_MOD1", "S_SPOS_MOD2")
 
 --Blue Crawla Mod
 mobjinfo[MT_BLUECRAWLA] = {

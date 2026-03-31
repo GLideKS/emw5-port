@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
 "MT_CLASSICMETAL",
 "MT_METALIX",
 "S_METALIX_STND1",
@@ -51,10 +51,10 @@ freeslot(
 --Metal Sonic (Hell)
 /*
 Note: Metal in final demo doesn't have MF_NOGRAVITY
-and floats around the map. 
+and floats around the map.
 
 But in srb2 v2.2.15 for some reason doesn't happen
-the same way despite having MF_FLOAT. 
+the same way despite having MF_FLOAT.
 
 Using MF_NOGRAVITY makes metal to float around the map.
 */
@@ -167,7 +167,7 @@ states[S_CLASSICMTLX_PAIN1785]   = {SPR_EGGM, FF_FULLBRIGHT|B, 26, A_Pain, 0, 0,
 
 --Workaround to collide with metals despite having MF_NOCLIPTHING like in final demo
 
-freeslot("MT_DUMMYCOLLIDE")
+SafeFreeslot("MT_DUMMYCOLLIDE")
 mobjinfo[MT_DUMMYCOLLIDE] = {
     spawnstate = S_INVISIBLE,
     deathstate = S_NULL,
@@ -184,11 +184,11 @@ end, MT_CLASSICMETAL)
 addHook("MobjThinker", function(mo)
     if not (mo and mo.valid) then return end
     local t = mo.target
-    if t then 
+    if t then
         P_MoveOrigin(mo, t.x, t.y, t.z)
         if mo.scale != t.scale then mo.scale = t.scale end
         if mo.radius != t.radius then mo.radius = t.radius end
-    else 
+    else
         P_RemoveMobj(mo)
     end
 end, MT_DUMMYCOLLIDE)

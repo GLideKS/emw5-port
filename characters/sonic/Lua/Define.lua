@@ -1,4 +1,4 @@
-freeslot("sfx_onic1", "sfx_onic6")
+SafeFreeslot("sfx_onic1", "sfx_onic6")
 
 if not FDChar then rawset(_G, "FDChar", {}) end
 FDChar["emwsonic"] = {

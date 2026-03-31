@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
 "MT_EMWEGG",
 "MT_EMWEGG_LINEDEF",
 "S_EMWEGG_1519",

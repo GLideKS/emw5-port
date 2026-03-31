@@ -1,4 +1,4 @@
-freeslot("sfx_vect01", "sfx_vect02")
+SafeFreeslot("sfx_vect01", "sfx_vect02")
 
 if not FDChar then rawset(_G, "FDChar", {}) end
 FDChar["emwvector"] = {

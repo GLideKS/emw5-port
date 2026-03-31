@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
 "MT_GUARDIANBODY",
 "MT_GUARDIANHEAD",
 "MT_GUARDLEFTHAND",

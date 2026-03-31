@@ -1,1 +1,2 @@
+dofile("Functions")
 dofile("Define")

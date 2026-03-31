@@ -2,13 +2,13 @@
 -- Use with FDBoxCommon.lua
 
 --[[
-The red shield in pre-2.0 versions was called the "Inferno Shield". It protected 
-the player from fire damage and disintegrated in water, but it also allowed the 
-player to spawn tiny flames while spinning, similar to the Elemental Shield. 
+The red shield in pre-2.0 versions was called the "Inferno Shield". It protected
+the player from fire damage and disintegrated in water, but it also allowed the
+player to spawn tiny flames while spinning, similar to the Elemental Shield.
 In 2.0, the red shield's behavior was switched to that of the Armageddon Shield.
 ]]
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBXE",
 	"MT_FDBOX_RED",
 	"MT_FDBOX_RED_ICON",

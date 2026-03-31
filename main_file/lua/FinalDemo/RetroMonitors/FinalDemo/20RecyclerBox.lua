@@ -1,7 +1,7 @@
 -- 2.0 Recycler Monitor - Ported by MIDIMan
 -- Use with FDBoxCommon.lua and FDMiscBoxCommon.lua
 
-freeslot(
+SafeFreeslot(
 	"MT_FDBOX_RECYCLE",
 	"MT_FDBOX_RECYCLE_ICON",
 	"S_FDBOX_RECYCLE_IDLE",

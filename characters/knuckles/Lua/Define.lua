@@ -1,4 +1,4 @@
-freeslot("sfx_knux05", "sfx_knux06")
+SafeFreeslot("sfx_knux05", "sfx_knux06")
 
 if not FDChar then rawset(_G, "FDChar", {}) end
 FDChar["emwknux"] = {

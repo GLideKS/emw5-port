@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
     "MT_EMWMETAL_BOOST",
     "S_EMWMETAL_BOOST_1750",
     "S_EMWMETAL_BOOST_1751",
@@ -30,8 +30,8 @@ states[S_EMWMETAL_BOOST_1752] = {SPR_EMW5_METALBOOST, 0, 1, A_SmokeTrailer, MT_O
 states[S_EMWMETAL_BOOST_1753] = {SPR_EMW5_METALBOOST, 0, 1, A_DualAction, S_EMWMETAL_BOOST_1752, S_EMWMETAL_BOOST_1750, S_EMWMETAL_BOOST_1754}
 states[S_EMWMETAL_BOOST_1754] = {SPR_EMW5_METALBOOST, 0, 1, A_DualAction, S_EMWMETAL_BOOST_1752, S_EMWMETAL_BOOST_1750, S_EMWMETAL_BOOST_1755}
 states[S_EMWMETAL_BOOST_1755] = {SPR_EMW5_METALBOOST, 0, 1, A_DualAction, S_EMWMETAL_BOOST_1752, S_EMWMETAL_BOOST_1750, S_EMWMETAL_BOOST_1756}
---state S_EMWMETAL_BOOST_1756 (S_FREESLOT405 (#1756) in the original mod) 
---originally mispelled the action wrong causing it to not do the intended action. 
+--state S_EMWMETAL_BOOST_1756 (S_FREESLOT405 (#1756) in the original mod)
+--originally mispelled the action wrong causing it to not do the intended action.
 --not gonna fix that here since that's how it is originally
 states[S_EMWMETAL_BOOST_1756] = {SPR_EMW5_METALBOOST, 0, 1, nil, S_EMWMETAL_BOOST_1752, nil, S_EMWMETAL_BOOST_1757}
 states[S_EMWMETAL_BOOST_1757] = {SPR_EMW5_METALBOOST, 0, 1, A_DualAction, S_EMWMETAL_BOOST_1752, S_EMWMETAL_BOOST_1750, S_EMWMETAL_BOOST_1758}

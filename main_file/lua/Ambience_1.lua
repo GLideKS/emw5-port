@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
 "MT_SEAWEED",
 "S_SEAWEED1",
 "S_SEAWEED2",

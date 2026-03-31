@@ -1,7 +1,7 @@
 -- 2.0 Gravity Boots Monitor - Ported by MIDIMan
 -- Use with FDBoxCommon.lua and FDMiscBoxCommon.lua
 
-freeslot(
+SafeFreeslot(
 	"MT_FDBOX_GRAVITY",
 	"MT_FDBOX_GRAVITY_ICON",
 	"S_FDBOX_GRAVITY_IDLE",

@@ -1,4 +1,4 @@
-freeslot("MT_EMWSONICBOOST",
+SafeFreeslot("MT_EMWSONICBOOST",
          "S_BOOST_1",
 		 "S_BOOST_2",
 		 "S_BOOST_3",

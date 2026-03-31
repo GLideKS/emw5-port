@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
     "MT_EMWESPIO_NINJASTAR",
     "S_EMWESPIO_NINJASTAR_1761",
     "S_EMWESPIO_NINJASTAR_1762",

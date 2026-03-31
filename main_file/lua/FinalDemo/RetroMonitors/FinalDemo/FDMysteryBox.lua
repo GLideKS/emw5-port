@@ -1,7 +1,7 @@
 -- Final Demo Mystery Monitor - Ported by MIDIMan
 -- Use with FDBoxCommon.lua and FDMiscBoxCommon.lua
 
-freeslot(
+SafeFreeslot(
 	"MT_FDBOX_QUESTION",
 	"S_FDBOX_QUESTION_IDLE"
 )

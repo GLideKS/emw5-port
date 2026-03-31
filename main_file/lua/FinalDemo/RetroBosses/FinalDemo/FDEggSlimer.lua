@@ -2,7 +2,7 @@
 -- Final Demo Egg Slimer - Ported by Glaber and MIDIMan (accuracy fixes)
 -- PLEASE LOAD RetroBossesCommon.lua, OldJetfumes.lua, EggSlimerCommon.lua, AND Pre21EggSlimerCommon.lua BEFORE THIS
 
-freeslot(
+SafeFreeslot(
 	-- Sprites
 	"SPR_FDES",
 	"SPR_FDEJ",
@@ -112,7 +112,7 @@ addHook("BossDeath", function(mo)
 	A_21BossDeath(mo) -- Despite its name, this function does practically the same thing Final Demo does
 
 	-- Spawn boss junk
-	-- These values are all over the place, but it's what 1.09.4's source code uses, 
+	-- These values are all over the place, but it's what 1.09.4's source code uses,
 	-- so I'm keeping them for accuracy
 	local mo2 = P_SpawnMobjFromMobj(
 		mo,

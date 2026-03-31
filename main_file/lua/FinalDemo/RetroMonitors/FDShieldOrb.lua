@@ -1,7 +1,7 @@
 -- Retro Monitors - Pre-2.1 Shield Orb
 -- Use with ShieldEra.lua
 
-freeslot(
+SafeFreeslot(
 	"SPR_FSHL",
 	"MT_FD_SHIELDORB",
 	"S_FD_SHIELDORB"

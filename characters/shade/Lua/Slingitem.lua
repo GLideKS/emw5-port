@@ -1,6 +1,6 @@
 -- Shade ringslinger item
 
-freeslot("MT_SHADESLING",
+SafeFreeslot("MT_SHADESLING",
 		"S_SHADESLING",
 		"S_SHADESLINGDEATH1",
 		"S_SHADESLINGDEATH2"

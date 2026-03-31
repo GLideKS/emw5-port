@@ -2,12 +2,12 @@
 -- Use with FDBoxCommon.lua
 
 --[[
-The blue shield originally acted as a pity shield until 1.09, where it behaved 
-more like a water-protecting shield. Then, 2.0 replaced its behavior with that 
+The blue shield originally acted as a pity shield until 1.09, where it behaved
+more like a water-protecting shield. Then, 2.0 replaced its behavior with that
 of the force shield (without the passive ability).
 ]]
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBXB",
 	"MT_FDBOX_BLUE",
 	"MT_FDBOX_BLUE_ICON",

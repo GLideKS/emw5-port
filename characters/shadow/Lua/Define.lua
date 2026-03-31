@@ -1,4 +1,4 @@
-freeslot("sfx_shdwt1", "sfx_shdwt2", "sfx_shdwt3", "sfx_shdwt4")
+SafeFreeslot("sfx_shdwt1", "sfx_shdwt2", "sfx_shdwt3", "sfx_shdwt4")
 
 if not FDChar then rawset(_G, "FDChar", {}) end
 FDChar["emwshadow"] = {

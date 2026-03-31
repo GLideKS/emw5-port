@@ -1,7 +1,7 @@
 -- Final Demo 1up Monitor - Ported by MIDIMan
 -- Use with FDBoxCommon.lua
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBX1",
 	"MT_FDBOX_1UP",
 	"MT_FDBOX_1UP_ICON",

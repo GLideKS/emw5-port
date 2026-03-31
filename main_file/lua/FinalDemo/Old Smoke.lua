@@ -2,7 +2,7 @@
 
 -- Old smoke for metalemw
 
-freeslot("MT_OLDSMOKE", "S_OLDSMOKE")
+SafeFreeslot("MT_OLDSMOKE", "S_OLDSMOKE")
 
 mobjinfo[MT_OLDSMOKE] = {
         doomednum = -1,

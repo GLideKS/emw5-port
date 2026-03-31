@@ -1,7 +1,7 @@
 // Old Crawla Commander - Ported by Glaber (original SOC) and MIDIMan (fixes and conversion to Lua)
 //use with LUA_CCOM
 
-freeslot(
+SafeFreeslot(
 	"MT_OLDCRAWLACOMANDER",
 	"S_OCOMMAND1",
 	"S_OCOMMAND2",
@@ -15,15 +15,15 @@ addHook("MapThingSpawn", function(mobj, mapthing)
 	and mapthing and mapthing.valid) then
 		return
 	end
-	
+
 	local offset
-	
+
 	if mapthing.z ~= 0 then
 		offset = mapthing.z
 	else
 		offset = 33*FRACUNIT
 	end
-	
+
 	if (mapthing.options & MTF_OBJECTFLIP) then
 		if offset ~= 0 then
 			mobj.z = mobj.z - offset
@@ -41,23 +41,23 @@ end, MT_OLDCRAWLACOMANDER)
 
 addHook("MobjDamage", function(target, inflictor, source, damage, damagetype)
 	if not (target and target.valid) then return end
-	
+
 	if target.fuse then return true end
-	
+
 	if target.health > 1 then
 		if target.info.painsound then S_StartSound(target, target.info.painsound) end
-		
+
 		target.fuse = TICRATE/2
 		target.flags2 = $|MF2_FRET
 	else
 		target.flags = $|MF_NOGRAVITY
 		target.fuse = 0
 	end
-	
+
 	target.momx = 0
 	target.momy = 0
 	target.momz = 0
-	
+
 	P_InstaThrust(target, target.angle-ANGLE_180, FixedMul(5*FRACUNIT, target.scale))
 	return
 end, MT_OLDCRAWLACOMANDER)

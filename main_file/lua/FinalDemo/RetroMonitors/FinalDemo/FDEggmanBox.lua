@@ -1,7 +1,7 @@
 -- Final Demo Eggman Monitor - Ported by MIDIMan
 -- Use with FDBoxCommon.lua and FDMiscBoxCommon.lua
 
-freeslot(
+SafeFreeslot(
 	"MT_FDBOX_EGGMAN",
 	"MT_FDBOX_EGGMAN_ICON",
 	"S_FDBOX_EGGMAN_IDLE",
@@ -50,7 +50,7 @@ mobjinfo[MT_FDBOX_EGGMAN] = {
 
 states[S_FDBOX_EGGMAN_IDLE] =	{SPR_FBXM,	A,	2,	nil,	0,	0,	S_FDBOX_FLICKER}
 
--- Don't let others know that the player was hurt by an Eggman monitor, like in 
+-- Don't let others know that the player was hurt by an Eggman monitor, like in
 -- the 2.0-and-below era
 addHook("HurtMsg", function(player, inflictor, source)
 	if not (player and player.valid and inflictor and inflictor.valid) then return end
@@ -59,7 +59,7 @@ addHook("HurtMsg", function(player, inflictor, source)
 	if not player.mo.health then
 		local playerText = player.name
 
-		-- Change the player's name's color depending on which team they're on, 
+		-- Change the player's name's color depending on which team they're on,
 		-- but only if the monitor's rmFDAltOption is within the 1.09-2.0 era
 		if (inflictor.rmFDAltOption or 0) < 2 or (inflictor.rmFDAltOption or 0) >= 4 then
 			if player.ctfteam then

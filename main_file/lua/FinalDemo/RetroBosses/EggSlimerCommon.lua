@@ -2,7 +2,7 @@
 -- Egg Slimer Commonalities
 -- THIS IS REQUIRED FOR EITHER THE 2.0 OR 2.1 EGG SLIMER TO WORK
 
-freeslot(
+SafeFreeslot(
 	-- Sprites
 	"SPR_21EN",
 	"SPR_2ENJ",

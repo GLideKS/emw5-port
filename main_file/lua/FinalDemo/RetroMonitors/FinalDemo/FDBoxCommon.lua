@@ -1,6 +1,6 @@
 -- Final Demo Monitor Commonalities - Ported by MIDIMan
 -- Use with the other Final Demo Monitor scripts
--- It is important to note that, even though these are labelled as "Final Demo" boxes, 
+-- It is important to note that, even though these are labelled as "Final Demo" boxes,
 -- some of them come from the 2.0 era
 
 --[[
@@ -9,13 +9,13 @@ A few notes regarding multiplayer monitors between versions:
 1.08-2.0 - Monitors could be set between off, low, medium, and high (Eggman was not an option)
 2.1-present - Monitors could be set as percentages
 
-In versions 1.08-1.09.4, players can cause a "segment violation" by setting all 
-the monitor toggles to "High", starting a race with "Random" monitors only, and 
-breaking a monitor. This is caused by the array that stores the random chances 
+In versions 1.08-1.09.4, players can cause a "segment violation" by setting all
+the monitor toggles to "High", starting a race with "Random" monitors only, and
+breaking a monitor. This is caused by the array that stores the random chances
 being too small. This bug has not been replicated for obvious reasons.
 ]]
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBOX",
 	"S_FDBOX_FLICKER",
 	"S_FDBOX_EXPLOSION1",
@@ -59,7 +59,7 @@ local function RM_DetermineShieldVariants(mo)
 			MT_FDBOX_RED_ICON
 		}
 	}
-	if not (mo and mo.valid) then return shields end -- Just use the 2.0 variants 
+	if not (mo and mo.valid) then return shields end -- Just use the 2.0 variants
 
 	-- [1] = jumpshield
 	-- [2] = watershield
@@ -160,7 +160,7 @@ rawset(_G, "RM_FDMonitorTypeSpawn", function(mo, mthing)
 -- 	end
 
 	-- Set powerup boxes to user settings for race and competition.
-	-- Note: Competition mode is based off of the "Classic Race" mode from the 
+	-- Note: Competition mode is based off of the "Classic Race" mode from the
 	-- pre-2.1 eras of SRB2
 	-- TODO: Consider using G_CoopGametype and GTR_RACE
 	if gametype == GT_RACE or gametype == GT_COMPETITION then

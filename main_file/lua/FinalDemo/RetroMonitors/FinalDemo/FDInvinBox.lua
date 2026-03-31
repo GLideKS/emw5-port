@@ -1,7 +1,7 @@
 -- Final Demo Invincibility Monitor - Ported by MIDIMan
 -- Use with FDBoxCommon.lua
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBXI",
 	"MT_FDBOX_INVIN",
 	"MT_FDBOX_INVIN_ICON",

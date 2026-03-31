@@ -2,14 +2,14 @@
 -- Use with FDBoxCommon.lua
 
 --[[
-The silver ring monitor (referred to as the "Grey Ring Box" in the source code) 
-was introduced in the Christmas demos, and remained in the game all the way up 
+The silver ring monitor (referred to as the "Grey Ring Box" in the source code)
+was introduced in the Christmas demos, and remained in the game all the way up
 until 2.0.
 
 The CTF ring monitors were introduced in 2.0.
 ]]
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBXR",
 	"MT_FDBOX_RING",
 	"MT_FDBOX_RING_ICON",

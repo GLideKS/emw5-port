@@ -1,7 +1,7 @@
 -- Final Demo Super Sneakers Monitor - Ported by MIDIMan
 -- Use with FDBoxCommon.lua
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBXS",
 	"MT_FDBOX_SHOES",
 	"MT_FDBOX_SHOES_ICON",

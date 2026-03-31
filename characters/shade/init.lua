@@ -1,3 +1,4 @@
+dofile("Functions")
 dofile("Wall Climb")
 dofile("Behavior")
 dofile("Spinitem")

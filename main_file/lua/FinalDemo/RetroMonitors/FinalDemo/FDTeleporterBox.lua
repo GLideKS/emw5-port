@@ -1,7 +1,7 @@
 -- Final Demo Teleporter Monitor - Ported by MIDIMan
 -- Use with FDBoxCommon.lua and FDMiscBoxCommon.lua
 
-freeslot(
+SafeFreeslot(
 	"MT_FDBOX_MIXUP",
 	"MT_FDBOX_MIXUP_ICON",
 	"S_FDBOX_MIXUP_IDLE",

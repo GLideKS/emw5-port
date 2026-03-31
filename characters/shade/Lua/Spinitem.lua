@@ -1,6 +1,6 @@
 -- Shade Spin Item
 
-freeslot("MT_SHADESPIN",
+SafeFreeslot("MT_SHADESPIN",
 		"S_SHADESPIN_1",
 		"S_SHADESPIN_2",
 		"S_SHADESPIN_3",

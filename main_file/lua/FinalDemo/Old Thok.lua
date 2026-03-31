@@ -2,7 +2,7 @@
 
 -- Old spin trail
 
-freeslot("MT_OLDTHOK", "S_OLDTHOK")
+SafeFreeslot("MT_OLDTHOK", "S_OLDTHOK")
 
 mobjinfo[MT_OLDTHOK] = {
         doomednum = -1,

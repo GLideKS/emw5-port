@@ -1,4 +1,4 @@
-freeslot("MT_KNUXPUNCH",
+SafeFreeslot("MT_KNUXPUNCH",
          "S_KNUXPUNCH_1",
 		 "S_KNUXPUNCH_2",
 		 "S_KNUXPUNCH_3",

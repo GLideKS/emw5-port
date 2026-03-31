@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
     "MT_EMWAMY_HAMMER",
     "S_EMWAMY_HAMMER_1",
     "S_EMWAMY_HAMMER_DEATH"

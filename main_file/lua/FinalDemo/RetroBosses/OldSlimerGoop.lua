@@ -2,7 +2,7 @@
 -- Old Egg Slimer Goop
 -- THIS IS REQUIRED FOR EITHER ALL VERSIONS OF THE EGG SLIMER TO WORK
 
-freeslot(
+SafeFreeslot(
     -- Sprites
     "SPR_OGOP",
     -- Objects

@@ -1,3 +1,4 @@
+dofile("Functions")
 dofile("Color")
 dofile("Spinitem")
 dofile("Slingitem")

@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
 "MT_ROCKET",
 "MT_SHOOPDAWHOOP",
 "MT_DEATHBALL",

@@ -5,6 +5,7 @@ local dofolder = function(file)
 end
 
 --Load Libraries and freeslots
+dofile("Functions")
 dofile("Freeslot_main")
 
 --Retro Monitors

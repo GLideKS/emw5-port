@@ -5,7 +5,7 @@
 The Whirlwind Shield wasn't introduced in SRB2 until 1.09 came out.
 ]]
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBXW",
 	"MT_FDBOX_WHITE",
 	"MT_FDBOX_WHITE_ICON",

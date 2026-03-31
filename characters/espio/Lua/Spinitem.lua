@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
     "MT_EMWESPIO_SPINITEM",
     "S_EMWESPIO_SPINITEM_2113"
 )

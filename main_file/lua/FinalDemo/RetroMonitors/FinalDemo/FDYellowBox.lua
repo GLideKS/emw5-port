@@ -1,7 +1,7 @@
 -- Final Demo Yellow (Attraction) Shield Monitor - Ported by MIDIMan
 -- Use with FDBoxCommon.lua
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBXY",
 	"MT_FDBOX_YELLOW",
 	"MT_FDBOX_YELLOW_ICON",

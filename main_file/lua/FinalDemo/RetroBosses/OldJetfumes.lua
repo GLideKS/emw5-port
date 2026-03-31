@@ -1,7 +1,7 @@
 ---@diagnostic disable: missing-fields
 -- Old Jetfumes
 
-freeslot(
+SafeFreeslot(
 	-- Sprites
 	"SPR_OJTF",
 	-- Objects

@@ -1,4 +1,4 @@
-freeslot("sfx_espio1", "sfx_espio3")
+SafeFreeslot("sfx_espio1", "sfx_espio3")
 
 if not FDChar then rawset(_G, "FDChar", {}) end
 FDChar["emwespio"] = {

@@ -1,4 +1,4 @@
-freeslot("MT_TAILSBOMB",
+SafeFreeslot("MT_TAILSBOMB",
          "S_TAILSBOMB_1"
 	)
 

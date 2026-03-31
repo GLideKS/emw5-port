@@ -1,4 +1,4 @@
-freeslot(
+SafeFreeslot(
 "MT_SHADOWSCENE2",
 "S_SHADOWSC1",
 "S_SHADOWSC2",

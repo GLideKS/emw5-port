@@ -2,12 +2,12 @@
 -- Use with FDBoxCommon.lua
 
 --[[
-The green shield acted like a water shield until 2.0, where it behaved more like 
-the elemental shield (without the passive ability). This shield was absent in 
+The green shield acted like a water shield until 2.0, where it behaved more like
+the elemental shield (without the passive ability). This shield was absent in
 1.09-1.09.4.
 ]]
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBXG",
 	"MT_FDBOX_GREEN",
 	"MT_FDBOX_GREEN_ICON",
@@ -32,9 +32,9 @@ end
 addHook("MobjFuse", RM_FDMonitorFuseThink, MT_FDBOX_GREEN)
 addHook("MapThingSpawn", function(mo, mthing)
 	if not (mo and mo.valid and mthing and mthing.valid) then return end
-	
+
 	RM_FDMonitorTypeSpawn(mo, mthing)
-	
+
 	if mo and mo.valid then
 		if ultimatemode and not G_IsSpecialStage(gamemap) then
 			P_RemoveMobj(mo)

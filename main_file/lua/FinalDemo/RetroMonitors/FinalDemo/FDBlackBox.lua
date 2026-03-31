@@ -2,11 +2,11 @@
 -- Use with FDBoxCommon.lua
 
 --[[
-The black shield was the armagedddon shield all the way up to 2.0, where it 
+The black shield was the armagedddon shield all the way up to 2.0, where it
 became red.
 ]]
 
-freeslot(
+SafeFreeslot(
 	"SPR_FBXK",
 	"MT_FDBOX_BLACK",
 	"MT_FDBOX_BLACK_ICON",
@@ -18,9 +18,9 @@ freeslot(
 addHook("MobjFuse", RM_FDMonitorFuseThink, MT_FDBOX_BLACK)
 addHook("MapThingSpawn", function(mo, mthing)
 	if not (mo and mo.valid and mthing and mthing.valid) then return end
-	
+
 	RM_FDMonitorTypeSpawn(mo, mthing)
-	
+
 	if mo and mo.valid then
 		if ultimatemode and not G_IsSpecialStage(gamemap) then
 			P_RemoveMobj(mo)
