@@ -1,7 +1,8 @@
 SafeFreeslot(
     "MT_EMWAMY_HAMMER",
     "S_EMWAMY_HAMMER_1",
-    "S_EMWAMY_HAMMER_DEATH"
+    "S_EMWAMY_HAMMER_DEATH",
+	"SPR_EMW5_AMYHAMMER"
 )
 
 mobjinfo[MT_EMWAMY_HAMMER] = {

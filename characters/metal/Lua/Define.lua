@@ -1,4 +1,4 @@
-SafeFreeslot("sfx_metl01")
+SafeFreeslot("sfx_metl01", "sfx_mtl01")
 
 if not FDChar then rawset(_G, "FDChar", {}) end
 FDChar["emwmetal"] = {

@@ -2,7 +2,7 @@ SafeFreeslot("MT_KNUXPUNCH",
          "S_KNUXPUNCH_1",
 		 "S_KNUXPUNCH_2",
 		 "S_KNUXPUNCH_3",
-		 "SPR_PNCH"
+		 "SPR_EMW5_KNUXPUNCH"
 )
 
 mobjinfo[MT_KNUXPUNCH] = {

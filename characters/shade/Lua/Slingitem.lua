@@ -3,8 +3,14 @@
 SafeFreeslot("MT_SHADESLING",
 		"S_SHADESLING",
 		"S_SHADESLINGDEATH1",
-		"S_SHADESLINGDEATH2"
+		"S_SHADESLINGDEATH2",
+		"SPR_EMW5_SHADESLASH",
+		"sfx_slshit",
+		"sfx_shslsh"
 )
+
+sfxinfo[sfx_shslsh] = {false, 50, SF_X4AWAYSOUND}
+sfxinfo[sfx_slshit] = {false, 50, SF_X4AWAYSOUND}
 
 mobjinfo[MT_SHADESLING] = {
         doomednum = -1,

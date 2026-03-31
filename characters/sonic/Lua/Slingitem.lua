@@ -1,4 +1,6 @@
 SafeFreeslot("MT_EMWSONICBOOST",
+		 "SPR_EMW5_SONICBOOST",
+		 "sfx_snbost",
          "S_BOOST_1",
 		 "S_BOOST_2",
 		 "S_BOOST_3",

@@ -1,4 +1,5 @@
 SafeFreeslot("MT_EMWSHADOW_CHAOSBLAST",
+		 "SPR_EMW5_CHAOSBLAST",
          "S_EMWSHADOW_CHAOSBLAST_1",
 		 "S_EMWSHADOW_CHAOSBLAST_2",
 		 "S_EMWSHADOW_CHAOSBLAST_3",
@@ -19,12 +20,15 @@ SafeFreeslot("MT_EMWSHADOW_CHAOSBLAST",
 		 "S_EMWSHADOW_CHAOSBLAST_DEBRIS1_2",
 		 "S_EMWSHADOW_CHAOSBLAST_DEBRIS2",
 		 "S_EMWSHADOW_CHAOSBLAST_DEBRIS3",
-		 "S_EMWSHADOW_CHAOSBLAST_DEBRISDEATH"
+		 "S_EMWSHADOW_CHAOSBLAST_DEBRISDEATH",
+		 "sfx_chaos1"
 )
+
+sfxinfo[sfx_chaos1] = {false, 60, 0}
 
 mobjinfo[MT_EMWSHADOW_CHAOSBLAST] = {
     doomednum = -1,
-	seesound = sfx_chs02,
+	seesound = sfx_chaos1,
 	spawnstate = S_EMWSHADOW_CHAOSBLAST_1,
     spawnhealth = 1000,
 	reactiontime = 8,

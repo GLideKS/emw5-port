@@ -1,2 +1,5 @@
+dofile("Libraries/FDCharLib/exec.lua")
 dofile("Functions")
+dofile("Slingitem")
+dofile("Spinitem")
 dofile("Define")

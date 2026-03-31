@@ -1,3 +1,4 @@
+dofile("Libraries/FDCharLib/exec.lua")
 dofile("Functions")
 dofile("Wall Climb")
 dofile("Behavior")

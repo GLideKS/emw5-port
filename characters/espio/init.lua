@@ -1,3 +1,4 @@
+dofile("Libraries/FDCharLib/exec.lua")
 dofile("Functions")
 dofile("Color")
 dofile("Spinitem")
