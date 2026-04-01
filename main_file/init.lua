@@ -51,7 +51,6 @@ dofolder("Old Level Title.lua")
 dofolder("Legacy Replacements.lua")
 dofolder("FD Weapon System.lua")
 dofolder("Old Thok.lua")
-dofolder("Old Supers.lua")
 dofolder("Old Smoke.lua")
 
 --Eggmanway5 Scripts
