@@ -623,7 +623,7 @@ mobjinfo[MT_SMETALFLYBY1] = {
     flags = MF_SPAWNCEILING|MF_NOGRAVITY|MF_NOCLIP|MF_FLOAT|MF_SCENERY|MF_NOBLOCKMAP
 }
 
-states[S_SMETALFLYBY4] = {SPR_THOK, B, 8, nil, 0, 0, S_NULL}
+states[S_SMETALFLYBY4] = {SPR_OLD_THOK, B, 8, nil, 0, 0, S_NULL}
 
 --EggmanDead
 mobjinfo[MT_DEADEGG] = {
