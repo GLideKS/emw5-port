@@ -1,0 +1,3 @@
+[submodule "FD-CharacterLib"]
+	path = FD-CharacterLib
+	url = https://github.com/GLideKS/FD-CharacterLib.git
