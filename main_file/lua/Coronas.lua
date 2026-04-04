@@ -119,7 +119,7 @@ LightObjects[MT_SHOOPDAWHOOP] = LightObjects[MT_IVSP]
 LightObjects[MT_SHOOPDAWHOOP].color = SKINCOLOR_BLUEBELL
 LightObjects[MT_SHOOPDAWHOOP].zoffset = 0
 
-LightObjects[MT_ROCKET] = explodestuff
+LightObjects[MT_EMW5_ROCKET] = explodestuff
 LightObjects[MT_BRADROCKET] = explodestuff
 LightObjects[MT_SCENERYEXPLOSION] = explodestuff
 

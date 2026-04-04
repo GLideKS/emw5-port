@@ -66,6 +66,7 @@ dofile("Brad")
 dofile("Ambience_1")
 dofile("Cutscenes")
 dofile("Coronas")
+dofile("Enemy Replace")
 
 --Retro Bosses
 

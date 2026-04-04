@@ -12,15 +12,13 @@ local Object_OldVariant = {
 	MT_MIXUP_BOX = MT_FDBOX_MIXUP,
 	MT_MYSTERY_BOX = MT_FDBOX_QUESTION,
 	MT_ELEMENTAL_BOX = MT_FDBOX_BLUE,
-	--Enemies
-	MT_CRAWLACOMMANDER = MT_OLDCRAWLACOMANDER
 }
 
 for i, v in pairs(Object_OldVariant) do
 	print(i)
 	addHook("MobjSpawn", function(mo)
-		if mapheaderinfo[gamemap].emw5 then 
-			mo.type = v 
+		if mapheaderinfo[gamemap].emw5 then
+			mo.type = v
 			P_SetMobjStateNF(mo, mobjinfo[v].spawnstate)
 			return true
 		end

@@ -1,5 +1,5 @@
 SafeFreeslot(
-"MT_ROCKET",
+"MT_EMW5_ROCKET",
 "MT_SHOOPDAWHOOP",
 "MT_DEATHBALL",
 "MT_ENERGYBALL",
@@ -74,9 +74,9 @@ mobjinfo[MT_BRADROCKET] = {
 }
 
 states[S_ROCKET].nextstate = S_BRADROCKET
-states[S_BRADROCKET] = {SPR_MISL, FF_FULLBRIGHT|A, 1, A_MoveRelative, 0, 0, S_ROCKET}
+states[S_BRADROCKET] = {SPR_EMW5_MISSILE, FF_FULLBRIGHT|A, 1, A_MoveRelative, 0, 0, S_ROCKET}
 
-mobjinfo[MT_ROCKET] = {
+mobjinfo[MT_EMW5_ROCKET] = {
     doomednum = -1,
     spawnstate = S_ROCKET,
     spawnhealth = 1000,
