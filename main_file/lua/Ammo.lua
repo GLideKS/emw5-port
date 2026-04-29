@@ -5,6 +5,7 @@ SafeFreeslot(
 "MT_ENERGYBALL",
 "MT_DOOMDBALL",
 "MT_BRADROCKET",
+"MT_EMW5_FLAMETHROWER",
 "S_EMWROCKET_1670",
 "S_EMWROCKET_1671",
 "S_EMWROCKET_1672",
@@ -44,6 +45,9 @@ SafeFreeslot(
 "S_DOOMDBALL_1580",
 "S_DOOMDBALL_1581",
 "S_DOOMDBALL_1582",
+"S_EMW5_FLAMETHROWER",
+"S_EMW5_FLAMETHROWEREXPLODE1",
+"S_EMW5_FLAMETHROWEREXPLODE2",
 "S_BRADROCKET"
 )
 
@@ -123,9 +127,9 @@ states[S_EMWROCKET_1687] = {SPR_EMW5_XPLODE, FF_FULLBRIGHT|R, 2, nil, 0, 0, S_EM
 states[S_EMWROCKET_1688] = {SPR_EMW5_XPLODE, FF_FULLBRIGHT|S, 2, nil, 0, 0, S_NULL}
 
 --Flamethrower
-mobjinfo[MT_TURRETLASER] = {
+mobjinfo[MT_EMW5_FLAMETHROWER] = {
     doomednum = -1,
-    spawnstate = S_TURRETLASER,
+    spawnstate = S_EMW5_FLAMETHROWER,
     spawnhealth = 1000,
     seestate = 0,
     seesound = 0,
@@ -136,7 +140,7 @@ mobjinfo[MT_TURRETLASER] = {
     painsound = 0,
     meleestate = 0,
     missilestate = 0,
-    deathstate = S_TURRETLASEREXPLODE1,
+    deathstate = S_EMW5_FLAMETHROWEREXPLODE1,
     deathsound = sfx_turhit,
     xdeathstate = 0,
     speed = 50*FRACUNIT,
@@ -148,6 +152,10 @@ mobjinfo[MT_TURRETLASER] = {
     raisestate = 0,
     flags = MF_NOBLOCKMAP|MF_MISSILE|MF_NOGRAVITY|MF_FIRE
 }
+
+states[S_EMW5_FLAMETHROWER] = {SPR_EMW5_FLAMETHROWER, FF_FULLBRIGHT|0, 1, nil, nil, nil, S_EMW5_FLAMETHROWER}
+states[S_EMW5_FLAMETHROWEREXPLODE1] = {SPR_EMW5_FLAMETHROWER, FF_FULLBRIGHT|1, 2, nil, nil, nil, S_EMW5_FLAMETHROWEREXPLODE2}
+states[S_EMW5_FLAMETHROWEREXPLODE2] = {SPR_EMW5_FLAMETHROWER, FF_FULLBRIGHT|2, 2, nil, nil, nil, S_NULL}
 
 -- Jet Bullet
 states[S_JETBULLET1] = {SPR_JBUL, A, 1, A_SmokeTrailer, MT_SPARK, 0, S_JETBULLET2}
