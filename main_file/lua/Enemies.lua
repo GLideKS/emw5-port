@@ -27,7 +27,7 @@ SafeFreeslot(
     "S_EMW5_DETON12",
     "S_EMW5_DETON13",
     "S_EMW5_DETON14",
-    "S_EMW5_DETON15",
+    "S_EMW5_DETON15"
 )
 local r -- vanilla object reference
 
@@ -36,7 +36,7 @@ mobjinfo[MT_SENKUCRAWLA] = {
     --$Category Enemies
     --$Name Red Crawla (EMW5)
     --$Sprite POSSA1
-    doomednum = -1, --will be a replacement through lua
+    doomednum = 10001,
     spawnstate = S_SENKUCRAWLA_STND,
     spawnhealth = 1,
     seestate = S_SENKUCRAWLA_RUN1,
@@ -78,7 +78,7 @@ mobjinfo[MT_EMW5_FLYINGCRAWLA] = {
     --$Category Enemies
     --$Name Yellow Flying Crawla (EMW5)
     --$Sprite SPOSA1
-    doomednum = -1, --will be a replacement through lua
+    doomednum = 10002,
     spawnstate = S_FLYINGCRAWLA_STND,
     spawnhealth = 1,
     seestate = S_FLYINGCRAWLA_FLOAT,
@@ -111,7 +111,7 @@ states[S_FLYINGCRAWLA_CHARGE] = {SPR_EMW5_FLYINGCRAWLA, A, 30, A_MoveRelative, 0
 
 ---------------EMW5 DETON---------------------
 mobjinfo[MT_EMW5_DETON] = {
-    doomednum = -1,
+    doomednum = 10003,
     spawnstate = S_EMW5_DETON1,
     seestate = S_EMW5_DETON2,
     seesound = sfx_mario6, --emw5

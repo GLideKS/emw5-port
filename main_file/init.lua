@@ -45,7 +45,6 @@ dofolder("Common/LUA_CCOM.txt")
 folder = "FinalDemo"
 
 dofolder("Old Level Title.lua")
-dofolder("Legacy Replacements.lua")
 dofolder("FD Weapon System.lua")
 dofolder("Old Thok.lua")
 dofolder("Old Smoke.lua")
