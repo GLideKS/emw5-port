@@ -38,8 +38,8 @@ dofolder("FDInfernoShield.lua")
 --SRB2 The Past
 folder = "FinalDemo/SRB2 The Past"
 
-dofolder("Crawla Commander FD/LUA_OCOM.txt")
 dofolder("Common/LUA_CCOM.txt")
+dofolder("Crawla Commander FD/LUA_OCOM.txt")
 
 --Final Demo system replica
 folder = "FinalDemo"
