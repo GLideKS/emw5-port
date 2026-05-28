@@ -1,6 +1,8 @@
+//Lighting System support.
+
 local coronasloaded = false
 
-local function LoadCoronas() --Only load coronas if the system is loaded. This is not TsoURDt3rd coronas.
+local function LoadCoronas()
 if coronasloaded then return end
 if not LightingSystem_loaded then return end
 
@@ -10,6 +12,8 @@ local explodestuff = {
     floorlight = true,
     alpha = FU/2,
     stayondeath = true,
+    centered_offset = true,
+    zoffset = 4,
     states = {
         [S_EMWROCKET_1670] = true,
         [S_EMWROCKET_1671] = true,
@@ -38,20 +42,10 @@ local bossexplode = {
     floorlight = true
 }
 
---Retro Monitors (Final Demo)
-LightObjects[MT_FD_SHIELDORB] = {
-    scale = FU/2,
-    floorlight = true,
-    zoffset = -20
-}
-
 --EMW5
 LightObjects[MT_DARKBRAD] = {
     color = SKINCOLOR_SALMON,
-    states = { --if any, the corona will display for the specified states
-        --format: [S_STATE] = {boolean, color}
-        --1st value: if true, the corona will display, false if not.
-        --2nd value: the color of the corona in this state
+    states = {
         [S_DARKB_1844] = true,
         [S_DARKB_1845] = true,
         [S_DARKB_1832] = true,
@@ -70,9 +64,10 @@ LightObjects[MT_DARKBRAD] = {
         [S_DARKB_1871] = true,
         [S_DARKB_1872] = true,
     },
-    scale = FU*4,
+    scale = FU*5,
     alpha = FU/2, --The translucency of the corona. in this case, is 50% translucent
     floorlight = true, --will the floorlight spawn?
+    centered_offset = true,
     stayondeath = true
 }
 LightObjects[MT_ENERGYBALL] = {
@@ -86,14 +81,16 @@ LightObjects[MT_DOOMDBALL] = {
     states = {
         [S_DEATHBALL_1631] = {color = SKINCOLOR_SALMON},
         [S_DEATHBALL_1632] = true,
-        [S_DEATHBALL_1633] = {color = SKINCOLOR_SALMON},
-        [S_DEATHBALL_1634] = {color = SKINCOLOR_PINK},
-        [S_DOOMDBALL_1580] = {color = SKINCOLOR_PINK},
+        [S_DEATHBALL_1633] = {color = SKINCOLOR_SUPERRED1},
+        [S_DEATHBALL_1634] = {color = SKINCOLOR_SUPERRED3},
+        [S_DOOMDBALL_1580] = {color = SKINCOLOR_SUPERRED5},
         [S_DOOMDBALL_1581] = {color = SKINCOLOR_PINK},
         [S_DOOMDBALL_1582] = {color = SKINCOLOR_PINK}
     },
-    scale = FU*8,
-    alpha = FU-(FU/3/2),
+    scale = FU*10,
+    alpha = FU/3*2,
+    centered_offset = true,
+    zoffset = 40,
     floorlight = true,
     stayondeath = true
 }
@@ -112,12 +109,18 @@ LightObjects[MT_DEATHBALL] = {
     scale = LightObjects[MT_DOOMDBALL].scale,
     alpha = LightObjects[MT_DOOMDBALL].alpha,
     floorlight = LightObjects[MT_DOOMDBALL].floorlight,
+    centered_offset = LightObjects[MT_DOOMDBALL].centered_offset,
+    zoffset = -40,
     stayondeath = LightObjects[MT_DOOMDBALL].stayondeath
 }
 
-LightObjects[MT_SHOOPDAWHOOP] = LightObjects[MT_IVSP]
-LightObjects[MT_SHOOPDAWHOOP].color = SKINCOLOR_BLUEBELL
-LightObjects[MT_SHOOPDAWHOOP].zoffset = 0
+LightObjects[MT_SHOOPDAWHOOP] = {
+    color = SKINCOLOR_BLUEBELL,
+    scale = FU/3,
+    alpha = FU/2,
+    stayondeath = false,
+    zoffset = 0
+}
 
 LightObjects[MT_EMW5_ROCKET] = explodestuff
 LightObjects[MT_BRADROCKET] = explodestuff
@@ -127,7 +130,7 @@ LightObjects[MT_SONIC3KBOSSEXPLODE] = bossexplode
 LightObjects[MT_BOSSEXPLODE] = bossexplode
 
 LightObjects[MT_METALIX] = {
-    color = SKINCOLOR_LEMON,
+    color = SKINCOLOR_YELLOW,
     scale = FU*2,
     alpha = FU/2,
     states = {
@@ -164,7 +167,7 @@ LightObjects[MT_EMERALD6].scale = emeralds_scale
 LightObjects[MT_EMERALD7].color = SKINCOLOR_SILVER
 LightObjects[MT_EMERALD7].scale = emeralds_scale
 
-LightObjects[MT_TURRETLASER] = {
+LightObjects[MT_EMW5_FLAMETHROWER] = {
     color = SKINCOLOR_ORANGE,
     scale = FU,
     alpha = FU/2,
