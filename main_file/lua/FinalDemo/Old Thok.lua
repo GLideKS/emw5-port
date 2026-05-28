@@ -2,7 +2,7 @@
 
 -- Old spin trail
 
-SafeFreeslot("MT_OLD_THOK", "S_OLD_THOK", "SPR_OLD_THOK")
+SafeFreeslot("MT_OLD_THOK", "MT_OLD_SMOKE", "S_OLD_THOK", "SPR_OLD_THOK")
 
 states[S_OLD_THOK] = {SPR_OLD_THOK, TR_TRANS60|0, 8, nil, nil, nil, nil}
 
