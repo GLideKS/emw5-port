@@ -47,7 +47,6 @@ folder = "FinalDemo"
 dofolder("Old Level Title.lua")
 dofolder("FD Weapon System.lua")
 dofolder("Old Thok.lua")
-dofolder("Old Smoke.lua")
 
 --Eggmanway5 Scripts
 
