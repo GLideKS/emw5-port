@@ -14,11 +14,13 @@ end
 
 local skim_sprite = SPR_SKIM
 local emerald_sprite = SPR_CEMG
+local deton_sprite = SPR_EMW5_DETON
 
 --sync for all players
 addHook("NetVars", function(net)
 	skim_sprite = net($)
 	emerald_sprite = net($)
+	deton_sprite = net($)
 end)
 
 --Since it's only the sprites and doesn't involve anything on movement
@@ -32,10 +34,19 @@ local function EMW_UpdateSprites()
 		states[_G["S_CEMG"..i]].sprite = emerald_sprite
 	end
 
-	-- Update for all the emeralds in the map since changing the sprite on the state isn't enough
+	--EMW5 Deton
+	for i = 1, 15 do
+		states[_G["S_DETON"..i]].sprite = deton_sprite
+	end
+
+	-- Update for all the mobjs in the map since changing the sprite on the state isn't enough
 	-- Using mobjs.iterate in a function that only gets called once it's fine.
 	for mo in mobjs.iterate() do
-		if (mo.type == MT_EMERALD1
+		if mo.type == MT_DETON then --Deton
+			mo.sprite = deton_sprite
+		end
+
+		if (mo.type == MT_EMERALD1 --Emeralds
 		or mo.type == MT_EMERALD2
 		or mo.type == MT_EMERALD3
 		or mo.type == MT_EMERALD4
@@ -44,6 +55,13 @@ local function EMW_UpdateSprites()
 		or mo.type == MT_EMERALD7) then
 			mo.sprite = emerald_sprite
 		end
+	end
+
+	--Update Properties
+	if mapheaderinfo[gamemap].emw5 then --EMW5 properties
+		mobjinfo[MT_DETON].seesound = sfx_mario6
+	else --Vanilla
+		mobjinfo[MT_DETON].seesound = sfx_s3k86
 	end
 end
 
@@ -57,9 +75,11 @@ addHook("ThinkFrame", function()
 		if mapheaderinfo[gamemap].emw5 then
 			skim_sprite = SPR_EMW5_SKIM
 			emerald_sprite = SPR_EMW5_EMMY
+			deton_sprite = SPR_EMW5_DETON
 		else
 			skim_sprite = SPR_SKIM
 			emerald_sprite = SPR_CEMG
+			deton_sprite = SPR_DETN
 		end
 		EMW_UpdateSprites()
 	end
