@@ -12,39 +12,66 @@ function A_TurretFire(actor, var1, var2)
 	super(actor, var1, var2)
 end
 
-// Change Skim sprites on EMW5 maps.
-// Quite a hack, but blame SRB2 making MT_SKIM movement hardcoded. amazing game!
-
 local skim_sprite = SPR_SKIM
+local emerald_sprite = SPR_CEMG
+
+--sync for all players
+addHook("NetVars", function(net)
+	skim_sprite = net($)
+	emerald_sprite = net($)
+end)
 
 --Since it's only the sprites and doesn't involve anything on movement
 --should not be harmful to have a resync.
 local function EMW_UpdateSprites()
-	states[S_SKIM1].sprite = skim_sprite
-	states[S_SKIM2].sprite = skim_sprite
-	states[S_SKIM3].sprite = skim_sprite
-	states[S_SKIM4].sprite = skim_sprite
-end
-
-addHook("NetVars", function(net)
-	skim_sprite = net($) --sync for all players
-end)
-
---Change it on map load
-addHook("MapLoad", function()
-	if mapheaderinfo[gamemap].emw5 then
-		skim_sprite = SPR_EMW5_SKIM
-	else
-		skim_sprite = SPR_SKIM
+	for i = 1, 4 do
+		states[_G["S_SKIM"..i]].sprite = skim_sprite
 	end
 
-	EMW_UpdateSprites()
-end)
+	for i = 1, 7 do
+		states[_G["S_CEMG"..i]].sprite = emerald_sprite
+	end
 
---For joining players
+	-- Update for all the emeralds in the map since changing the sprite on the state isn't enough
+	-- Using mobjs.iterate in a function that only gets called once it's fine.
+	for mo in mobjs.iterate() do
+		if (mo.type == MT_EMERALD1
+		or mo.type == MT_EMERALD2
+		or mo.type == MT_EMERALD3
+		or mo.type == MT_EMERALD4
+		or mo.type == MT_EMERALD5
+		or mo.type == MT_EMERALD6
+		or mo.type == MT_EMERALD7) then
+			mo.sprite = emerald_sprite
+		end
+	end
+end
+
 addHook("ThinkFrame", function()
-	if not consoleplayer then return end
-	if consoleplayer.jointime != 1 then return end
+	if gamestate != GS_LEVEL then return end
 
-	EMW_UpdateSprites()
+	--Change if the map is an EMW5 map.
+	if leveltime == 1 then
+		if mapheaderinfo[gamemap].emw5 then
+			skim_sprite = SPR_EMW5_SKIM
+			emerald_sprite = SPR_EMW5_EMMY
+			print("changed to emw5")
+		else
+			skim_sprite = SPR_SKIM
+			emerald_sprite = SPR_CEMG
+			print("changed to vanilla")
+		end
+
+		EMW_UpdateSprites()
+		print("change done")
+	end
+
+	--For Joining Players
+	if not consoleplayer then return end
+
+	if consoleplayer.jointime == 1 then
+		EMW_UpdateSprites()
+
+		print("joined!")
+	end
 end)
