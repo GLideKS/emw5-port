@@ -7,7 +7,7 @@ SafeFreeslot(
 	"S_OCOMMAND2",
 	"S_OCOMMAND3",
 	"S_OCOMMAND4",
-	"SPR_OCOM"
+	"SPR_OLDCRAWLACOMMANDER"
 )
 
 addHook("MapThingSpawn", function(mobj, mapthing)
@@ -82,10 +82,10 @@ mobjinfo[MT_OLDCRAWLACOMANDER] = {
 	flags = MF_SLIDEME|MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
 }
 
-states[S_OCOMMAND1] =	{SPR_OCOM,	A,	1,	A_CrawlaCommanderReThink,	0,	15*FRACUNIT,	S_OCOMMAND2}
-states[S_OCOMMAND2] =	{SPR_OCOM,	B,	1,	A_CrawlaCommanderReThink,	0,	15*FRACUNIT,	S_OCOMMAND1}
-states[S_OCOMMAND3] =	{SPR_OCOM,	C,	1,	A_CrawlaCommanderReThink,	0,	15*FRACUNIT,	S_OCOMMAND4}
-states[S_OCOMMAND4] =	{SPR_OCOM,	D,	1,	A_CrawlaCommanderReThink,	0,	15*FRACUNIT,	S_OCOMMAND3}
+states[S_OCOMMAND1] =	{SPR_OLDCRAWLACOMMANDER,	A,	1,	A_CrawlaCommanderReThink,	0,	15*FRACUNIT,	S_OCOMMAND2}
+states[S_OCOMMAND2] =	{SPR_OLDCRAWLACOMMANDER,	B,	1,	A_CrawlaCommanderReThink,	0,	15*FRACUNIT,	S_OCOMMAND1}
+states[S_OCOMMAND3] =	{SPR_OLDCRAWLACOMMANDER,	C,	1,	A_CrawlaCommanderReThink,	0,	15*FRACUNIT,	S_OCOMMAND4}
+states[S_OCOMMAND4] =	{SPR_OLDCRAWLACOMMANDER,	D,	1,	A_CrawlaCommanderReThink,	0,	15*FRACUNIT,	S_OCOMMAND3}
 
 // (Note from Glaber)
 // Pain cycle for Old Crawla Commander
