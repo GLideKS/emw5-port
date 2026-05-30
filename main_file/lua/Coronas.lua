@@ -70,7 +70,7 @@ LightObjects[MT_DARKBRAD] = {
     centered_offset = true,
     stayondeath = true
 }
-LightObjects[MT_ENERGYBALL] = {
+LightObjects[MT_EMW5_ENERGYBALL] = {
     color = SKINCOLOR_GALAXY,
     scale = FU*2,
     alpha = FU/4,
