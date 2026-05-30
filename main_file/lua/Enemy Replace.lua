@@ -55,15 +55,11 @@ addHook("ThinkFrame", function()
 		if mapheaderinfo[gamemap].emw5 then
 			skim_sprite = SPR_EMW5_SKIM
 			emerald_sprite = SPR_EMW5_EMMY
-			print("changed to emw5")
 		else
 			skim_sprite = SPR_SKIM
 			emerald_sprite = SPR_CEMG
-			print("changed to vanilla")
 		end
-
 		EMW_UpdateSprites()
-		print("change done")
 	end
 
 	--For Joining Players
@@ -71,7 +67,5 @@ addHook("ThinkFrame", function()
 
 	if consoleplayer.jointime == 1 then
 		EMW_UpdateSprites()
-
-		print("joined!")
 	end
 end)
