@@ -47,6 +47,8 @@ local function EMW_UpdateSprites()
 	end
 end
 
+--The reason of why I'm doing this into a thinkframe and not in a mapload hook
+--is because joining players will not see the changes
 addHook("ThinkFrame", function()
 	if gamestate != GS_LEVEL then return end
 
