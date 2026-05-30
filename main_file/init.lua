@@ -1,80 +1,91 @@
-local folder = ""
+--load all files
+local directory = { "/",
+// Load Libraries and Freeslots //
+    "Functions",
+    "Freeslot_main",
 
-local dofolder = function(file)
-    dofile(folder.."/"..file)
+// Retro Monitors //
+	{ "FinalDemo/RetroMonitors/FinalDemo",
+
+		"FDBoxCommon.lua", -- Final Demo Monitor Commonalities
+        "FDRingBox.lua", -- Final Demo Ring Monitors
+        "FDShoesBox.lua", -- Final Demo Super Sneakers Monitor
+        "FDInvinBox.lua", -- Final Demo Invincibility Monitor
+        "FD1upBox.lua", -- Final Demo 1up Monitor
+        "FDBlueBox.lua", -- Final Demo Blue Shield Monitor
+        "FDGreenBox.lua", -- Final Demo Green Shield Monitor
+        "FDBlackBox.lua", -- Final Demo Black Shield Monitor
+        "FDRedBox.lua", -- Final Demo Red Shield Monitor
+        "FDYellowBox.lua", -- Final Demo Yellow (Attraction) Shield Monitor
+        "FDWhiteBox.lua", -- Final Demo White (Whirlwind) Shield Monitor
+        "FDMiscBoxCommon.lua", -- Final Demo Miscellaneous Monitor Commonalities
+        "FDEggmanBox.lua", -- Final Demo Eggman Monitor
+        "20GravityBox.lua", -- 2.0 Gravity Boots Monitor
+        "FDMysteryBox.lua", -- Final Demo Mystery Monitor
+        "FDTeleporterBox.lua", -- Final Demo Teleporter Monitor
+        "20RecyclerBox.lua" -- 2.0 Recycler Monitor
+	},
+
+    { "FinalDemo/RetroMonitors",
+
+        "FDShieldOrb.lua",
+        "ShieldEra.lua",
+        "FDInfernoShield.lua"
+    },
+
+// SRB2 The Past //
+	{ "FinalDemo/SRB2 The Past",
+		"Common/LUA_CCOM.txt",
+        "Crawla Commander FD/LUA_OCOM.txt"
+	},
+
+// Final Demo System replica //
+    { "FinalDemo",
+        "Old Level Title.lua",
+        "FD Weapon System.lua",
+        "Old Thok.lua"
+    },
+
+// Eggman Way 5 Scripts //
+	"LUA_XPDL",
+    "Ammo",
+    "Sound Definitions",
+    "Enemies",
+    "Egg Mobile",
+    "Metal_Guardian",
+    "Metal",
+    "Brad",
+    "Ambience_1",
+    "Cutscenes",
+    "Coronas",
+    "Enemy Replace",
+
+// Retro Bosses //
+	{ "FinalDemo/RetroBosses",
+		"RetroBossesCommon", -- Retro Boss Commonalities
+        "OldJetfumes", -- Old Jetfumes
+        "Pre21EggMobileCommon", -- Pre-2.1 Egg Mobile Commonalities
+        "OldSlimerGoop", -- Old Egg Slimer Goop
+        "EggSlimerCommon", -- Egg Slimer Commonalities
+        "Pre21EggSlimerCommon", -- Pre-2.1 Egg Slimer Commonalities
+        "Behavior"
+	},
+
+    { "FinalDemo/RetroBosses/FinalDemo",
+        "FDEggSlimer"
+    }
+}
+
+local function load(dir, path)
+	for i, v in ipairs(dir) do
+		if i == 1 then continue end
+
+		if type(v) == "string" then
+			dofile(path..v)
+		elseif type(v) == "table" then
+			load(v, path..v[1].."/")
+		end
+	end
 end
 
---Load Libraries and freeslots
-dofile("Functions")
-dofile("Freeslot_main")
-
---Retro Monitors
-folder = "FinalDemo/RetroMonitors/FinalDemo"
-
-dofolder("FDBoxCommon.lua") -- Final Demo Monitor Commonalities
-dofolder("FDRingBox.lua") -- Final Demo Ring Monitors
-dofolder("FDShoesBox.lua") -- Final Demo Super Sneakers Monitor
-dofolder("FDInvinBox.lua") -- Final Demo Invincibility Monitor
-dofolder("FD1upBox.lua") -- Final Demo 1up Monitor
-dofolder("FDBlueBox.lua") -- Final Demo Blue Shield Monitor
-dofolder("FDGreenBox.lua") -- Final Demo Green Shield Monitor
-dofolder("FDBlackBox.lua") -- Final Demo Black Shield Monitor
-dofolder("FDRedBox.lua") -- Final Demo Red Shield Monitor
-dofolder("FDYellowBox.lua") -- Final Demo Yellow (Attraction) Shield Monitor
-dofolder("FDWhiteBox.lua") -- Final Demo White (Whirlwind) Shield Monitor
-dofolder("FDMiscBoxCommon.lua") -- Final Demo Miscellaneous Monitor Commonalities
-dofolder("FDEggmanBox.lua") -- Final Demo Eggman Monitor
-dofolder("20GravityBox.lua") -- 2.0 Gravity Boots Monitor
-dofolder("FDMysteryBox.lua") -- Final Demo Mystery Monitor
-dofolder("FDTeleporterBox.lua") -- Final Demo Teleporter Monitor
-dofolder("20RecyclerBox.lua") -- 2.0 Recycler Monitor
-
-folder = "FinalDemo/RetroMonitors"
-
-dofolder("FDShieldOrb.lua")
-dofolder("ShieldEra.lua")
-dofolder("FDInfernoShield.lua")
-
---SRB2 The Past
-folder = "FinalDemo/SRB2 The Past"
-
-dofolder("Common/LUA_CCOM.txt")
-dofolder("Crawla Commander FD/LUA_OCOM.txt")
-
---Final Demo system replica
-folder = "FinalDemo"
-
-dofolder("Old Level Title.lua")
-dofolder("FD Weapon System.lua")
-dofolder("Old Thok.lua")
-
---Eggmanway5 Scripts
-
-dofile("LUA_XPDL")
-dofile("Ammo")
-dofile("Sound Definitions")
-dofile("Enemies")
-dofile("Egg Mobile")
-dofile("Metal_Guardian")
-dofile("Metal")
-dofile("Brad")
-dofile("Ambience_1")
-dofile("Cutscenes")
-dofile("Coronas")
-dofile("Enemy Replace")
-
---Retro Bosses
-
-folder = "FinalDemo/RetroBosses"
-
-dofolder("RetroBossesCommon") -- Retro Boss Commonalities
-dofolder("OldJetfumes") -- Old Jetfumes
-dofolder("Pre21EggMobileCommon") -- Pre-2.1 Egg Mobile Commonalities
-dofolder("OldSlimerGoop") -- Old Egg Slimer Goop
-dofolder("EggSlimerCommon") -- Egg Slimer Commonalities
-dofolder("Pre21EggSlimerCommon") -- Pre-2.1 Egg Slimer Commonalities
-dofolder("Behavior")
-
-folder = "FinalDemo/RetroBosses/FinalDemo"
-
-dofolder("FDEggSlimer")
+load(directory, "")
