@@ -141,8 +141,20 @@ SafeFreeslot(
 "S_WARPEDTREE",
 "MT_METALTAUNT",
 "S_METALLOOK",
-"S_METALSAYS"
+"S_METALSAYS",
+"MT_METALSCENERY",
+"S_METALSCENERY"
 )
+
+--Metal sonic scenery found in Metal Reactor act 14
+states[S_METALSCENERY] = {SPR_EMW5_MTLSCENERY, 0, -1, nil, 0, 0, S_NULL}
+mobjinfo[MT_METALSCENERY] = {
+    doomednum = 10004,
+    spawnstate = S_METALSCENERY,
+    radius = 14*FU,
+    height = 40*FU,
+    flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
+}
 
 --SpinFire Smoke
 states[S_SPINFIRE1] = {SPR_SFLM, A|FF_FULLBRIGHT, 2, A_SmokeTrailer, MT_SMOKE, 0, S_SPINFIRE2}
