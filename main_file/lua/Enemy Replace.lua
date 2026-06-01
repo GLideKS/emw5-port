@@ -24,6 +24,19 @@ addHook("NetVars", function(net)
 	deton_sprite = net($)
 end)
 
+--Objects to have a replaced sprite
+local object_sprite_replace = {
+	[MT_DETON] = deton_sprite,
+	[MT_SKIM] = skim_sprite,
+	[MT_EMERALD1] = emerald_sprite,
+	[MT_EMERALD2] = emerald_sprite,
+	[MT_EMERALD3] = emerald_sprite,
+	[MT_EMERALD4] = emerald_sprite,
+	[MT_EMERALD5] = emerald_sprite,
+	[MT_EMERALD6] = emerald_sprite,
+	[MT_EMERALD7] = emerald_sprite
+}
+
 --Since it's only the sprites and doesn't involve anything on movement
 --should not be harmful to have a resync.
 local function EMW_UpdateSprites()
@@ -43,19 +56,8 @@ local function EMW_UpdateSprites()
 	-- Update for all the mobjs in the map since changing the sprite on the state isn't enough
 	-- Using mobjs.iterate in a function that only gets called once it's fine.
 	for mo in mobjs.iterate() do
-		if mo.type == MT_DETON then --Deton
-			mo.sprite = deton_sprite
-		end
-
-		if (mo.type == MT_EMERALD1 --Emeralds
-		or mo.type == MT_EMERALD2
-		or mo.type == MT_EMERALD3
-		or mo.type == MT_EMERALD4
-		or mo.type == MT_EMERALD5
-		or mo.type == MT_EMERALD6
-		or mo.type == MT_EMERALD7) then
-			mo.sprite = emerald_sprite
-		end
+		if not object_sprite_replace[mo.type] then continue end
+		mo.sprite = object_sprite_replace[mo.type]
 	end
 
 	--Update Properties
