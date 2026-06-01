@@ -56,7 +56,9 @@ local function EMW_UpdateSprites()
 	-- Update for all the mobjs in the map since changing the sprite on the state isn't enough
 	-- Using mobjs.iterate in a function that only gets called once it's fine.
 	for mo in mobjs.iterate() do
+		if not mo.health then continue end
 		if not object_sprite_replace[mo.type] then continue end
+
 		mo.sprite = object_sprite_replace[mo.type]
 	end
 
