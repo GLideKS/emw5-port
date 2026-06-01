@@ -7,6 +7,7 @@ accelstart = 50
 acceleration = 70
 endcolor = 128
 prefcolor = Green
+prefoppositecolor = Jet
 jumpheight = 100
 actionspd = 31
 supercolor = legacysilver

@@ -6,6 +6,7 @@ thrustfactor = 4
 accelstart = 65
 acceleration = 85
 prefcolor = Red
+prefoppositecolor = Neon
 jumpheight = 100
 revitem = MT_OLD_THOK
 spinitem = MT_OLD_THOK

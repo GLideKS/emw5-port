@@ -13,6 +13,7 @@ jumpheight = 100
 mindash = 26
 maxdash = 60
 prefcolor = Green
+prefoppositecolor = Sandy
 thokitem = 0
 revitem = MT_OLD_THOK
 spinitem = MT_OLD_THOK

@@ -10,6 +10,7 @@ acceleration = 70
 startcolor = 145
 endcolor = 159
 prefcolor = Cornflower
+prefoppositecolor = Cobalt
 supercolor = legacyyellow
 jumpheight = 100
 revitem = MT_OLD_THOK

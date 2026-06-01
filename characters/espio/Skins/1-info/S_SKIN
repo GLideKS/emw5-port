@@ -10,6 +10,7 @@ acceleration = 80
 startcolor = 144
 endcolor = 159
 prefcolor = FD_Purple
+prefoppositecolor = Sandy
 jumpheight = 100
 spinitem = MT_EMWESPIO_SPINITEM
 thokitem = MT_EMWESPIO_SPINITEM

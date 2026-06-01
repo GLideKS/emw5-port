@@ -15,6 +15,7 @@ maxdash = 60
 startcolor = 145
 endcolor = 159
 prefcolor = Red
+prefoppositecolor = Forest
 thokitem = 0
 revitem = MT_OLD_THOK
 spinitem = MT_OLD_THOK

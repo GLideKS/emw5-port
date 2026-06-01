@@ -9,6 +9,7 @@ spin = 1
 startcolor = 33
 endcolor = 47
 prefcolor = Red
+prefoppositecolor = Crimson
 jumpheight = 100
 runspeed = 65
 supercolor = legacyred

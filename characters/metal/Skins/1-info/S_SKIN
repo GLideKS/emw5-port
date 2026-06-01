@@ -10,6 +10,7 @@ acceleration = 40
 startcolor = 145
 jumpheight = 159
 prefcolor = FD_Dark_Blue
+prefoppositecolor = Dusk
 supercolor = legacyyellow
 thokitem = MT_OLD_THOK
 revitem = MT_OLD_THOK
