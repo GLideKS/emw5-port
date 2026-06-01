@@ -58,7 +58,7 @@ local directory = { "/",
     "Ambience_1",
     "Cutscenes",
     "Coronas",
-    "Enemy Replace",
+    "Overrides",
 
 // Retro Bosses //
 	{ "FinalDemo/RetroBosses",
