@@ -2,6 +2,7 @@ SafeFreeslot(
 	"SPR_EMW5_SKIM"
 )
 
+--Turret Fire defaults override
 function A_TurretFire(actor, var1, var2)
 	if actor.type == MT_TURRET --Only replace it's ammo with flame thrower in EMW5 maps.
 	and mapheaderinfo[gamemap].emw5 then
@@ -12,8 +13,8 @@ function A_TurretFire(actor, var1, var2)
 	super(actor, var1, var2)
 end
 
-local skim_sprite = SPR_SKIM
-local emerald_sprite = SPR_CEMG
+local skim_sprite = SPR_EMW5_SKIM
+local emerald_sprite = SPR_EMW5_EMMY
 local deton_sprite = SPR_EMW5_DETON
 
 --sync for all players
@@ -26,11 +27,11 @@ end)
 --Since it's only the sprites and doesn't involve anything on movement
 --should not be harmful to have a resync.
 local function EMW_UpdateSprites()
-	for i = 1, 4 do
+	for i = 1, 4 do --EMW5 SKIM
 		states[_G["S_SKIM"..i]].sprite = skim_sprite
 	end
 
-	for i = 1, 7 do
+	for i = 1, 7 do --EMW5 Emerald
 		states[_G["S_CEMG"..i]].sprite = emerald_sprite
 	end
 
