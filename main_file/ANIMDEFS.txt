@@ -1,0 +1,2 @@
+Texture EMWWTR1 Range EMWWTR16 Tics 4
+Texture EMWFLL1 Range EMWFLL4 Tics 2
