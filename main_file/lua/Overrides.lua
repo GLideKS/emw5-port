@@ -16,12 +16,14 @@ end
 local skim_sprite = SPR_EMW5_SKIM
 local emerald_sprite = SPR_EMW5_EMMY
 local deton_sprite = SPR_EMW5_DETON
+local mine_sprite = SPR_EMW5_BOMB
 
 --sync for all players
 addHook("NetVars", function(net)
 	skim_sprite = net($)
 	emerald_sprite = net($)
 	deton_sprite = net($)
+	mine_sprite = net($)
 end)
 
 --Objects to have a replaced sprite
@@ -34,7 +36,8 @@ local object_sprite_replace = {
 	[MT_EMERALD4] = emerald_sprite,
 	[MT_EMERALD5] = emerald_sprite,
 	[MT_EMERALD6] = emerald_sprite,
-	[MT_EMERALD7] = emerald_sprite
+	[MT_EMERALD7] = emerald_sprite,
+	[MT_MINE] = mine_sprite
 }
 
 --Since it's only the sprites and doesn't involve anything on movement
@@ -47,6 +50,8 @@ local function EMW_UpdateSprites()
 	for i = 1, 7 do --EMW5 Emerald
 		states[_G["S_CEMG"..i]].sprite = emerald_sprite
 	end
+
+	states[S_MINE1].sprite = mine_sprite --Jetty-syn's mine
 
 	--EMW5 Deton
 	for i = 1, 15 do
@@ -81,10 +86,12 @@ addHook("ThinkFrame", function()
 			skim_sprite = SPR_EMW5_SKIM
 			emerald_sprite = SPR_EMW5_EMMY
 			deton_sprite = SPR_EMW5_DETON
+			mine_sprite = SPR_EMW5_BOMB
 		else
 			skim_sprite = SPR_SKIM
 			emerald_sprite = SPR_CEMG
 			deton_sprite = SPR_DETN
+			mine_sprite = SPR_MINE
 		end
 		EMW_UpdateSprites()
 	end

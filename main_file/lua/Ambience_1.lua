@@ -143,8 +143,20 @@ SafeFreeslot(
 "S_METALLOOK",
 "S_METALSAYS",
 "MT_METALSCENERY",
-"S_METALSCENERY"
+"S_METALSCENERY",
+"MT_EMW5_GHZTREE",
+"S_EMW5_GHZTREE"
 )
+
+--Common GHZ Tree
+states[S_EMW5_GHZTREE] = {SPR_EMW5_GHZTREE, 0, -1, nil, 0, 0, S_NULL}
+mobjinfo[MT_EMW5_GHZTREE] = {
+    doomednum = 10003,
+    spawnstate = S_EMW5_GHZTREE,
+    radius = 16*FU,
+    height = 40*FU,
+    flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
+}
 
 --Metal sonic scenery found in Metal Reactor act 14
 states[S_METALSCENERY] = {SPR_EMW5_MTLSCENERY, 0, -1, nil, 0, 0, S_NULL}
