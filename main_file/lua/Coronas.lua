@@ -38,8 +38,12 @@ local explodestuff = {
 }
 
 local bossexplode = {
+    scale = FU/2,
+    alpha = FU/2,
     stayondeath = true,
-    floorlight = true
+    floorlight = true,
+    centered_offset = true,
+    zoffset = 10
 }
 
 --EMW5
@@ -168,9 +172,10 @@ LightObjects[MT_EMERALD7].color = SKINCOLOR_SILVER
 LightObjects[MT_EMERALD7].scale = emeralds_scale
 
 LightObjects[MT_EMW5_FLAMETHROWER] = {
-    color = SKINCOLOR_ORANGE,
+    color = SKINCOLOR_RED,
     scale = FU,
     alpha = FU/2,
+    fullbright = true,
     floorlight = true,
     stayondeath = true
 }
