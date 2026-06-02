@@ -1,14 +1,22 @@
+Support
+- Added Support for Lighting System addon, a replica of the final demo coronas that EMW5 used a lot back in the day. It's not perfect but it's enough.
+
 Conversion related
 - Ported and converted all maps to UDMF
 - Converted all graphics for SRB2 Palette
 - Imported some flat and textures from SRB2 v1.09.4
 - All Sounds have been renamed to leave the FREXXX freeslot naming.
+- All musics have been renamed to leave the old music slotting
 - Most sprites have been moved to LongSprites to leave the F00X freeslot naming.
 - All states have been renamed properly to leave the freeslot restricted states
 - Characters with super frames uses the super marker and the proper sprites, required for SRB2 v2.2
 - Disabled vanilla characters on single player.
 - Ported all 142 emblems position manually with the level editor.
 - Bosses doesn't give 10 rings at start, as in the original.
+- EMW5 Objects doesn't replace vanilla SRB2 objects anymore. some visuals has been replaced through lua instead (Deton, Skim, Jetty-syn mine, emeralds, etc)
+- EMW5 Textures doesn't replace vanilla SRB2 textures anymore.
+- All music and sounds has been converted to .OGG audio format.
+
 
 Needed edits
 - Some graphics are required to be renamed to show them as intended (like the boot up graphic)
@@ -16,9 +24,12 @@ Needed edits
 - ERSKYXX textures has been merged into one. those are a splitted sky texture.
 - External files like .bat has been edited to match their current port files to play as intended
 - All torches has coronas enabled
+- Fixed Character sprite offsets
+- Characters needed urgently a sign post sprite due to the save select, so a proper one has been made.
+- Removed unused content.
+
 
 Script related
-- Used Lua to automatically replace 2.2 monitors with RetroMonitors
 - Added a collide workaround with lua to be able to hit Classic Metal Sonics due to behavior differences with MF_NOCLIPTHING between both SRB2 version.
 - Coded Dark Brad's deathball damage from scratch for accuracy with the original mod.
 - Using FD Character Library to replicate past character features from Final demo (Like HUD, slingitem, etc)
