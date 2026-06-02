@@ -58,7 +58,7 @@ Pic1Name = BFPINTR
 Pic1Duration = 800
 Pic1XCoord = 0
 Pic1YCoord = 0
-Music = MAP98M
+Music = TMSHDW
 TextXPos = 1
 TextYPos = 320
 SceneText = "SONIC THE HEDGEHOG!"
@@ -68,7 +68,7 @@ this!"#
 
 Level 1
 Levelname = Mystic Ruins
-Music = MAP01M
+Music = MSTRNS
 NextLevel = 2
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 29
@@ -85,7 +85,7 @@ Lua.emw5 = true
 Level 2
 Levelname = Dark Plains
 Act = 1
-Music = MAP02M
+Music = DKPLN1
 NextLevel = 3
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
@@ -102,7 +102,7 @@ Lua.emw5 = true
 Level 3
 Levelname = Dark Plains
 Act = 2
-Music = MAP03M
+Music = DKPLN2
 NextLevel = 4
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
@@ -119,8 +119,8 @@ Lua.emw5 = true
 Level 4
 Levelname = Dark Plains
 Act = 3
-Music = MAP04M
-MusicPostBoss = MAP02M
+Music = DKPLN3
+MusicPostBoss = DKPLN1
 NextLevel = 5
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -141,7 +141,7 @@ Lua.emw5 = true
 
 Level 5
 Levelname = Mystic Ruins
-Music = MAP01M
+Music = MSTRNS
 NextLevel = 6
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -159,7 +159,7 @@ Lua.emw5 = true
 Level 6
 Levelname = Pyramid Cave
 Act = 4
-Music = MAP06M
+Music = PRDCV1
 NextLevel = 7
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 1
@@ -177,7 +177,7 @@ Lua.emw5 = true
 Level 7
 Levelname = Pyramid Cave
 Act = 5
-Music = MAP06M
+Music = PRDCV1
 NextLevel = 8
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 1
@@ -195,8 +195,8 @@ Lua.emw5 = true
 Level 8
 Levelname = Pyramid Cave
 Act = 6
-Music = MAP08M
-MusicPostBoss = MAP06M
+Music = PRDCV2
+MusicPostBoss = PRDCV1
 NextLevel = 9
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 1
@@ -217,7 +217,7 @@ Lua.emw5 = true
 
 Level 9
 Levelname = Mystic Ruins
-Music = MAP01M
+Music = MSTRNS
 NextLevel = 10
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -235,7 +235,7 @@ Lua.emw5 = true
 Level 10
 LevelName = Eggman Base
 Act = 7
-Music = MAP10M
+Music = EGGBAS
 NextLevel = 11
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
@@ -253,7 +253,7 @@ Lua.emw5 = true
 Level 11
 LevelName = Eggman Base
 Act = 8
-Music = MAP10M
+Music = EGGBAS
 NextLevel = 12
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
@@ -271,7 +271,7 @@ Lua.emw5 = true
 Level 12
 Levelname = The Metallix
 Act = 9
-Music = MAP12M
+Music = EMWMTL
 NextLevel = 13
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 1
@@ -291,7 +291,7 @@ Lua.emw5 = true
 
 Level 13
 Levelname = Mystic Ruins
-Music = MAP13M
+Music = MSTRS2
 NextLevel = 14
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -308,7 +308,7 @@ Lua.emw5 = true
 Level 14
 Levelname = NotsoGreen Hill
 Act = 10
-Music = MAP14M
+Music = NGHZ1
 NextLevel = 15
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
@@ -325,7 +325,7 @@ Lua.emw5 = true
 Level 15
 Levelname = NotsoGreen Hill
 Act = 11
-Music = MAP14M
+Music = NGHZ1
 NextLevel = 16
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
@@ -342,7 +342,7 @@ Lua.emw5 = true
 Level 16
 Levelname = NotsoGreen Hill
 Act = 12
-Music = MAP16M
+Music = NGHZ2
 NextLevel = 17
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -359,7 +359,7 @@ Lua.emw5 = true
 
 Level 17
 Levelname = Mystic Ruins
-Music = MAP17M
+Music = MFLOOD
 NextLevel = 18
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -379,7 +379,7 @@ Lua.emw5 = true
 
 Level 18
 Levelname = Mystic Ruins
-Music = MAP18M
+Music = RIPCIT
 NextLevel = 19
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -397,7 +397,7 @@ Lua.emw5 = true
 Level 19
 Levelname = Metal Reactor
 Act = 13
-Music = MAP19M
+Music = MTRCT1
 NextLevel = 20
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
@@ -414,7 +414,7 @@ Lua.emw5 = true
 Level 20
 Levelname = Metal Reactor
 Act = 14
-Music = MAP20M
+Music = MTRCT2
 NextLevel = 22
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 7
@@ -431,7 +431,7 @@ Lua.emw5 = true
 Level 22
 Levelname = Metal Guardian
 Act = 15
-Music = MAP21M
+Music = MTRCT3
 NextLevel = 23
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -450,7 +450,7 @@ Lua.emw5 = true
 
 Level 23
 Levelname = Mystic Ruins
-Music = MAP01M
+Music = MSTRNS
 NextLevel = 1102
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -468,7 +468,7 @@ Lua.emw5 = true
 Level 24
 Levelname = The Final Battle
 Act = 16
-Music = MAP24M
+Music = EMWFIN
 NextLevel = 36
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 22
@@ -491,7 +491,7 @@ Lua.emw5 = true
 
 Level 25
 Levelname = One Year Later
-Music = MAP25M
+Music = ONE_YR
 NextLevel = 26
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 9
@@ -512,7 +512,7 @@ Lua.emw5 = true
 Level 26
 LevelName = Olivine Forest
 Act = 1
-Music = MAP26M
+Music = OLVFR1
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 29
 NextLevel = 27
@@ -531,7 +531,7 @@ Lua.emw5 = true
 Level 27
 LevelName = Olivine Forest
 Act = 2
-Music = MAP26M
+Music = OLVFR1
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 29
 NextLevel = 28
@@ -550,7 +550,7 @@ Lua.emw5 = true
 Level 28
 LevelName = Olivine Forest
 Act = 3
-Music = MAP28M
+Music = OLVFR2
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
 NextLevel = 29
@@ -571,7 +571,7 @@ Lua.emw5 = true
 
 Level 29
 Levelname = Mystic Ruins
-Music = MAP29M
+Music = MRSCHS
 NextLevel = 30
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -592,7 +592,7 @@ Lua.emw5 = true
 Level 30
 LevelName = Sunken Steel
 Act = 4
-Music = MAP30M
+Music = SKPLT1
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
 NextLevel = 31
@@ -611,7 +611,7 @@ Lua.emw5 = true
 Level 31
 LevelName = Sunken Steel
 Act = 5
-Music = MAP31M
+Music = SKPLT2
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
 NextLevel = 32
@@ -630,7 +630,7 @@ Lua.emw5 = true
 Level 32
 LevelName = Sunken Steel
 Act = 6
-Music = MAP32M
+Music = SKPLT3
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
 NextLevel = 33
@@ -652,7 +652,7 @@ Lua.emw5 = true
 Level 33
 LevelName = Desolate Hill
 Act = 7
-Music = MAP33M
+Music = DESHL1
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
 NextLevel = 34
@@ -671,7 +671,7 @@ Lua.emw5 = true
 Level 34
 LevelName = Desolate Hill
 Act = 8
-Music = MAP34M
+Music = DESHL2
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 SkyNum = 20
 NextLevel = 35
@@ -690,7 +690,7 @@ Lua.emw5 = true
 Level 35
 LevelName = Shrine
 Act = 9
-Music = MAP35M
+Music = EWSHRN
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
 NextLevel = 41
@@ -709,7 +709,7 @@ Lua.emw5 = true
 Level 36
 Levelname = The Doomsday
 Act = 11
-Music = MAP36M
+Music = DOMSDY
 NextLevel = 1102
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 22
@@ -732,7 +732,7 @@ Lua.emw5 = true
 
 Level 41
 Levelname = Emerald Shrine
-Music = MAP99M
+Music = WLOBBY
 NextLevel = 24
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 29
@@ -750,7 +750,7 @@ Lua.emw5 = true
 
 Level 40
 Levelname = Mystic Ruins
-Music = MAP01M
+Music = MSTRNS
 NextLevel = 2
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 29
@@ -790,7 +790,7 @@ Lua.emw5 = true
 Level 60
 Levelname = Classic DarkPlains
 Act = 1
-Music = MAP02M
+Music = DKPLN1
 NextLevel = 61
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -829,7 +829,7 @@ Lua.emw5 = true
 Level 62
 Levelname = Classic NotSoGHZ
 Act = 3
-Music = MAP16M
+Music = NGHZ2
 NextLevel = 63
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -850,7 +850,7 @@ Lua.emw5 = true
 Level 63
 Levelname = Classic MysticRuins
 Act = 3
-Music = MAP01M
+Music = MSTRNS
 NextLevel = 64
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -871,7 +871,7 @@ Lua.emw5 = true
 Level 64
 Levelname = Classic MetalSonics
 Act = 4
-Music = MAP73M
+Music = AGLCRV
 NextLevel = 60
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -909,7 +909,7 @@ Lua.emw5 = true
 
 Level 91
 Levelname = Kine
-Music = MAP91M
+Music = KINESO
 NextLevel = 91
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 29
@@ -926,7 +926,7 @@ Lua.emw5 = true
 
 Level 92
 Levelname = Goldie
-Music = MAP92M
+Music = SNCORP
 NextLevel = 92
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 29
@@ -943,7 +943,7 @@ Lua.emw5 = true
 Level 93
 Levelname = Shade
 Act = 0
-Music = MAP93M
+Music = SHDECT
 NextLevel = 93
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 29
@@ -960,7 +960,7 @@ Lua.emw5 = true
 Level 95
 Levelname = Brad
 Act = 0
-Music = MAP95M
+Music = BRADCT
 NextLevel = 95
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 20
@@ -1011,7 +1011,7 @@ Lua.emw5 = true
 Level 99
 Levelname = Waiting Lobby
 Act = 0
-Music = MAP99M
+Music = WLOBBY
 NextLevel = 01
 TypeOfLevel = Singleplayer,Co-op
 SkyNum = 41
@@ -1038,7 +1038,7 @@ Lua.emw5 = true
 
 Level 71
 Levelname = Pyramid Temple
-Music = MAP06M
+Music = PRDCV1
 SelectHeading = EggmanWay 5
 NextLevel = 72
 TypeOfLevel = Match,Tag
@@ -1050,7 +1050,7 @@ Lua.emw5 = true
 
 Level 72
 Levelname = NotThatGreen Hill
-Music = MAP72M
+Music = DMNGHZ
 SelectHeading = EggmanWay 5
 NextLevel = 73
 TypeOfLevel = Match,Tag
@@ -1063,7 +1063,7 @@ Lua.emw5 = true
 
 Level 73
 Levelname = AngelsCrevice
-Music = MAP73M
+Music = AGLCRV
 SelectHeading = EggmanWay 5
 NextLevel = 74
 TypeOfLevel = Match,Tag
@@ -1076,7 +1076,7 @@ Lua.emw5 = true
 
 Level 74
 Levelname = Shadowcity
-Music = MAP74M
+Music = SHDWCT
 SelectHeading = EggmanWay 5
 NextLevel = 75
 TypeOfLevel = Match,Tag
@@ -1089,7 +1089,7 @@ Lua.emw5 = true
 
 Level 75
 Levelname = Emerald Shrine
-Music = MAP75M
+Music = MSHRIN
 SelectHeading = EggmanWay 5
 NextLevel = 70
 TypeOfLevel = Match,Tag
