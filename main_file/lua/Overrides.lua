@@ -13,6 +13,11 @@ function A_TurretFire(actor, var1, var2)
 	super(actor, var1, var2)
 end
 
+--Goombas.
+--Sorry, there's no way to set these only for emw5 maps and revert for vanilla in a net safe way.
+mobjinfo[MT_GOOMBA].speed = 16
+mobjinfo[MT_GOOMBA].speed = 24
+
 local skim_sprite = SPR_EMW5_SKIM
 local emerald_sprite = SPR_EMW5_EMMY
 local deton_sprite = SPR_EMW5_DETON
