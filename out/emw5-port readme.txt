@@ -32,6 +32,6 @@ Play style: Strafe or Manual
 	OR
 
 	* Lighting System Addon (Fake coronas, but this port supports it):
-	https://github.com/GLideKS/Lighting-System
+	https://github.com/GLideKS/Lighting-System/releases
 
 - SRB2 Final Demo palette colors (Doom Palette) https://mb.srb2.org/addons/slade-palettes.6170/
